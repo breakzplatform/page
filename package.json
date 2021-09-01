@@ -1,0 +1,22 @@
+{
+  "name": "joseli.to",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepush": "mv pt/output/index.html public/pt/index.html && git add public/pt/index.html && git commit -am 'update pt site'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breakzplatform/joseli.to.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/breakzplatform/joseli.to/issues"
+  },
+  "homepage": "https://github.com/breakzplatform/joseli.to#readme",
+  "dependencies": {
+    "husky": "^7.0.2"
+  }
+}

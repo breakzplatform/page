@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "tiddlywiki --listen",
-    "build": "tiddlywiki --build index",
-    "minify": "mv output/index.html output/index.html.bak && html-minifier output/index.html.bak -o output/index.html --remove-comments --collapse-whitespace --minify-css && rm output/index.html.bak"
+    "build": "rm -rf .cache && tiddlywiki --build index",
+    "minify": "html-minifier output/wiki.html -o output/index.html --remove-comments --collapse-whitespace --minify-css && rm output/wiki.html"
   },
   "dependencies": {
     "html-minifier": "^4.0.0",

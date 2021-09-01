@@ -5,7 +5,6 @@
         "tiddlywiki/filesystem",
         "tiddlywiki/highlight",
         "tiddlywiki/katex",
-        "tiddlywiki/blog",
 		"tiddlywiki/codemirror"
     ],
     "themes": [
@@ -18,7 +17,7 @@
         "index": [
             "--rendertiddler",
             "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
-            "index.html",
+            "wiki.html",
             "text/plain"
         ],
         "static": [
