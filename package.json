@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepush": "mv pt/output/index.html public/pt/index.html && git add public/pt/index.html && git commit -am 'update pt site'"
+    "prepush": "cd pt && yarn build && yarn minify && mv pt/output/index.html public/pt/index.html && git add public/pt/index.html && git commit -am 'update pt site'"
   },
   "repository": {
     "type": "git",
