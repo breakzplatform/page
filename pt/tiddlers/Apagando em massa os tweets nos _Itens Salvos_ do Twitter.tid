@@ -1,0 +1,17 @@
+created: 20210327000000000
+modified: 20210328000000000
+tags: Notinhas
+title: Apagando em massa os tweets nos "Itens Salvos" do Twitter
+type: text/vnd.tiddlywiki
+
+Versão que fiz para Twitter [[do mesmo snippet que fiz para YouTube|Apagando em massa vídeos da playlist "Assistir Depois" do YouTube]]. Você tem que rodar algumas coisas pelo rate limit da API, mas funciona.
+
+```javascript
+setInterval(function() {
+	document.querySelector('div[aria-label*="Compartilhar"]').click();
+	var things = document.evaluate('//span[contains(text(),"Remover")]',document,null,XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,null);
+		for (var i = 0; i < things.snapshotLength; i++) {
+		    things.snapshotItem(i).click();
+		}		
+}, 1000);
+```

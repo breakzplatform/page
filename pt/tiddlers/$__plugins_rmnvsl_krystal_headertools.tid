@@ -1,0 +1,13 @@
+tags: $:/plugins/rmnvsl/krystal/header
+title: $:/plugins/rmnvsl/krystal/headertools
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/MenuBar]!has[draft.of]]">
+<$button class="tc-btn-invisible tc-tiddlylink" to=<<currentTiddler>>>
+<$transclude tiddler="$buttonTemplate$" mode="inline">
+<$transclude tiddler=<<currentTiddler>> field="caption">
+<$macrocall $name="currentTiddler" $type="text/plain" $output="text/plain"/>
+</$transclude>
+</$transclude>
+</$button>
+</$list>

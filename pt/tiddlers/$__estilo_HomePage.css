@@ -1,0 +1,162 @@
+div[data-tiddler-title="HomePage"] {
+	background: #ccc;
+	color: #000;
+	font-family:  Times, "Times New Roman", Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", serif;
+}
+
+div[data-tiddler-title="HomePage"] p { 
+	font-size: 12pt;
+}
+
+div[data-tiddler-title="HomePage"] p > a.tc-tiddlylink,
+div[data-tiddler-title="HomePage"] p > a.tc-tiddlylink:link,
+div[data-tiddler-title="HomePage"] p > a.tc-tiddlylink:visited,
+div[data-tiddler-title="HomePage"] p > a.tc-tiddlylink-external,
+div[data-tiddler-title="HomePage"] p > a.tc-tiddlylink-external:link, 
+div[data-tiddler-title="HomePage"] p > a.tc-tiddlylink-external:visited {
+	color: #00f;
+	text-decoration: underline; 
+	font-style: italic;
+}
+
+div[data-tiddler-title="HomePage"] p > a.tc-tiddlylink:hover, 
+div[data-tiddler-title="HomePage"] p > a.tc-tiddlylink-external:hover {
+	font-style: normal;
+	background: none;
+}
+
+div[data-tiddler-title="HomePage"] .tc-tiddler-title-icon {
+	margin-right: .5rem;
+}
+
+div[data-tiddler-title="HomePage"] .tc-title {
+	color: #000;
+	font-size: 24pt;
+	font-weight: 700;
+}
+
+div[data-tiddler-title="HomePage"] .tc-subtitle {
+	color: #000;
+	font-style: italic;
+}
+
+div[data-tiddler-title="HomePage"] a.tc-tiddlylink-external:after,
+div[data-tiddler-title="HomePage"] .tc-tags-wrapper,
+div[data-tiddler-title="HomePage"] .krystal-references {
+	display: none;
+}
+
+div[data-tiddler-title="HomePage"] .tc-tiddler-controls button svg,
+div[data-tiddler-title="HomePage"] .tc-tiddler-controls button img,
+div[data-tiddler-title="HomePage"] .tc-search button svg,
+div[data-tiddler-title="HomePage"] .tc-search a svg {
+	fill: #888888;
+}
+
+div[data-tiddler-title="HomePage"] .tc-tiddler-controls button:hover svg,
+div[data-tiddler-title="HomePage"] .tc-tiddler-controls button:hover img,
+div[data-tiddler-title="HomePage"] .tc-search button:hover svg,
+div[data-tiddler-title="HomePage"] .tc-search a:hover svg {
+	fill: #f4f4f4;
+}
+
+div[data-tiddler-title="HomePage"] .www {
+	float: right;
+	margin-left: 1rem;
+}
+
+/* scroll bar */
+
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-track {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFElEQVQIW2M4fPz0////GYAYyAIASnoKpV3w4kgAAAAASUVORK5CYII=");
+  image-rendering: pixelated;
+}
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-track:active {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAEElEQVQIW2No6+pjgAAgCwAWogM9VKrgGQAAAABJRU5ErkJggg==");
+}
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-thumb {
+  border-top: 1px solid #c3c7cb;
+  border-left: 1px solid #c3c7cb;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
+  width: 16px;
+  height: 16px;
+  background-color: #c3c7cb;
+  z-index: 1;
+}
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-corner {
+  background-color: #c3c7cb;
+}
+div[data-tiddler-title="HomePage"]::-webkit-resizer {
+  width: 16px;
+  height: 16px;
+  background-color: #c3c7cb;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAN0lEQVR4Ae3MgQUAMBRDwU5fFF05lb/CARTBw2Ulof0DxPtcwp3hNuEYnjbcEW4TjuFpwx3h9gMWGgZ2Y/PT2gAAAABJRU5ErkJggg==");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button,
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button {
+  border-top: 1px solid #c3c7cb;
+  border-left: 1px solid #c3c7cb;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #c3c7cb;
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:active,
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:active {
+  background-position: 2px 2px;
+}
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:horizontal:decrement,
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:horizontal:decrement {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHklEQVQY02NgoBT8xyX8H5fwf1zCpOjAYwceV1EEAAO2D/HsQ4vsAAAAAElFTkSuQmCC");
+}
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:horizontal:increment,
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:horizontal:increment {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHUlEQVQY02NgIB/8xy3xH7fEf9wS/0nUQZqrKAYAK44P8ZRmzLQAAAAASUVORK5CYII=");
+}
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:vertical:decrement,
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:vertical:decrement {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGklEQVR4AWMYxuA/SYphmETFhDX9x4mHGQAAcL4P8dQiMq8AAAAASUVORK5CYII=");
+}
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:vertical:increment,
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:vertical:increment {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAF0lEQVQY02NgoBf4jwJxSOHQhcNAOgMAWWAP8Rv2U3UAAAAASUVORK5CYII=");
+}
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:horizontal:increment:start,
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:horizontal:increment:start {
+  display: none;
+}
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:horizontal:decrement:end,
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:horizontal:decrement:end {
+  display: none;
+}
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:vertical:increment:start,
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:vertical:increment:start {
+  display: none;
+}
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:vertical:decrement:end,
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:vertical:decrement:end {
+  display: none;
+}
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:active,
+div[data-tiddler-title="HomePage"]::-webkit-scrollbar-button:active {
+  border-top: 1px solid #868a8e;
+  border-left: 1px solid #868a8e;
+  border-bottom: 1px solid #868a8e;
+  border-right: 1px solid #868a8e;
+  box-shadow: none;
+}

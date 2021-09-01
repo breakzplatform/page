@@ -1,0 +1,15 @@
+{
+  "name": "joseli.to",
+  "version": "0.2",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tiddlywiki --listen",
+    "build": "tiddlywiki --build index",
+    "minify": "mv output/index.html output/index.html.bak && html-minifier output/index.html.bak -o output/index.html --remove-comments --collapse-whitespace --minify-css && rm output/index.html.bak"
+  },
+  "dependencies": {
+    "html-minifier": "^4.0.0",
+    "tiddlywiki": "^5.1.23"
+  }
+}

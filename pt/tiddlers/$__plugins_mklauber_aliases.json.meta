@@ -1,0 +1,10 @@
+author: Matthew Lauber
+core-version: >=5.1.18
+dependents: 
+description: Aliases - Alias Manager
+list: 
+plugin-type: plugin
+source: https://github.com/mklauber/tiddly-aliases
+title: $:/plugins/mklauber/aliases
+type: application/json
+version: 5.1.22

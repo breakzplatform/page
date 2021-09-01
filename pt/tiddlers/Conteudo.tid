@@ -1,0 +1,24 @@
+list-after: Index
+tags: Index $:/tags/MenuBar
+title: Conteúdo
+type: text/vnd.tiddlywiki
+
+!! [[Notinhas]]
+<<list-links "[tag[Notinhas]limit[5]!sort[created]]">>
+
+!! [[Desenvolvimento|Dev]]
+<<list-links "[tag[Dev]!tag[Notinhas]limit[5]!sort[created]]">>
+
+!! [[Produtividade]]
+<<list-links "[tag[Produtividade]!tag[Notinhas]limit[5]!sort[created]]">>
+
+!! [[Artigos]]
+<<list-links "[tag[Artigos]!tag[Notinhas]limit[5]!sort[created]]">>
+
+!! [[Palestras]]
+<<list-links "[tag[Palestras]limit[5]!sort[created]]">>
+
+!! [[Projetos]]
+<<list-links "[tag[Projetos]limit[5]!sort[created]]">>
+
+{{$:/Footer}}

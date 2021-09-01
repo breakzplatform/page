@@ -1,0 +1,12 @@
+author: Scott Kingery
+core-version: >=5.1.20
+created: 20200508053500072
+creator: Scott Kingery
+description: xmlbuilder
+list: readme settings history
+modified: 20210829022722418
+modifier: Scott Kingery
+plugin-type: plugin
+title: $:/plugins/techlifeweb/xmlbuilder
+type: application/json
+version: 1.1.0

@@ -1,0 +1,12 @@
+tags: $:/tags/ViewTemplate
+title: $:/core/ui/ViewTemplate/subtitle
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
+<div class="tc-subtitle">
+<$link to={{!!modifier}} />
+<$list filter="[is[current]has[created]]">Publicado em&nbsp;<span class="lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></$list>
+<$list filter="[is[current]has[modified]]">, atualizado&nbsp;<span class="lowercase"><$view field="modified" format="relativedate"/></span></$list>
+</div>
+</$reveal>

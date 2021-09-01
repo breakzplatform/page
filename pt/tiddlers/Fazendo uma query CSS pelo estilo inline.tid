@@ -1,0 +1,15 @@
+tags: Notinhas CSS Snippet
+title: Fazendo uma query CSS pelo estilo inline
+type: text/vnd.tiddlywiki
+created: 20210427000000000
+modified: 20210428000000000
+
+Pode parecer absurdo, mas este código funciona:
+
+```css
+div[style*="rgb(193,152,251)"] {
+	color: #57b5f9 !important;
+}
+```
+
+Isso se deve ao fato de `style` ser apenas mais um atributo de uma tag, apesar de intuitivamente acharmos que ele tem algo de diferente pela sua natureza.

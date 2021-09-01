@@ -1,0 +1,72 @@
+*::-webkit-scrollbar {
+	width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #9680A9;
+}
+
+a, a:link {
+	font-weight: bold;
+}
+
+a:hover, a:not(.tc-tiddlylink):hover {
+	background-color: #9680A9;
+	color: #fff;
+}
+
+a.tc-tiddlylink:hover {
+	text-decoration: none;
+}
+
+a:not(.tc-tiddlylink), a:not(.tc-tiddlylink):link, a:not(.tc-tiddlylink):visited {
+	color: #9680A9;
+	text-decoration: none;
+}
+
+a.tc-tiddlylink-external:after {
+	content: "➜";
+	display: inline-block;
+	transform: rotate(-45deg);
+}
+
+.tc-site-title {
+	display: flex;
+	font-family: monospace;
+	align-items: center;
+	justify-content: center;
+}
+
+.tc-site-title > a.tc-tiddlylink {
+	font-weight: bold;
+	text-transform: lowercase;
+	border: none;
+}
+
+.eu {
+	margin-right: 10px;
+	border-radius: 100%;
+}
+
+.tc-dropzone > p {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tc-sidebar-lists input {
+	border: 1px solid #9680A9;
+}
+
+.lowercase { text-transform: lowercase; }
+
+div[data-tiddler-title="Conteúdo"] .tc-tags-wrapper,
+div[data-tiddler-title="Conteúdo"] .krystal-references,
+div[data-tiddler-title="Index"] .tc-tags-wrapper,
+div[data-tiddler-title="Index"] .krystal-references {
+	display: none;
+}

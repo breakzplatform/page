@@ -1,0 +1,12 @@
+created: 20210321000000001
+modified: 20210321000000001
+tags: Dev Notinhas 2021
+title: API de Favicons do DuckDuckGo
+type: text/vnd.tiddlywiki
+
+O buscador do bem //DuckDuckGo// tem uma API não-documentada para obter favicons de um website. Basta fazer um request para:
+<pre>https://icons.duckduckgo.com/ip3/<domínio>.ico</pre>
+ou seja, por exemplo o favicon da Amazon:
+<pre>https://icons.duckduckgo.com/ip3/amazon.com.ico</pre>
+
+A API não é documentada, então não existe oficialmente um limite de uso. Duas grandes vantagens são o fato de retornar apenas a imagem mesmo e não ter nada misterioso no request (sem tracking) e que, diferente de outras APIs do mesmo tipo, o DDG verifica o valor das metatags para atribuir o ícone, ao invés de simplesmente acessar o /favicon.ico do domínio.
