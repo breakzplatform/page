@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "prepush": "cd pt && yarn build && yarn minify && cd .. && mv pt/output/index.html public/pt/index.html && git add public/pt/index.html && git commit -am 'update pt site'"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/breakzplatform/joseli.to.git"
