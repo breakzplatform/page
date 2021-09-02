@@ -22,6 +22,8 @@ fs.readFile(path.join(__dirname, '..', 'output') + '/wiki.html', 'utf8', async (
 
   let _a = _txt1 + _txt2;
 
+  root.querySelector('div[name="Core"] pre').replaceWith('<pre>' + _a + '</pre>');
+
   _a1 = root.querySelector('div[name="Core"] pre').innerHTML.toString().indexOf("/*! modern-normalize v1.0.0");
   _a2 = root.querySelector('div[name="Core"] pre').innerHTML.toString().indexOf("list-item;\n}\n&quot");
 
