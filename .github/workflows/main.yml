@@ -1,0 +1,22 @@
+name: Joseli.to Deploy
+
+on: [push]
+
+jobs:
+  pt:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v2
+      - name: Enter PT folder
+        run: cd pt
+      - name: Install PT dependencies
+        run: yarn install
+      - name: Build PT
+        run: yarn build
+      - name: Minify PT
+        run: yarn minify
+      - name: Move PT to root
+        run: mv output/index.html ../public/pt/index.html
