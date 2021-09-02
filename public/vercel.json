@@ -1,5 +1,6 @@
 {
   "redirects": [
+    { "source": "/", "destination": "https://legacy.joseli.to" },
     { "source": "/:path", "destination": "https://legacy.joseli.to" },
     {
       "source": "/:path",
@@ -10,7 +11,19 @@
           "value": "BR"
         }
       ],
-      "destination": "/pt/:path*",
+      "destination": "/pt/:path",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "BR"
+        }
+      ],
+      "destination": "/pt/",
       "permanent": false
     }
   ]
