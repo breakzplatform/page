@@ -1,0 +1,10 @@
+list-after: $:/core/ui/EditTemplate/title
+title: $:/ContributionBanner
+type: text/vnd.tiddlywiki
+
+\define linkup()
+[[Additional Info|https://github.com/breakzplatform/joseli.to/blob/main/pt/tiddlers/$(currentTiddler)$.tid]]
+\end
+
+<div class="tc-improvement-banner">Can you help us improve this documentation? [[Find out how|Improving TiddlyWiki Documentation]] to <<linkup>>
+</div>
