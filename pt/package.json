@@ -6,10 +6,12 @@
   "scripts": {
     "start": "tiddlywiki --listen",
     "build": "rm -rf .cache && tiddlywiki --build index",
-    "minify": "html-minifier output/wiki.html -o output/index.html --remove-comments --collapse-whitespace --minify-css && rm output/wiki.html"
+    "minify": "node scripts/cleaner.js && html-minifier output/index.min.html -o output/index.html --remove-comments --collapse-whitespace --minify-css && rm output/index.min.html output/wiki.html"
   },
   "dependencies": {
+    "clean-css": "^5.1.5",
     "html-minifier": "^4.0.0",
+    "node-html-parser": "^4.1.4",
     "tiddlywiki": "^5.1.23"
   }
 }
