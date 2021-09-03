@@ -297,7 +297,7 @@ summary {
 }
 
 *::-webkit-scrollbar-thumb {
-	background-color: #9680A9;
+	background-color: #654E73;
 }
 
 a, a:link {
@@ -305,7 +305,7 @@ a, a:link {
 }
 
 a:hover, a:not(.tc-tiddlylink):hover {
-	background-color: #9680A9;
+	background-color: #654E73;
 	color: #fff;
 }
 
@@ -314,7 +314,7 @@ a.tc-tiddlylink:hover {
 }
 
 a:not(.tc-tiddlylink), a:not(.tc-tiddlylink):link, a:not(.tc-tiddlylink):visited {
-	color: #9680A9;
+	color: #654E73;
 	text-decoration: none;
 }
 
@@ -349,7 +349,7 @@ a.tc-tiddlylink-external:after {
 }
 
 .tc-sidebar-lists input {
-	border: 1px solid #9680A9;
+	border: 1px solid #654E73;
 }
 
 .lowercase { text-transform: lowercase; }

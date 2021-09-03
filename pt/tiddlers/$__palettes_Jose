@@ -1,4 +1,4 @@
-alert-background: #9680A9
+alert-background: #654E73
 alert-border: #b99e2f
 alert-highlight: #881122
 alert-muted-foreground: #b99e2f
@@ -35,7 +35,7 @@ external-link-foreground-hover: inherit
 external-link-foreground-visited: #0000aa
 external-link-foreground: #0000ee
 foreground: #333333
-message-background: #E2DCE7
+message-background: #F1EDF2
 message-border: #cfd6e6
 message-foreground: #547599
 modal-backdrop: <<colour foreground>>
@@ -50,7 +50,7 @@ notification-border: #999999
 page-background: #f4f4f4
 pre-background: #f5f5f5
 pre-border: #cccccc
-primary: #9680A9
+primary: #654E73
 selection-background: 
 selection-foreground: 
 select-tag-background: 
@@ -83,7 +83,7 @@ tab-foreground: #666666
 table-border: #dddddd
 table-footer-background: #a8a8a8
 table-header-background: #f0f0f0
-tag-background: #9680A9
+tag-background: #654E73
 tag-foreground: #ffffff
 tiddler-background: <<colour background>>
 tiddler-border: <<colour background>>

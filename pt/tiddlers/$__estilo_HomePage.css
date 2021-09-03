@@ -33,6 +33,18 @@ div[data-tiddler-title="HomePage"] .tc-title {
 	color: #000;
 	font-size: 24pt;
 	font-weight: 700;
+	display: flex;
+	margin: 0;
+}
+
+
+div[data-tiddler-title="HomePage"] .tc-title:before {
+	content: '';
+	display: block;
+	width: 33px;
+	height: 33px;
+	margin-right: 10px;
+	background-image: url('https://static.joseli.to/joseli.to/HomePage/globe_earth.gif');
 }
 
 div[data-tiddler-title="HomePage"] .tc-subtitle {
