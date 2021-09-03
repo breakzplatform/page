@@ -61,7 +61,7 @@ sidebar-controls-foreground: #aaaaaa
 sidebar-foreground-shadow: rgba(255,255,255, 0.8)
 sidebar-foreground: #acacac
 sidebar-muted-foreground-hover: #444444
-sidebar-muted-foreground: #c0c0c0
+sidebar-muted-foreground: #595959
 sidebar-tab-background-selected: #f4f4f4
 sidebar-tab-background: #e0e0e0
 sidebar-tab-border-selected: <<colour tab-border-selected>>
@@ -100,7 +100,7 @@ tiddler-info-border: #dddddd
 tiddler-info-tab-background: #f8f8f8
 tiddler-link-background: <<colour background>>
 tiddler-link-foreground: <<colour primary>>
-tiddler-subtitle-foreground: #c0c0c0
+tiddler-subtitle-foreground: #595959
 tiddler-title-foreground: #182955
 toolbar-new-button: 
 toolbar-options-button: 
