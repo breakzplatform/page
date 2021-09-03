@@ -24,15 +24,15 @@ fs.readFile(path.join(__dirname, '..', 'output') + '/wiki.html', 'utf8', async (
 
   root.querySelector('div[name="Core"] pre').set_content(_a);
 
-  _a1 = root.querySelector('div[name="Vanilla"] pre').innerHTML.toString().indexOf("/*! modern-normalize v1.0.0");
-  _a2 = root.querySelector('div[name="Vanilla"] pre').innerHTML.toString().indexOf("list-item;\n}\n&quot");
+  // _a1 = root.querySelector('div[name="Vanilla"] pre').innerHTML.toString().indexOf("/*! modern-normalize v1.0.0");
+  // _a2 = root.querySelector('div[name="Vanilla"] pre').innerHTML.toString().indexOf("list-item;\n}\n&quot");
 
-  _txt1 = root.querySelector('div[name="Vanilla"] pre').innerHTML.substring(0, _a1)
-  _txt2 = root.querySelector('div[name="Vanilla"] pre').innerHTML.substring(_a2, root.querySelector('div[name="Vanilla"] pre').innerHTML.length);
+  // _txt1 = root.querySelector('div[name="Vanilla"] pre').innerHTML.substring(0, _a1)
+  // _txt2 = root.querySelector('div[name="Vanilla"] pre').innerHTML.substring(_a2, root.querySelector('div[name="Vanilla"] pre').innerHTML.length);
 
-  _a = _txt1 + "&quot" + _txt2;
+  // _a = _txt1 + "&quot" + _txt2;
 
-  root.querySelector('div[name="Vanilla"] pre').set_content(_a);
+  // root.querySelector('div[name="Vanilla"] pre').set_content(_a);
 
   root.querySelector('div[title="$:/estilo/Global"] pre').replaceWith(`
     <pre>${new CleanCSS({})
