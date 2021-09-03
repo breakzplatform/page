@@ -1,0 +1,37 @@
+\rules only filteredtranscludeinline transcludeinline macrocallinline
+<div class="tc-remove-when-wiki-loaded">
+<style scoped>
+body {
+  background: #fff;
+	overflow: hidden;
+}
+
+.tc-remove-when-wiki-loaded {
+	height: 100vh;
+	text-align: center;
+}
+
+.splash {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.rotate {
+  animation: rotation 2s infinite linear;
+	border-radius: 100%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+</style>
+<div class="splash">
+	<img alt="Carregando o site Joseli.to, aguarde. É rápido." src="https://next.joseli.to/pt/favicon.png" width="256" height="256" class="rotate" loading="lazy" />
+</div>
+</div>
