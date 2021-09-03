@@ -85,6 +85,11 @@ entities@^2.0.0:
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
   integrity sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==
 
+esm@^3.2.25:
+  version "3.2.25"
+  resolved "https://registry.yarnpkg.com/esm/-/esm-3.2.25.tgz#342c18c29d56157688ba5ce31f8431fbb795cc10"
+  integrity sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==
+
 he@1.2.0, he@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
@@ -141,6 +146,13 @@ relateurl@^0.2.7:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
+
+roadroller@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/roadroller/-/roadroller-2.0.0.tgz#2d37bd8a1780ebfa8a649657db6c0d2fe55c1a25"
+  integrity sha512-soMdMCcA6na9QyvufEmjujV6+RXZm2WTbMlG1WbVsev7xMHBUglYSTEKdRIbQwnpyCzaL0QOQ/jyT6V+kKtVVQ==
+  dependencies:
+    esm "^3.2.25"
 
 source-map@~0.6.0:
   version "0.6.1"
