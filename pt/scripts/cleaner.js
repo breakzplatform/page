@@ -32,6 +32,8 @@ fs.readFile(path.join(__dirname, '..', 'output') + '/wiki.html', 'utf8', async (
     <meta name="twitter:title" content="Joseli.to — Uma página pessoal" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://joseli.to/pt/social.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/apple-touch-icon-72x72.png" />
