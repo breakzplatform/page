@@ -21,15 +21,15 @@ fs.readFile(path.join(__dirname, '..', 'output') + '/wiki.html', 'utf8', async (
   root.querySelector('head').insertAdjacentHTML('beforeend', `
     <meta charset="utf-8" />
     <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#653585" />
 	  <meta property="og:type" content="website" />
     <link rel="webmention" href="https://webmention.io/joseli.to/webmention" />
     <link rel="pingback" href="https://webmention.io/joseli.to/xmlrpc" />
     <link rel="me" href="https://twitter.com/breakzplatform" />
     <link rel="dns-prefetch" href="//static.joseli.to" />
-    <meta property="og:title" content="Joseli.to · Uma página pessoal" />
+    <meta property="og:title" content="Joseli.to — Uma página pessoal" />
     <meta property="og:image" content="https://joseli.to/pt/social.png" />
-    <meta name="twitter:title" content="Joseli.to · Uma página pessoal" />
+    <meta name="twitter:title" content="Joseli.to — Uma página pessoal" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://joseli.to/pt/social.png" />
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/apple-touch-icon-57x57.png" />
@@ -46,13 +46,14 @@ fs.readFile(path.join(__dirname, '..', 'output') + '/wiki.html', 'utf8', async (
     <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="assets/favicon-128.png" sizes="128x128" />
     <meta name="application-name" content="Joseli.to"/>
-    <title>Joseli.to · Uma página pessoal</title>
+    <title>Joseli.to — Uma página pessoal</title>
   `);
 
   root.querySelector('noscript').remove();
   root.querySelector('#styleArea').remove();
   root.querySelector('div[author="Flibbles"]').remove();
   root.querySelector('div[author="Scott Kingery"]').remove();
+  root.querySelector('.tc-password-wrapper').remove();
 
   let _a1 = root.querySelector('div[name="Core"] pre').innerHTML.toString().indexOf("&quot;$:/palettes/Blanca&quot;");
   let _a2 = root.querySelector('div[name="Core"] pre').innerHTML.toString().indexOf("&quot;$:/palettes/Vanilla&quot;:{&quot;name&quot;:&quot;Vanilla");
