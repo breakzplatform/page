@@ -518,3 +518,14 @@ div[data-tiddler-title="Index"] .tc-tags-wrapper,
 div[data-tiddler-title="Index"] .krystal-references {
 	display: none;
 }
+
+@media screen and (max-width: 768px) {
+	header button.tc-tiddlylink,
+	button[title*="Pesquisa"] {
+		padding: .75em;
+	}
+	
+	.tc-tiddler-controls button:not([title="Fechar este Tiddler"]) {
+			display: none;
+	}
+}
