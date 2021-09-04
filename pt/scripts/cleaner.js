@@ -17,8 +17,14 @@ const newsletterFeedItems = [];
     newsletterFeedItems.push('* [[' + item.title + '|' + item.link + ']]')
   });
 
-  const res = await fetch('https://lastfm-last-played.biancarosa.com.br/joselitojunior/latest-song');
-  const track = await res.json();
+
+  let track = "";
+  const res = await fetch('https://lastfm-last-played.biancarosa.com.br/joselitojunior/alatest-song');
+  try {
+    track = await res.json();
+  } catch (e) {
+    track = [{ track: { artist: { "#text": "Blues Traveler" }, name: "Hook" } }, { track: { artist: { "#text": "Daft Punk" }, name: "One More Time" } }][~~(Math.random() * 2)];
+  }
 
   fs.readFile(path.join(__dirname, '..', 'output') + '/wiki.html', 'utf8', async (err, data) => {
     if (err) {
@@ -32,6 +38,8 @@ const newsletterFeedItems = [];
     root.querySelector('meta[name="viewport"]').remove();
     root.querySelector('meta[content="IE=Edge"]').remove();
     root.querySelector('meta[content*="text/html"]').remove();
+    root.querySelector('meta[name*="application"]').remove();
+    root.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]').remove();
     root.querySelector('#faviconLink').remove();
     root.querySelector('title').remove();
 
@@ -84,6 +92,19 @@ const newsletterFeedItems = [];
     root.querySelector('div[author="Flibbles"]').remove();
     root.querySelector('div[author="Scott Kingery"]').remove();
 
+    root.querySelector('div[title="$:/config/codemirror/lineNumbers"]').remove();
+
+    root.querySelector('div[title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/delete"] pre').replaceWith("<pre>hide</pre>");
+    root.querySelector('div[title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit"] pre').replaceWith("<pre>hide</pre>");
+    root.querySelector('div[title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel"] pre').replaceWith("<pre>hide</pre>");
+    root.querySelector('div[title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler"] pre').replaceWith("<pre>hide</pre>");
+
+    root.querySelector('div[title="$:/tags/PageControls"]').replaceWith(`
+      <div list="$:/core/ui/Buttons/home $:/core/ui/Buttons/close-all $:/core/ui/Buttons/permaview $:/core/ui/Buttons/RandomSelection $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/new-tiddler $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/print $:/core/ui/Buttons/refresh $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/more-page-actions" title="$:/tags/PageControls" type="text/vnd.tiddlywiki" revision="0" bag="default">
+        <pre></pre>
+      </div>
+    `)
+
     let _a1 = root.querySelector('div[name="Core"] pre').innerHTML.toString().indexOf("&quot;$:/palettes/Blanca&quot;");
     let _a2 = root.querySelector('div[name="Core"] pre').innerHTML.toString().indexOf("&quot;$:/palettes/Vanilla&quot;:{&quot;name&quot;:&quot;Vanilla");
 
@@ -103,6 +124,7 @@ const newsletterFeedItems = [];
     _a = _txt1 + _txt2;
 
     root.querySelector('div[name="Vanilla"] pre').set_content(_a);
+
 
     const homePage = root.querySelector('div[title="HomePage"] pre');
     homePage.replaceWith("<pre>" + homePage.innerHTML.replace(`//Ao som de ''&lt;span&gt;&lt;/span&gt;''//`, `//Ao som de ''${track['track']['name']} - ${track['track']['artist']['#text']}''//`) + "</pre>");
