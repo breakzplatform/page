@@ -16,6 +16,7 @@ fs.readFile(path.join(__dirname, '..', 'output') + '/wiki.html', 'utf8', async (
   root.querySelector('meta[content="IE=Edge"]').remove();
   root.querySelector('meta[content*="text/html"]').remove();
   root.querySelector('#faviconLink').remove();
+  root.querySelector('title').remove();
 
   root.querySelector('head').insertAdjacentHTML('beforeend', `
     <meta charset="utf-8" />
@@ -45,9 +46,13 @@ fs.readFile(path.join(__dirname, '..', 'output') + '/wiki.html', 'utf8', async (
     <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="assets/favicon-128.png" sizes="128x128" />
     <meta name="application-name" content="Joseli.to"/>
+    <title>Joseli.to · Uma página pessoal</title>
   `);
 
   root.querySelector('noscript').remove();
+  root.querySelector('#styleArea').remove();
+  root.querySelector('div[author="Flibbles"]').remove();
+  root.querySelector('div[author="Scott Kingery"]').remove();
 
   let _a1 = root.querySelector('div[name="Core"] pre').innerHTML.toString().indexOf("&quot;$:/palettes/Blanca&quot;");
   let _a2 = root.querySelector('div[name="Core"] pre').innerHTML.toString().indexOf("&quot;$:/palettes/Vanilla&quot;:{&quot;name&quot;:&quot;Vanilla");
