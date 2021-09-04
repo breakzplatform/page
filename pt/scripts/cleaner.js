@@ -90,7 +90,7 @@ const newsletterFeedItems = [];
 
     const content = root.querySelector('div[title="Conteúdo"] pre');
 
-    content.replaceWith("<pre>" + content.innerHTML.replace('!! [[Newsletter]] !!', `!! [[Newsletter]]\n${newsletterFeedItems.join('\n')}`) + "</pre>");
+    content.replaceWith("<pre>" + content.innerHTML.replace('!! [[Newsletter|https://world.hey.com/joselito]] !!', `!! [[Newsletter|https://world.hey.com/joselito]]\n${newsletterFeedItems.join('\n')}`) + "</pre>");
 
     root.querySelector('div[title="$:/estilo/Global"] pre').replaceWith(`
     <pre>${new CleanCSS({})

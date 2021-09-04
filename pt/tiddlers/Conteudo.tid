@@ -12,7 +12,7 @@ type: text/vnd.tiddlywiki
 !! [[Produtividade]]
 <<list-links "[tag[Produtividade]!tag[Notinhas]limit[5]!sort[created]]">>
 
-!! [[Newsletter]] !!
+!! [[Newsletter|https://world.hey.com/joselito]] !!
 
 !! [[Artigos]]
 <<list-links "[tag[Artigos]!tag[Notinhas]limit[5]!sort[created]]">>
