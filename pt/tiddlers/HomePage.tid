@@ -6,7 +6,9 @@ type: text/vnd.tiddlywiki
 
 <img src="https://static.joseli.to/joseli.to/HomePage/logo.png" width="256" height="256" loading="lazy" alt="Logo JOSE">
 
-//Ao som de ''<span></span>''// <a href="http://last.fm/joselitojunior" target="_blank" rel="noreferrer noopener"><img src="https://static.joseli.to/joseli.to/HomePage/iconlisteningtomusic.gif" width="31" height="18" alt="Smiley ouvindo música com fones de ouvido" /></a>
+<div style="display: flex; items-align: center;">//Ao som de ''<span></span>''//<a href="http://last.fm/joselitojunior" target="_blank" rel="noreferrer noopener"><img src="https://static.joseli.to/joseli.to/HomePage/iconlisteningtomusic.gif" width="31" height="18" alt="Smiley ouvindo música com fones de ouvido" style="margin-left: 10px" /></a></div>
+
+---
 
 ''Boas-vindas! Este site é um site igual a todos os outros sites. É um site diferente dos outros sites. É o meu cantinho na internet. O meu site.''
 
