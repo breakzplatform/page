@@ -1,0 +1,13 @@
+created: 20200504040708890
+modified: 20200508062527559
+title: $:/sitemap
+type: text/vnd.tiddlywiki
+
+&#60;?xml version="1.0" encoding="UTF-8"?&#62;<br />
+&#60;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&#62;<br />
+<$list filter="[!is[system]get[modified]!prefix[NaN]!sort[]]" variable=modified>
+  <$list filter="[!is[system]modified<modified>]">
+     &#60;url&#62;<br />
+          &#60;loc&#62;{{$:/plugins/techlifeweb/xmlbuilder/discoverfeed!!serverdomain}}#<$view field="title" format="urlencoded"/>:Conte%C3%BAdo%20%5B%5B<$view field="title" format="urlencoded"/>%5D%5D&#60;/loc&#62;<br />
+          &#60;lastmod&#62;<$view field="modified" format=date template="[UTC]YYYY-0MM-0DDT0hh:0mm:0ssZ"/></lastmod&#62;<br />
+     &#60;/url&#62;<br /></$list></$list>&#60;/urlset&#62;<br />

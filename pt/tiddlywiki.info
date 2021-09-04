@@ -44,7 +44,7 @@
         "feeds": [
 			"--rendertiddler","$:/plugins/techlifeweb/xmlbuilder/static.template.html","static.html","text/plain",
 			"--rendertiddlers","[!is[system]]","$:/plugins/techlifeweb/xmlbuilder/static.tiddler.html","static","text/plain",
-			"--rendertiddler","$:/plugins/techlifeweb/xmlbuilder/sitemap","sitemap.xml","text/plain",
+			"--rendertiddler","$:/sitemap","sitemap.xml","text/plain",
 			"--rendertiddler","$:/rss/Notinhas","feed/notinhas.atom","text/plain",
 			"--rendertiddler","$:/rss/Artigos","feed/artigos.atom","text/plain"]
     }
