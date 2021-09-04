@@ -12,6 +12,41 @@ fs.readFile(path.join(__dirname, '..', 'output') + '/wiki.html', 'utf8', async (
   const root = HTMLParser.parse(data);
 
   root.querySelector('meta[name="copyright"]').remove();
+  root.querySelector('meta[name="viewport"]').remove();
+  root.querySelector('meta[content="IE=Edge"]').remove();
+  root.querySelector('meta[content*="text/html"]').remove();
+  root.querySelector('#faviconLink').remove();
+
+  root.querySelector('head').insertAdjacentHTML('beforeend', `
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="theme-color" content="#ffffff" />
+	  <meta property="og:type" content="website" />
+    <link rel="webmention" href="https://webmention.io/joseli.to/webmention" />
+    <link rel="pingback" href="https://webmention.io/joseli.to/xmlrpc" />
+    <link rel="me" href="https://twitter.com/breakzplatform" />
+    <link rel="dns-prefetch" href="//static.joseli.to" />
+    <meta property="og:title" content="Joseli.to · Uma página pessoal" />
+    <meta property="og:image" content="https://joseli.to/pt/social.png" />
+    <meta name="twitter:title" content="Joseli.to · Uma página pessoal" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://joseli.to/pt/social.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="assets/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="assets/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Joseli.to"/>
+  `);
+
   root.querySelector('noscript').remove();
 
   let _a1 = root.querySelector('div[name="Core"] pre').innerHTML.toString().indexOf("&quot;$:/palettes/Blanca&quot;");
