@@ -287,7 +287,7 @@ summary {
 }
 
 /* highlight.js */
-/*!
+/*
   Theme: GitHub
   Description: Light theme as seen on github.com
   Author: github.com
@@ -496,7 +496,7 @@ a.tc-tiddlylink-external:after {
 	background: #F1EDF2;
 	border: 1px solid #652585;
 	padding: .25rem .5em;
-	margin: .25rem 0;
+	margin: .25rem 0 0;
 	display: flex;
 	align-items: center;
 }

@@ -8,13 +8,6 @@ div[data-tiddler-title="HomePage"] p {
 	font-size: 12pt;
 }
 
-
-div[data-tiddler-title="HomePage"] p:last-child { 
-	font-size: 8pt;
-	line-height: 1;
-	margin: 0 0 10px;
-}
-
 div[data-tiddler-title="HomePage"] p > a.tc-tiddlylink,
 div[data-tiddler-title="HomePage"] p > a.tc-tiddlylink:link,
 div[data-tiddler-title="HomePage"] p > a.tc-tiddlylink:visited,

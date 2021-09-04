@@ -128,10 +128,18 @@ const newsletterFeedItems = [];
     root.querySelector('div[name="Vanilla"] pre').set_content(_a);
 
 
+    root.querySelector('div[title="$:/Splash"]').remove();
+    root.querySelector('div[title="$:/sitemap"]').remove();
+    root.querySelector('div[title="$:/rss/Notinhas"]').remove();
+    root.querySelector('div[title="$:/rss/Artigos"]').remove();
+    root.querySelector('div[title="$:/Import"]').remove();
+    root.querySelector('div[title="$:/plugins/tiddlywiki/codemirror"]').remove();
+
+
     const homePage = root.querySelector('div[title="HomePage"] pre');
     homePage.replaceWith("<pre>" + homePage.innerHTML
       .replace(`//Ao som de ''&lt;span&gt;&lt;/span&gt;''//`, `//Ao som de ''${track['track']['name']} - ${track['track']['artist']['#text']}''//`)
-      .replace(`Última compilação:`, `Última compilação ás //${new Date().toISOString()}//. Atualizado a cada 15 minutos.`)
+      .replace(`Última compilação:`, `Última compilação ás ''${new Date().toISOString()}''. Atualizado a cada 15 minutos.`)
       .replace(`2010-`, `2010-${(new Date()).getFullYear()}`) + "</pre>");
 
     const content = root.querySelector('div[title="Conteúdo"] pre');
