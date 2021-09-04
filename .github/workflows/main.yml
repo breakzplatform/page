@@ -27,13 +27,10 @@ jobs:
       - name: Generate PT Feeds
         working-directory: ./pt
         run: yarn feeds
-      - name: Minify PT Feeds
-        working-directory: ./pt
-        run: yarn minify:feeds
       - name: Move PT to root
-        run: ls && mv pt/output/index.html public/pt/index.html
+        run: mv pt/output/index.html public/pt/index.html
       - name: Move PT Feeds to root
-        run: ls && mkdir public/pt/feed && mv -v pt/output/feed/* public/pt/feed/
+        run: mkdir public/pt/feed && mv -v pt/output/feed/* public/pt/feed/
       - uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}

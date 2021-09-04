@@ -507,6 +507,11 @@ a.tc-tiddlylink-external:after {
 	margin-right: .5em;
 }
 
+.krystal-tiddler__frame--maximized .tc-tiddler-body {
+	max-width: 720px;
+	margin: 0 auto;
+}
+
 div[data-tiddler-title="Conteúdo"] .tc-tags-wrapper,
 div[data-tiddler-title="Conteúdo"] .krystal-references,
 div[data-tiddler-title="Index"] .tc-tags-wrapper,
