@@ -129,13 +129,12 @@ const newsletterFeedItems = [];
 
 
     const homePage = root.querySelector('div[title="HomePage"] pre');
-    homePage.replaceWith("<pre>" + homePage.innerHTML.replace(`//Ao som de ''&lt;span&gt;&lt;/span&gt;''//`, `//Ao som de ''${track['track']['name']} - ${track['track']['artist']['#text']}''//`) + "</pre>");
+    homePage.replaceWith("<pre>" + homePage.innerHTML
+      .replace(`//Ao som de ''&lt;span&gt;&lt;/span&gt;''//`, `//Ao som de ''${track['track']['name']} - ${track['track']['artist']['#text']}''//`)
+      .replace(`Última compilação:`, `Última compilação: ''${new Date().toISOString()}''//`) + "</pre>");
 
     const content = root.querySelector('div[title="Conteúdo"] pre');
     content.replaceWith("<pre>" + content.innerHTML.replace(`!! [[Newsletter|https://world.hey.com/joselito]] !!`, `!! [[Newsletter|https://world.hey.com/joselito]]\n${newsletterFeedItems.slice(0, 5).join('\n')}`) + "</pre>");
-
-
-    track['track']['name'] + ' - ' + track['track']['artist']['#text']
 
     root.querySelector('div[title="$:/estilo/Global"] pre').replaceWith(`
     <pre>${new CleanCSS({})
