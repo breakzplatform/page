@@ -532,7 +532,8 @@ div[data-tiddler-title="Index"] .krystal-references {
 
 @media screen and (max-width: 768px) {
 	header button.tc-tiddlylink {
-		padding: 1rem .75rem;
+		padding: .5rem;
+		margin: .5rem 0;
 	}
 	
 	.tc-tiddler-controls button:not([title="Fechar este Tiddler"]) {
