@@ -27,6 +27,9 @@ jobs:
       - name: Generate PT Feeds
         working-directory: ./pt
         run: yarn feeds
+      - name: Minify PT Feeds
+        working-directory: ./pt
+        run: yarn minify:feeds
       - name: Move PT to root
         run: ls && mv pt/output/index.html public/pt/index.html
       - name: Move PT Feeds to root

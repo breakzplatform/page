@@ -7,7 +7,8 @@
     "start": "tiddlywiki --listen",
     "build": "rm -rf .cache && tiddlywiki --build index",
     "minify": "node scripts/cleaner.js && html-minifier output/index.min.html -o output/index.html --remove-comments --collapse-whitespace --minify-css",
-    "feeds": "tiddlywiki --build feeds"
+    "feeds": "tiddlywiki --build feeds",
+    "minify:feeds": "html-minifier --input-dir output/feed --output-dir output/feed --remove-comments --collapse-whitespace"
   },
   "dependencies": {
     "clean-css": "^5.1.5",
