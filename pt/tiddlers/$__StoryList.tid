@@ -1,3 +1,3 @@
-list: HomePage Conteúdo Index
+list: $:/core/ui/SideBarSegments/search HomePage Conteúdo Index
 title: $:/StoryList
 type: text/vnd.tiddlywiki
