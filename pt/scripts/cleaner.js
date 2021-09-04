@@ -19,7 +19,7 @@ const newsletterFeedItems = [];
 
 
   let track = "";
-  const res = await fetch('https://lastfm-last-played.biancarosa.com.br/joselitojunior/alatest-song');
+  const res = await fetch('https://lastfm-last-played.biancarosa.com.br/joselitojunior/latest-song');
   try {
     track = await res.json();
   } catch (e) {
