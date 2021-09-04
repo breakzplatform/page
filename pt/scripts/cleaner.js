@@ -75,6 +75,9 @@ const newsletterFeedItems = [];
     <meta name="application-name" content="Joseli.to"/>
     <title>Joseli.to — Uma página pessoal</title>
     <meta name="description" content="Este site é um site igual a todos os outros sites. É um site diferente dos outros sites. É o meu cantinho na internet. O meu site. Leia sobre desenvolvimento web, produtividade e artigos políticos com praticamente nenhum embasamento." />
+    <link rel="alternate" type="application/atom+xml" title="Joseli.to — Newsletter" href="https://world.hey.com/joselito/feed.atom" />
+    <link rel="alternate" type="application/atom+xml" title="Joseli.to — Notinhas" href="feed/notinhas.atom" />
+    <link rel="alternate" type="application/atom+xml" title="Joseli.to — Artigos" href="feed/artigos.atom" />
   `);
 
     root.querySelector('body').insertAdjacentHTML('beforeend', `<script>
