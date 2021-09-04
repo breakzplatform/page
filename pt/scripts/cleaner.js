@@ -53,7 +53,6 @@ fs.readFile(path.join(__dirname, '..', 'output') + '/wiki.html', 'utf8', async (
   root.querySelector('#styleArea').remove();
   root.querySelector('div[author="Flibbles"]').remove();
   root.querySelector('div[author="Scott Kingery"]').remove();
-  root.querySelector('.tc-password-wrapper').remove();
 
   let _a1 = root.querySelector('div[name="Core"] pre').innerHTML.toString().indexOf("&quot;$:/palettes/Blanca&quot;");
   let _a2 = root.querySelector('div[name="Core"] pre').innerHTML.toString().indexOf("&quot;$:/palettes/Vanilla&quot;:{&quot;name&quot;:&quot;Vanilla");
