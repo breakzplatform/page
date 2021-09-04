@@ -12,6 +12,8 @@ type: text/vnd.tiddlywiki
 !! [[Produtividade]]
 <<list-links "[tag[Produtividade]!tag[Notinhas]limit[5]!sort[created]]">>
 
+!! [[Newsletter]] !!
+
 !! [[Artigos]]
 <<list-links "[tag[Artigos]!tag[Notinhas]limit[5]!sort[created]]">>
 
