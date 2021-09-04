@@ -17,6 +17,7 @@ div[data-tiddler-title="HomePage"] p > a.tc-tiddlylink-external:visited {
 	color: #00f;
 	text-decoration: underline; 
 	font-style: italic;
+	background: transparent;
 }
 
 div[data-tiddler-title="HomePage"] p > a.tc-tiddlylink:hover, 
