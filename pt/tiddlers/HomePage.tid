@@ -6,8 +6,7 @@ type: text/vnd.tiddlywiki
 
 <img src="https://static.joseli.to/joseli.to/HomePage/logo.png" width="256" height="256" loading="lazy" alt="Logo JOSE">
 
-//Ao som de ''<span id="song">******</span>''//
-<<lastfm joselitojunior>>
+//Ao som de ''<span></span>''// <a href="http://last.fm/joselitojunior" target="_blank" rel="noreferrer noopener"><img src="https://static.joseli.to/joseli.to/HomePage/iconlisteningtomusic.gif" width="31" height="18" alt="Smiley ouvindo música com fones de ouvido" /></a>
 
 ''Boas-vindas! Este site é um site igual a todos os outros sites. É um site diferente dos outros sites. É o meu cantinho na internet. O meu site.''
 
@@ -21,7 +20,9 @@ Não repare a bagunça, volte sempre que precisar. Se quiser saber mais sobre mi
 
 Espero que você goste da [[minha Homepage|https://music.youtube.com/watch?v=v2QvAaBNc9A]]. Foi e é feita com carinho. E tem clone de pizza as terças!
 
-<img src="https://static.joseli.to/joseli.to/HomePage/viewbook.gif" loading="lazy" alt="Assine meu Guestbook" width="88" height="31">
+----
+
+<a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-32487-b0" target="_blank" rel="noreferrer noopener"><img src="https://static.joseli.to/joseli.to/HomePage/viewbook.gif" loading="lazy" alt="Assine meu Guestbook" width="88" height="31"></a>
 <a href="https://amzn.to/33kpxf0" target="_blank" rel="noreferrer noopener"><img src="https://static.joseli.to/joseli.to/HomePage/amazon2.gif" loading="lazy" width="88" height="31" alt="Compre na Amazon"></a>
 <img src="https://static.joseli.to/joseli.to/HomePage/segagendevring.gif" loading="lazy" alt="Badge da Sega em referência ao Mega Drive, meu console favorito" width="88" height="31">
 <img src="https://static.joseli.to/joseli.to/HomePage/ubuntu-88x31.gif" loading="lazy" alt="Badge do Ubuntu, minha primeira experiência com Linux e que uso até hoje, mas dentro do Windows" width="88" height="31">

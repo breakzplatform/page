@@ -6,6 +6,8 @@ const path = require('path');
 const Parser = require('rss-parser');
 const parser = new Parser();
 
+const fetch = require('cross-fetch');
+
 const newsletterFeedItems = [];
 
 (async () => {
@@ -14,6 +16,9 @@ const newsletterFeedItems = [];
   newsletterFeed.items.forEach(item => {
     newsletterFeedItems.push('* [[' + item.title + '|' + item.link + ']]')
   });
+
+  const res = await fetch('https://lastfm-last-played.biancarosa.com.br/joselitojunior/latest-song');
+  const track = await res.json();
 
   fs.readFile(path.join(__dirname, '..', 'output') + '/wiki.html', 'utf8', async (err, data) => {
     if (err) {
@@ -88,9 +93,14 @@ const newsletterFeedItems = [];
 
     root.querySelector('div[name="Vanilla"] pre').set_content(_a);
 
-    const content = root.querySelector('div[title="Conteúdo"] pre');
+    const homePage = root.querySelector('div[title="HomePage"] pre');
+    homePage.replaceWith("<pre>" + homePage.innerHTML.replace(`//Ao som de ''&lt;span&gt;&lt;/span&gt;''//`, `//Ao som de ''${track['track']['name']} - ${track['track']['artist']['#text']}''//`) + "</pre>");
 
-    content.replaceWith("<pre>" + content.innerHTML.replace('!! [[Newsletter|https://world.hey.com/joselito]] !!', `!! [[Newsletter|https://world.hey.com/joselito]]\n${newsletterFeedItems.slice(0, 5).join('\n')}`) + "</pre>");
+    const content = root.querySelector('div[title="Conteúdo"] pre');
+    content.replaceWith("<pre>" + content.innerHTML.replace(`!! [[Newsletter|https://world.hey.com/joselito]] !!`, `!! [[Newsletter|https://world.hey.com/joselito]]\n${newsletterFeedItems.slice(0, 5).join('\n')}`) + "</pre>");
+
+
+    track['track']['name'] + ' - ' + track['track']['artist']['#text']
 
     root.querySelector('div[title="$:/estilo/Global"] pre').replaceWith(`
     <pre>${new CleanCSS({})

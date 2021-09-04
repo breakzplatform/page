@@ -1,5 +1,5 @@
 div[data-tiddler-title="HomePage"] {
-	background: #ccc;
+	background: #C0C0C0;
 	color: #000;
 	font-family:  Times, "Times New Roman", Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", serif;
 }
@@ -35,6 +35,7 @@ div[data-tiddler-title="HomePage"] .tc-title {
 	font-weight: 700;
 	display: flex;
 	margin: 0;
+  font-variant: small-caps;
 }
 
 
