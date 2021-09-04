@@ -519,9 +519,19 @@ div[data-tiddler-title="Index"] .krystal-references {
 	display: none;
 }
 
+.tc-sidebar-lists input {
+	padding: .5em;
+	margin: 0 .5em;
+}
+
+.tc-search button svg, .tc-search a svg {
+    height: 1.5em;
+    width: 1.5em;
+    margin: 0 .25em;
+}
+
 @media screen and (max-width: 768px) {
-	header button.tc-tiddlylink,
-	button[title*="Pesquisa"] {
+	header button.tc-tiddlylink {
 		padding: .75em;
 	}
 	

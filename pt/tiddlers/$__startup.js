@@ -19,5 +19,6 @@ Startup
 
 	exports.startup = function() {
 		document.querySelector('input[type="search"]').setAttribute("aria-label", "Buscar no site");
+		document.querySelector('input[type="search"]').setAttribute("placeholder", "Buscar no site");
 	}
 })();
