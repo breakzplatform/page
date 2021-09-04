@@ -12,6 +12,9 @@
     "languages": [
         "pt-BR"
     ],
+    "config": {
+		"retain-original-tiddler-path": true
+	},
     "build": {
         "index": [
             "--rendertiddler",

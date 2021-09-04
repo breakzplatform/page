@@ -1,10 +1,20 @@
-list-after: $:/core/ui/EditTemplate/title
+list-before: $:/core/ui/EditTemplate/title
+tags: $:/tags/EditTemplate
 title: $:/ContributionBanner
 type: text/vnd.tiddlywiki
 
-\define linkup()
-[[Additional Info|https://github.com/breakzplatform/joseli.to/blob/main/pt/tiddlers/$(currentTiddler)$.tid]]
+\define base-github()
+https://github.com/breakzplatform/joseli.to/tree/main/pt/tiddlers/
 \end
 
-<div class="tc-improvement-banner">Can you help us improve this documentation? [[Find out how|Improving TiddlyWiki Documentation]] to <<linkup>>
+<$set name="draft-of" value={{{ [<currentTiddler>get[draft.of]] }}}>
+<$list filter="[[$:/config/OriginalTiddlerPaths]getindex<draft-of>]" variable="target" >
+<div class="tc-improvement-banner">
+<img src="https://github.githubassets.com/favicons/favicon.svg" />
+<div>
+Você está editando esse tiddle apenas localmente.
+<a href={{{ [<target>addprefix<base-github>] }}} class="tc-tiddlylink-external" target="_blank" rel="noopener noreferrer">Edite este conteúdo no GitHub</a> ou [[saiba mais|Editando o conteúdo deste site]].
 </div>
+</div>
+</$list>
+</$set>
