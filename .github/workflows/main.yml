@@ -1,6 +1,10 @@
 name: Joseli.to Deploy
-on: [push]
-
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 */6 * * *'
 jobs:
   pt:
     runs-on: ubuntu-latest
