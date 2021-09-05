@@ -4,11 +4,11 @@ tags: Meta
 title: HomePage
 type: text/vnd.tiddlywiki
 
-//Ao som de ''<span></span>''//<a href="http://last.fm/user/joselitojunior" target="_blank" rel="noreferrer noopener" style="margin: 0 0 0 5px"><img src="https://static.joseli.to/joseli.to/HomePage/iconlisteningtomusic.gif" width="31" height="18" alt="Smiley ouvindo música com fones de ouvido" style="margin: 0 0 -3px" srcset="https://static.joseli.to/joseli.to/HomePage/iconlisteningtomusic.gif 640w, https://static.joseli.to/joseli.to/HomePage/iconlisteningtomusic@2x.png 1280w" /></a>
+<div class="marquee"><span>Ao som de ''<i></i>'' <a href="http://last.fm/user/joselitojunior" target="_blank" rel="noreferrer noopener" style="margin: 0 0 0 5px"><img src="https://static.joseli.to/joseli.to/HomePage/iconlisteningtomusic.gif" width="31" height="18" alt="Smiley ouvindo música com fones de ouvido" style="margin: 0 0 -3px" srcset="https://static.joseli.to/joseli.to/HomePage/iconlisteningtomusic.gif 640w, https://static.joseli.to/joseli.to/HomePage/iconlisteningtomusic@2x.png 1280w" /></a></span></div>
 
 ---
 
-''Boas-vindas! Este site é um site igual a todos os outros sites. É um site diferente dos outros sites. É o meu cantinho na internet. O meu site.''
+<h3>Boas-vindas! Este site é um site igual a todos os outros sites. É um site diferente dos outros sites. É o meu cantinho na internet. O meu site.</h3>
 
 Por muito tempo, coisa de mais uma década — basicamente desde quando eu registrei o meu primeiro domínio — eu me questionei o que diabos faria com o meu site. Sempre pensei que o ideal era fazer um Blog, principalmente pra quem presenciou o impacto dos blogs do meio pro fim da década de 2000. No entanto, eu sempre soube que não era pra mim, apesar de não assumir isso. Blog, quase que intriscecamente, exige uma dedicação periódica pra se manter. Eu sou daqueles que precisa de motivação e paixão pra fazer, se não, não tem muita graça. Ainda sim tentei fazer ao menos uma dezena de blogs.
 

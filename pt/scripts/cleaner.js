@@ -94,6 +94,7 @@ const newsletterFeedItems = [];
 
     root.querySelector('noscript').remove();
     root.querySelector('#styleArea').remove();
+
     root.querySelector('div[author="Flibbles"]').remove();
     root.querySelector('div[author="Scott Kingery"]').remove();
 
@@ -102,6 +103,7 @@ const newsletterFeedItems = [];
     root.querySelector('div[title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/delete"] pre').replaceWith("<pre>hide</pre>");
     root.querySelector('div[title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel"] pre').replaceWith("<pre>hide</pre>");
     root.querySelector('div[title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler"] pre').replaceWith("<pre>hide</pre>");
+    root.querySelector('div[title="$:/config/MissingLinks"] pre').replaceWith("<pre>no</pre>");
 
     root.querySelector('div[title="$:/tags/PageControls"]').replaceWith(`
       <div list="$:/core/ui/Buttons/home  $:/core/ui/Buttons/RandomSelection $:/core/ui/Buttons/permaview $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/new-tiddler $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/print $:/core/ui/Buttons/refresh $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/save-wiki  $:/core/ui/Buttons/close-all $:/core/ui/Buttons/more-page-actions" title="$:/tags/PageControls" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -140,7 +142,7 @@ const newsletterFeedItems = [];
 
     const homePage = root.querySelector('div[title="HomePage"] pre');
     homePage.replaceWith("<pre>" + homePage.innerHTML
-      .replace(`//Ao som de ''&lt;span&gt;&lt;/span&gt;''//`, `//Ao som de ''${track['track']['name']} - ${track['track']['artist']['#text']}''//`)
+      .replace(`Ao som de ''&lt;i&gt;&lt;/i&gt;''`, `Ao som de ''${track['track']['name']} - ${track['track']['artist']['#text']}''`)
       .replace(`Última compilação:`, `Última compilação ás ''${new Date().toISOString()}''. Atualizado a cada 15 minutos.`)
       .replace(`2010-`, `2010-${(new Date()).getFullYear()}`) + "</pre>");
 

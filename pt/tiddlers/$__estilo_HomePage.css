@@ -74,6 +74,32 @@ div[data-tiddler-title="HomePage"] .tc-search a:hover svg {
 	fill: #f4f4f4;
 }
 
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+	font-style: italic;
+}
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+div[data-tiddler-title="HomePage"] h3 {
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
 div[data-tiddler-title="HomePage"] .www {
 	float: right;
 	margin-left: 1rem;
