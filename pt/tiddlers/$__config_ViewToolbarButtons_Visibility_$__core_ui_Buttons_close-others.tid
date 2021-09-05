@@ -1,4 +1,4 @@
 title: $:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/close-others
 type: text/vnd.tiddlywiki
 
-show
+hide

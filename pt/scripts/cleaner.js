@@ -57,6 +57,7 @@ const newsletterFeedItems = [];
     <meta name="twitter:title" content="Joseli.to — Uma página pessoal" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://static.joseli.to/joseli.to/social.png" />
+    <meta name="twitter:creator" content="@breakzplatform" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-touch-icon-57x57.png" />
@@ -75,6 +76,7 @@ const newsletterFeedItems = [];
     <meta name="application-name" content="Joseli.to"/>
     <title>Joseli.to — Uma página pessoal</title>
     <meta name="description" content="Este site é um site igual a todos os outros sites. É um site diferente dos outros sites. É o meu cantinho na internet. O meu site. Leia sobre desenvolvimento web, produtividade e artigos políticos com praticamente nenhum embasamento." />
+    <meta property="og:description" content="Este site é um site igual a todos os outros sites. É um site diferente dos outros sites. É o meu cantinho na internet. O meu site. Leia sobre desenvolvimento web, produtividade e artigos políticos com praticamente nenhum embasamento." />
     <link rel="alternate" type="application/atom+xml" title="Joseli.to — Newsletter" href="https://world.hey.com/joselito/feed.atom" />
     <link rel="alternate" type="application/atom+xml" title="Joseli.to — Notinhas" href="feed/notinhas.atom" />
     <link rel="alternate" type="application/atom+xml" title="Joseli.to — Artigos" href="feed/artigos.atom" />
