@@ -1,0 +1,3 @@
+[submodule "pt/plugins/github-comments"]
+	path = pt/plugins/github-comments
+	url = git@github.com:breakzplatform/tw5-github-comments.git
