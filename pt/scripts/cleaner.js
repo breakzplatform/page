@@ -143,11 +143,11 @@ const newsletterFeedItems = [];
     const homePage = root.querySelector('div[title="HomePage"] pre');
     homePage.replaceWith("<pre>" + homePage.innerHTML
       .replace(`Ao som de ''&lt;i&gt;&lt;/i&gt;''`, `Ao som de ''${track['track']['name']} - ${track['track']['artist']['#text']}''`)
-      .replace(`Última compilação:`, `Última compilação ás ''${new Date().toISOString()}''. Atualizado a cada 15 minutos.`)
-      .replace(`2010-`, `2010-${(new Date()).getFullYear()}`) + "</pre>");
+      .replace(`2010-''&lt;i&gt;&lt;/i&gt;''`, `2010-${(new Date()).getFullYear()}`)
+      .replace(`Última compilação: ''&lt;i&gt;&lt;/i&gt;''`, `Última compilação ás ''${new Date().toISOString()}''. Atualizado a cada 15 minutos.`) + "</pre>");
 
     const content = root.querySelector('div[title="Conteúdo"] pre');
-    content.replaceWith("<pre>" + content.innerHTML.replace(`!! [[Newsletter|https://world.hey.com/joselito]] !!`, `!! [[Newsletter|https://world.hey.com/joselito]]\n${newsletterFeedItems.slice(0, 5).join('\n')}`) + "</pre>");
+    content.replaceWith("<pre>" + content.innerHTML.replace(`!! [[Newsletter|https://world.hey.com/joselito]] ''&lt;i&gt;&lt;/i&gt;''`, `!! [[Newsletter|https://world.hey.com/joselito]]\n${newsletterFeedItems.slice(0, 5).join('\n')}`) + "</pre>");
 
     root.querySelector('div[title="$:/estilo/Global"] pre').replaceWith(`
     <pre>${new CleanCSS({})
