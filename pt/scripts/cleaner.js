@@ -92,14 +92,6 @@ const newsletterFeedItems = [];
       });
     </script>`);
 
-    root.querySelector('noscript').remove();
-    root.querySelector('#styleArea').remove();
-
-    root.querySelector('div[author="Flibbles"]').remove();
-    root.querySelector('div[author="Scott Kingery"]').remove();
-
-    root.querySelector('div[title="$:/config/codemirror/lineNumbers"]').remove();
-
     root.querySelector('div[title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/delete"] pre').replaceWith("<pre>hide</pre>");
     root.querySelector('div[title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel"] pre').replaceWith("<pre>hide</pre>");
     root.querySelector('div[title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler"] pre').replaceWith("<pre>hide</pre>");
@@ -131,13 +123,22 @@ const newsletterFeedItems = [];
 
     root.querySelector('div[name="Vanilla"] pre').set_content(_a);
 
+    root.querySelector('noscript').remove();
+    root.querySelector('#styleArea').remove();
 
     root.querySelector('div[title="$:/Splash"]').remove();
     root.querySelector('div[title="$:/sitemap"]').remove();
     root.querySelector('div[title="$:/rss/Notinhas"]').remove();
     root.querySelector('div[title="$:/rss/Artigos"]').remove();
     root.querySelector('div[title="$:/Import"]').remove();
+
+    root.querySelector('div[author="Flibbles"]').remove();
+    root.querySelector('div[author="Scott Kingery"]').remove();
     root.querySelector('div[title="$:/plugins/tiddlywiki/codemirror"]').remove();
+    root.querySelector('div[title="$:/config/codemirror/theme"]').remove();
+    root.querySelector('div[title="$:/plugins/adithyab/cmplus"]').remove();
+    root.querySelector('div[title="$:/config/codemirror/styleActiveLine"]').remove();
+    root.querySelector('div[title="$:/config/codemirror/lineNumbers"]').remove();
 
 
     const homePage = root.querySelector('div[title="HomePage"] pre');
