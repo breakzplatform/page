@@ -1,0 +1,10 @@
+tags: $:/tags/StartupAction/Browser
+title: $:/StartupActions
+type: text/vnd.tiddlywiki
+
+<$if value=<<homepageishidden>>>
+	<$action-setfield $tiddler="$:/DefaultTiddlers" $value="Conteúdo Index"/>
+</$if>
+<$else>
+	<$action-setfield $tiddler="$:/DefaultTiddlers" $value="HomePage Conteúdo Index"/>
+</$else>

@@ -1,6 +1,7 @@
 caption: PeerTube
+list-after: dailymotion
 tags: Vídeo [[Hello, Curiosity!]]
-title: $:/videos/peerTube/HelloCuriosity
+title: $:/videos/PeerTube/HelloCuriosity
 type: text/vnd.tiddlywiki
 
 <iframe width="100%" height="315" sandbox="allow-same-origin allow-scripts" src="https://devtube.dev-wiki.de/videos/embed/b1e1e1b5-8984-41db-b216-326496bd4a10" frameborder="0" allowfullscreen></iframe>

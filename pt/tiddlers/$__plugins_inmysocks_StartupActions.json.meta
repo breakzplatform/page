@@ -1,0 +1,9 @@
+author: inmysocks
+core-version: >=5.1.8
+dependents: 
+description: A daemon that will trigger actions when the wiki is opened or reloaded.
+plugin-type: plugin
+source: https://github.com/inmysocks/TW5-StartupActions
+title: $:/plugins/inmysocks/StartupActions
+type: application/json
+version: 0.0.7

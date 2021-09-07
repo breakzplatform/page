@@ -2,4 +2,4 @@ tags:
 title: Hello, Curiosity!
 type: text/vnd.tiddlywiki
 
-<<tabs "[tag[Vídeo]tag[$(currentTiddler)$]]" "$:/videos/peerTube/HelloCuriosity" "$:/state/videos/HelloCuriosity">>
+<<tabs "[tag[Vídeo]tag[$(currentTiddler)$]]" "$:/videos/dailymotion/HelloCuriosity" "$:/state/videos/HelloCuriosity">>

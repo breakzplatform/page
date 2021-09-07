@@ -105,6 +105,26 @@ div[data-tiddler-title="HomePage"] .www {
 	margin-left: 1rem;
 }
 
+
+div[data-tiddler-title="HomePage"] button.win {
+    background: silver;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    border: none;
+    border-radius: 0;
+    box-sizing: border-box;
+    min-height: 23px;
+    min-width: 75px;
+    padding: 0 12px;
+    -webkit-font-smoothing: none;
+    font-family: "Pixelated MS Sans Serif",Arial;
+    font-size: 11px;
+}
+
+div[data-tiddler-title="HomePage"] button.win:active {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
+    padding: 2px 11px 0 13px;
+}
+
 /* scroll bar */
 
 div[data-tiddler-title="HomePage"]::-webkit-scrollbar {
