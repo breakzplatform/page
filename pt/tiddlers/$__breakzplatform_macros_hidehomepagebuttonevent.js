@@ -1,5 +1,5 @@
 /*\
-title: $:/breakzplatform/marcos/hidehomepagebuttonevent.js
+title: $:/breakzplatform/macros/hidehomepagebuttonevent.js
 type: application/javascript
 module-type: macro
 
