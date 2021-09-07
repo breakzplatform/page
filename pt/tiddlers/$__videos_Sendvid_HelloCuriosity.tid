@@ -1,0 +1,7 @@
+caption: Sendvid
+list-after: PeerTube
+tags: Vídeo [[Hello, Curiosity!]]
+title: $:/videos/Sendvid/HelloCuriosity
+type: text/vnd.tiddlywiki
+
+<iframe width="100%" height="315" src="//sendvid.com/embed/l92o0c39" frameborder="0" allowfullscreen></iframe>

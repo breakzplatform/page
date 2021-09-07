@@ -1,0 +1,3 @@
+module-type: startup
+title: $:/plugins/inmysocks/StartupActions/startup-actions.js
+type: application/javascript
