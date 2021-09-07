@@ -39,7 +39,6 @@ div[data-tiddler-title="HomePage"] .tc-title {
   font-variant: small-caps;
 }
 
-
 div[data-tiddler-title="HomePage"] .tc-title:before {
 	content: '';
 	display: block;

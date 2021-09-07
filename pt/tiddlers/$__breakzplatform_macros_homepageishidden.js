@@ -1,5 +1,5 @@
 /*\
-title: $:/breakzplatform/homepageishidden.js
+title: $:/breakzplatform/macros/homepageishidden.js
 type: application/javascript
 module-type: macro
 
@@ -24,7 +24,7 @@ exports.params = [];
 Run the macro
 */
 exports.run = function() {
-	return "0";
+	return localStorage.getItem('hideHomePage');
 };
 
 })();

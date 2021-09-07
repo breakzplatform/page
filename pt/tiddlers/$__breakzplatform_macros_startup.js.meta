@@ -1,4 +1,4 @@
 module-type: startup
 tags: 
-title: $:/startup.js
+title: $:/breakzplatform/macros/startup.js
 type: application/javascript
