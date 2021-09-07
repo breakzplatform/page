@@ -130,7 +130,7 @@ const newsletterFeedItems = [];
     root.querySelector('div[title="$:/sitemap"]').remove();
     root.querySelector('div[title="$:/rss/Notinhas"]').remove();
     root.querySelector('div[title="$:/rss/Artigos"]').remove();
-    root.querySelector('div[title="$:/Import"]').remove();
+    !!root.querySelector('div[title="$:/Import"]') && root.querySelector('div[title="$:/Import"]').remove();
 
     root.querySelector('div[author="Flibbles"]').remove();
     root.querySelector('div[author="Scott Kingery"]').remove();
