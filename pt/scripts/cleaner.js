@@ -80,6 +80,7 @@ const newsletterFeedItems = [];
     <link rel="alternate" type="application/atom+xml" title="Joseli.to — Newsletter" href="https://world.hey.com/joselito/feed.atom" />
     <link rel="alternate" type="application/atom+xml" title="Joseli.to — Notinhas" href="feed/notinhas.atom" />
     <link rel="alternate" type="application/atom+xml" title="Joseli.to — Artigos" href="feed/artigos.atom" />
+    <link href="https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css" rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;">
   `);
 
     root.querySelector('body').insertAdjacentHTML('beforeend', `<script>

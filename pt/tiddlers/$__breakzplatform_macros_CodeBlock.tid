@@ -1,0 +1,8 @@
+tags: $:/tags/Macro
+title: $:/breakzplatform/macros/CodeBlock
+type: text/vnd.tiddlywiki
+
+\define code(text)
+<<copy-to-clipboard-above-right """$text$""">>
+```$text$```
+\end

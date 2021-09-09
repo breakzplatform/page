@@ -100,6 +100,7 @@ kbd,
 samp,
 pre {
   font-family:
+	  'Iosevka Web',
     ui-monospace,
     SFMono-Regular,
     Consolas,
@@ -299,6 +300,7 @@ summary {
 */
 
 .hljs {
+	font-family: 'Iosevka Web';
   color: #24292e;
   background: #ffffff;
 }
@@ -531,6 +533,11 @@ div[data-tiddler-title="Index"] .krystal-references {
     height: 1.5em;
     width: 1.5em;
     margin: 0 .25em;
+}
+
+button[title*="Copiar"] {
+    margin: 0 0 .5rem;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
