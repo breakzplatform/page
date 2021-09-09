@@ -6,28 +6,28 @@ module-type: macro
 Macro to return the TiddlyWiki core version number
 
 \*/
-(function(){
+(function () {
 
-/*jslint node: true, browser: true */
-/*global $tw: false */
-"use strict";
+	/*jslint node: true, browser: true */
+	/*global $tw: false */
+	"use strict";
 
-/*
-Information about this macro
-*/
+	/*
+	Information about this macro
+	*/
 
-exports.name = "hidehomepagebuttonevent";
+	exports.name = "hidehomepagebuttonevent";
 
-exports.params = [];
+	exports.params = [];
 
-/*
-Run the macro
-*/
-exports.run = function() {
-	document.getElementById("btn-hide-home").addEventListener("click", () => {
-		document.getElementById("btn-hide-home").style.display = "none";
-		localStorage.setItem('hideHomePage', '1');
-	}, false);
-};
+	/*
+	Run the macro
+	*/
+	exports.run = function () {
+		document.querySelector(".btn-hide-home.win").addEventListener("click", () => {
+			document.querySelector(".btn-hide-home.win").style.display = "none";
+			localStorage.setItem('hideHomePage', '1');
+		}, false);
+	};
 
 })();
