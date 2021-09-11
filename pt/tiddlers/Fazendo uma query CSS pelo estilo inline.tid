@@ -10,6 +10,6 @@ Pode parecer absurdo, mas este código funciona:
 div[style*="rgb(193,152,251)"] {
 	color: #57b5f9 !important;
 }
-""" class="pinto">>
+""">>
 
 Isso se deve ao fato de `style` ser apenas mais um atributo de uma tag, apesar de intuitivamente acharmos que ele tem algo de diferente pela sua natureza.

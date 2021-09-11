@@ -18,7 +18,7 @@ diff-insert-background: #aaefad
 diff-insert-foreground: <<colour foreground>>
 diff-invisible-background: 
 diff-invisible-foreground: <<colour muted-foreground>>
-dirty-indicator: #ff0000
+dirty-indicator: #653585
 download-background: #34c734
 download-foreground: <<colour background>>
 dragger-background: <<colour foreground>>

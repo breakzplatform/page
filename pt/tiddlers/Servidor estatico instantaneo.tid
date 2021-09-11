@@ -6,8 +6,6 @@ type: text/vnd.tiddlywiki
 
 Existe um post meu de alguns anos falando sobre levantar um servidor HTTP com um comando usando Node. Já era simples, mas felizmente vivemos no futuro. Se você tem NPM instalado (com toda certeza tem) basta entrar na pasta que você quer servir e rodar:
 
-```bash
-npx serve
-```
+`npx serve`
 
 Aí é só correr pro abraço.

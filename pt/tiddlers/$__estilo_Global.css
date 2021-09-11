@@ -453,6 +453,19 @@ a.tc-tiddlylink-external:after {
 	transform: rotate(-45deg);
 }
 
+code a,
+pre a,
+code a:not(.tc-tiddlylink), code a:not(.tc-tiddlylink):link, code a:not(.tc-tiddlylink):visited,
+pre a:not(.tc-tiddlylink), pre a:not(.tc-tiddlylink):link, pre a:not(.tc-tiddlylink):visited {
+	color: inherit;
+	font-weight: inherit;
+}
+
+code a.tc-tiddlylink-external:after,
+pre a.tc-tiddlylink-external:after  {
+	display: none;
+}
+
 .tc-site-title {
 	display: flex;
 	font-family: monospace;
@@ -538,6 +551,8 @@ div[data-tiddler-title="Index"] .krystal-references {
 button[title*="Copiar"] {
     margin: 0 0 .5rem;
     font-weight: bold;
+    font-family: 'Iosevka Web', monospace;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {

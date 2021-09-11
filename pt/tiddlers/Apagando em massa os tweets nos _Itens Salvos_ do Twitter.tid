@@ -6,7 +6,7 @@ type: text/vnd.tiddlywiki
 
 Versão que fiz para Twitter [[do mesmo snippet que fiz para YouTube|Apagando em massa vídeos da playlist "Assistir Depois" do YouTube]]. Você tem que rodar algumas coisas pelo rate limit da API, mas funciona.
 
-```javascript
+<<code """javascript
 setInterval(function() {
 	document.querySelector('div[aria-label*="Compartilhar"]').click();
 	var things = document.evaluate('//span[contains(text(),"Remover")]',document,null,XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,null);
@@ -14,4 +14,4 @@ setInterval(function() {
 		    things.snapshotItem(i).click();
 		}		
 }, 1000);
-```
+""">>
