@@ -83,22 +83,7 @@ const newsletterFeedItems = [];
     <link href="https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css" rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;">
   `);
 
-    root.querySelector('body').insertAdjacentHTML('beforeend', `<script async src="https://cdn.jsdelivr.net/npm/tabby-dot-js/dist/tabby.js"></script><script>
-      window.KONAMI_CURSOR = 0;
-
-      const KONAMI_CODE = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
-      document.addEventListener('keydown', (e) => {
-        window.KONAMI_CURSOR = (e.keyCode == KONAMI_CODE[window.KONAMI_CURSOR]) ? window.KONAMI_CURSOR + 1 : 0;
-        if (window.KONAMI_CURSOR == KONAMI_CODE.length) Tabby.start([
-            "https://static.joseli.to/joseli.to/nina/0.webp",
-            "https://static.joseli.to/joseli.to/nina/1.webp",
-            "https://static.joseli.to/joseli.to/nina/2.webp",
-            "https://static.joseli.to/joseli.to/nina/3.webp",
-            "https://static.joseli.to/joseli.to/nina/4.webp",
-            "https://static.joseli.to/joseli.to/nina/5.webp"
-          ]);
-      });
-    </script>`);
+    root.querySelector('body').insertAdjacentHTML('beforeend', `<script>window.KONAMI_CURSOR=0;const KONAMI_CODE=[38,38,40,40,37,39,37,39,66,65];document.addEventListener('keydown',(e)=>{window.KONAMI_CURSOR=(e.keyCode==KONAMI_CODE[window.KONAMI_CURSOR])?window.KONAMI_CURSOR+1:0;if(window.KONAMI_CURSOR==KONAMI_CODE.length)window.location.href='https://amzn.to/3jXDIiG'})</script>`);
 
     root.querySelector('div[title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/delete"] pre').replaceWith("<pre>hide</pre>");
     root.querySelector('div[title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel"] pre').replaceWith("<pre>hide</pre>");
