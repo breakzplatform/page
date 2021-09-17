@@ -4,7 +4,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '*/15 12-23 * * *'
+    - cron: '45 12-23 * * *'
 jobs:
   pt:
     runs-on: ubuntu-latest
