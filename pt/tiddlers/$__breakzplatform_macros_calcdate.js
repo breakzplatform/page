@@ -1,0 +1,34 @@
+/*\
+title: $:/breakzplatform/macros/calcdate.js
+type: application/javascript
+module-type: macro
+
+Macro to return the TiddlyWiki core version number
+
+\*/
+(function () {
+
+	/*jslint node: true, browser: true */
+	/*global $tw: false */
+	"use strict";
+
+	/*
+	Information about this macro
+	*/
+
+	exports.name = "calcdate";
+
+	exports.params = [
+		{name: "date"},
+		{name: "type"}
+	];
+
+	/*
+	Run the macro
+	*/
+	exports.run = function (date, type) {
+		const years = new Date(new Date() -  new Date(''+date.substring(0,4)+'-'+date.substring(4,6)+'-01T00:20:00')).getFullYear() - 1970;
+    if(years >= 3) return "<div class=\"old-post\"><strong>Atenção:</strong> Esse post é antigo! As informações e opiniões expressas nele podem estar desatualizadas.</div>";
+	};
+
+})();

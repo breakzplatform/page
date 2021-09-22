@@ -1,0 +1,10 @@
+list-after: $:/core/ui/ViewTemplate/tags
+tags: $:/tags/ViewTemplate
+title: $:/breakzplatform/ViewTemplate/old
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]tag[Artigos]]">
+<$if value={{!!created}}>
+<$macrocall $name="calcdate" date={{!!created}}/>
+</$if>
+</$list>

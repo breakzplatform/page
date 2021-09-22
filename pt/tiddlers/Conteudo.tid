@@ -16,7 +16,7 @@ Você também pode acompanhar os conteúdos [[via RSS feeds|Feeds]].
 !! [[Notinhas]]
 <<list-links "[tag[Notinhas]limit[5]!sort[created]]">>
 
-!! [[Desenvolvimento|Dev]]
+!! [[Desenvolvimento]]
 <<list-links "[tag[Dev]!tag[Notinhas]limit[5]!sort[created]]">>
 
 !! [[Produtividade]]
