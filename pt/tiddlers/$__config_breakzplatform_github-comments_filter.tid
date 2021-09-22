@@ -2,4 +2,4 @@ tags:
 title: $:/config/breakzplatform/github-comments/filter
 type: text/vnd.tiddlywiki
 
-[!is[system]!tag[Meta]]
+[!is[system]!tag[Meta]] -Index
