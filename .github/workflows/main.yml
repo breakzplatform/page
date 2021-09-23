@@ -26,11 +26,16 @@ jobs:
       - name: Minify PT
         working-directory: ./pt
         run: yarn minify
+      - name: Minify PT mobile
+        working-directory: ./pt
+        run: yarn minify:mobile
       - name: Generate PT Feeds
         working-directory: ./pt
         run: yarn feeds
       - name: Move PT to root
         run: mv pt/output/index.html public/pt/index.html
+      - name: Move PT mobile to root
+        run: mv pt/output/mobile/index.html public/mobile/pt/index.html
       - name: Move PT Feeds to root
         run: mkdir public/pt/feed && mv -v pt/output/feed/* public/pt/feed/
       - uses: amondnet/vercel-action@v20
@@ -40,3 +45,10 @@ jobs:
           vercel-project-id: ${{ secrets.PROJECT_ID }}
           vercel-args: '--prod'
           working-directory: ./public
+      - uses: amondnet/vercel-action@v20
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.ORG_ID }}
+          vercel-project-id: ${{ secrets.MOBILE_PROJECT_ID }}
+          vercel-args: '--prod'
+          working-directory: ./public/mobile

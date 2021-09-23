@@ -1,0 +1,8 @@
+caption: Menu
+list-before: $:/core/ui/SideBar/Open
+tags: $:/tags/SideBar
+title: $:/Menu
+type: text/vnd.tiddlywiki
+
+* [[Index]]
+* [[Conteúdo]]
