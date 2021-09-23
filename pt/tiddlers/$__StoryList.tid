@@ -1,2 +1,3 @@
-list: Index Conteúdo HomePage
+list: HomePage Conteúdo Notinhas
 title: $:/StoryList
+type: text/vnd.tiddlywiki

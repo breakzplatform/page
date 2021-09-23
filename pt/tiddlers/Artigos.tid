@@ -4,6 +4,9 @@ type: text/vnd.tiddlywiki
 
 Esta é minha amigável coleção de artigos. Grande parte deles são de opinião, então eles podem representar ou não minha opinião atual, que muda o tempo inteiro. Preste atenção, mas não leve muito a sério.
 
+!! Aconteceu Comigo
+<<toc 'Aconteceu Comigo' '!sort[created]'>>
+
 !! Reflexões
 <<toc 'Reflexões' '!sort[created]'>>
 

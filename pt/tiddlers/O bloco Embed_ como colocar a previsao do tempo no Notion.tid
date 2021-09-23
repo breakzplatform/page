@@ -1,0 +1,21 @@
+created: 20210505040000000
+tags: Produtividade Notion
+title: O bloco Embed: como colocar a previsão do tempo no Notion
+type: text/vnd.tiddlywiki
+
+O Notion possui diversos tipos de blocos, e um deles é o bloco <code>embed</code>. No entanto, algo que não é de conhecimento geral é que o bloco de embed não funciona apenas para aplicações "padrão", como vídeos do YouTube ou documentos do Drive. O embed funciona para literalmente tudo.
+
+Como literalmente tudo é literalmente tudo, se você encontrar um serviço como o [[WeatherWidget.io|https://WeatherWidget.io]] e quiser por no seu dashboard, você pode.
+
+''Só tem um detalhe:'' tal qual os blocos mais "comuns", você só pode informar qual a URL do embed; não diretamente o código do <code>iframe</code>.  Só que o WeatherWidget dá esse snippet aqui pra gente:
+
+<<code """html
+<a class="weatherwidget-io" href="https://forecast7.com/en/n8d51n35d01/porto-de-galinhas/" data-label_1="PORTO DE GALINHAS" data-label_2="WEATHER" data-theme="original">PORTO DE GALINHAS WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+""">>
+
+Nota-se que isso não é uma URL. O que fazer então?
+
+Se você é dev, uma das saídas é criar um htmlzinho, subir em algum serviço estático, e embedar no Notion. //''Se você não é programador''//, tudo bem: você pode criar um embed widget com o [[Apption|https://apption.co/]]. Eles tem [[um tutorial específico pro WeatherWidget|https://apption.co/apps/11]], onde você cria um novo embed, cola o snippet e ele gera uma url do Apption pra você colar no Notion. Depois de colar é só correr pro abraço.
