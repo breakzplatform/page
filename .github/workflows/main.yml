@@ -41,6 +41,8 @@ jobs:
         run: mv pt/output/mobile/index.html public/mobile/pt/index.html
       - name: Move PT Feeds to root
         run: mkdir public/pt/feed && mv -v pt/output/feed/* public/pt/feed/
+      - name: Replicate vercel.json
+        run: cp public/vercel.json public/mobile/vercel.json
       - uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
