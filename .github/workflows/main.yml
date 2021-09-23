@@ -43,6 +43,8 @@ jobs:
         run: mkdir public/pt/feed && mv -v pt/output/feed/* public/pt/feed/
       - name: Replicate vercel.json
         run: cp public/vercel.json public/mobile/vercel.json
+      - name: Replicate assets PT
+        run: cp public/pt/assets/* public/mobile/pt/assets
       - uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
