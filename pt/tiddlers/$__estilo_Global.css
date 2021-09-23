@@ -625,6 +625,23 @@ figure figcaption {
 	margin: 0;
 }
 
+.refnotes-tooltip {
+  position: initial;
+}
+
+.refnotes-tooltip:hover {
+  position: relative;
+} 
+
+.refnotes-tooltip .refnotes-tooltiptext {
+  max-width: 0;
+  bottom: 0;
+}
+
+.refnotes-tooltip:hover .refnotes-tooltiptext {
+	max-width: 20vw;
+}
+
 @media screen and (max-width: 768px) {
 	header button.tc-tiddlylink {
 		padding: .5rem;

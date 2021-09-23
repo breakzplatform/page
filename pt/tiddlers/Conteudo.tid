@@ -13,16 +13,19 @@ Aqui estão listados os conteúdos mais recentes publicados por mim. Dado a natu
 
 Você também pode acompanhar os conteúdos [[via RSS feeds|Feeds]].
 
+!! [[Favoritos]]
+<<list-links "[tag[⭐]limit[5]!sort[created]]">>
+
 !! [[Notinhas]]
 <<list-links "[tag[Notinhas]limit[5]!sort[created]]">>
 
+!! [[Newsletter|https://world.hey.com/joselito]] ''<i></i>''
+
 !! [[Desenvolvimento]]
-<<list-links "[tag[Dev]!tag[Notinhas]limit[5]!sort[created]]">>
+<<list-links "[tag[Desenvolvimento]!tag[Notinhas]limit[5]!sort[created]]">>
 
 !! [[Produtividade]]
 <<list-links "[tag[Produtividade]!tag[Notinhas]limit[5]!sort[created]]">>
-
-!! [[Newsletter|https://world.hey.com/joselito]] ''<i></i>''
 
 !! [[Artigos]]
 <<list-links "[tag[Artigos]!tag[Notinhas]limit[5]!sort[created]]">>
