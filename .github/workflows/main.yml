@@ -26,6 +26,9 @@ jobs:
       - name: Minify PT
         working-directory: ./pt
         run: yarn minify
+      - name: Create mobile folder
+        working-directory: ./pt
+        run: mkdir output/mobile
       - name: Minify PT mobile
         working-directory: ./pt
         run: yarn minify:mobile
