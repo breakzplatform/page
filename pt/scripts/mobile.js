@@ -1,31 +1,8 @@
 const HTMLParser = require('node-html-parser');
-const CleanCSS = require('clean-css');
 const fs = require('fs');
 const path = require('path');
 
-const Parser = require('rss-parser');
-const parser = new Parser();
-
-const fetch = require('cross-fetch');
-
-const newsletterFeedItems = [];
-
 (async () => {
-
-  const newsletterFeed = await parser.parseURL('https://world.hey.com/joselito/feed.atom');
-  newsletterFeed.items.forEach(item => {
-    newsletterFeedItems.push('* [[' + item.title + '|' + item.link + ']]')
-  });
-
-
-  let track = "";
-  const res = await fetch('https://lastfm-last-played.biancarosa.com.br/joselitojunior/latest-song');
-  try {
-    track = await res.json();
-  } catch (e) {
-    track = [{ track: { artist: { "#text": "Blues Traveler" }, name: "Hook" } }, { track: { artist: { "#text": "Daft Punk" }, name: "One More Time" } }][~~(Math.random() * 2)];
-  }
-
   fs.readFile(path.join(__dirname, '..', 'output') + '/wiki.min.html', 'utf8', async (err, data) => {
     if (err) {
       console.error(err)
