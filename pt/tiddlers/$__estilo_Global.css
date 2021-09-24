@@ -466,7 +466,7 @@ pre a.tc-tiddlylink-external:after  {
 	display: none;
 }
 
-.tc-tiddler-frame {
+.tc-tiddler-frame:nth-last-of-type(1) {
 	border: none;
 }
 
@@ -640,6 +640,24 @@ figure figcaption {
 
 .refnotes-tooltip:hover .refnotes-tooltiptext {
 	max-width: 20vw;
+}
+
+button.tc-tag-label, span.tc-tag-label {
+	padding: 0.2em 0.3rem;
+	border-radius: 0;
+}
+
+.tc-subtitle {
+	color: #333;
+	margin: 0 0 0.15rem;
+}
+
+.krystal-tiddler__frame--hide .share-post {
+	display: none;
+}
+
+.content-list span {
+	font-size: 0.7rem;
 }
 
 @media screen and (max-width: 768px) {

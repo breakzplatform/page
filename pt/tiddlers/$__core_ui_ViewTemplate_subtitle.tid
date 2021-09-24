@@ -5,8 +5,11 @@ type: text/vnd.tiddlywiki
 \whitespace trim
 <$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
 <div class="tc-subtitle">
-<$link to={{!!modifier}} />
-<$list filter="[is[current]has[created]]">Publicado em&nbsp;<span class="lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></$list>
+<$if value={{!!just-date}}><span class="lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></$if>
+<$else>
+<$if value={{!!modifier}}>✒️ <$link to={{!!modifier}} /></$if>
+<$list filter="[is[current]has[created]]"><$if not value={{!!modifier}}>✒️&nbsp;</$if>Publicado em&nbsp;<span class="lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></$list>
 <$list filter="[is[current]has[modified]]">, atualizado&nbsp;<span class="lowercase"><$view field="modified" format="relativedate"/></span></$list>
+</$else>
 </div>
 </$reveal>

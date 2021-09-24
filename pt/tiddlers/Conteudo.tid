@@ -17,21 +17,28 @@ Você também pode acompanhar os conteúdos [[via RSS feeds|Feeds]].
 <<list-links "[tag[⭐]limit[5]!sort[created]]">>
 
 !! [[Notinhas]]
-<<list-links "[tag[Notinhas]limit[5]!sort[created]]">>
+<ul class="content-list">
+<$list filter="[tag[Notinhas]limit[5]!sort[created]]"> 
+<li><$link to={{!!title}}>{{!!title}}</$link> <span><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
+</$list>
+</ul>
 
 !! [[Newsletter|https://world.hey.com/joselito]] ''<i></i>''
 
 !! [[Desenvolvimento]]
-<<list-links "[tag[Desenvolvimento]!tag[Notinhas]limit[5]!sort[created]]">>
+<<list-links "[tag[Desenvolvimento]!tag[Notinhas]!sort[created]limit[5]]">>
 
 !! [[Produtividade]]
-<<list-links "[tag[Produtividade]!tag[Notinhas]limit[5]!sort[created]]">>
+<<list-links "[tag[Produtividade]!tag[Notinhas]!sort[created]limit[5]]">>
 
 !! [[Artigos]]
-<<list-links "[tag[Artigos]!tag[Notinhas]limit[5]!sort[created]]">>
-
-!! [[Palestras]]
-<<list-links "[tag[Palestras]limit[5]!sort[created]]">>
+<<list-links "[tag[Artigos]!tag[Notinhas]!sort[created]limit[5]]">>
 
 !! [[Projetos]]
-<<list-links "[tag[Projetos]limit[5]!sort[created]]">>
+<<list-links "[tag[Projetos]!sort[created]limit[5]]">>
+
+!! [[Palestras]]
+<<list-links "[tag[Palestras]!sort[created]limit[5]]">>
+
+!! [[Slides]]
+<<list-links "[tag[Slides]!sort[created]limit[5]]">>

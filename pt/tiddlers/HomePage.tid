@@ -1,6 +1,7 @@
 aliases: [[Home]]
 caption: Página Inicial
 created: 20100109213206000
+just-date: true
 tags: Meta
 title: HomePage
 type: text/vnd.tiddlywiki
@@ -48,7 +49,7 @@ Espero que você goste da [[minha Homepage|https://music.youtube.com/watch?v=v2Q
 <img src="https://static.joseli.to/joseli.to/HomePage/i_heart_fb.gif" loading="lazy" alt="Feedburner" width="88" height="31">
 <img src="https://static.joseli.to/joseli.to/HomePage/cc-by-sa.gif" loading="lazy" alt="Licença Creative Commons CC-BY-SA" width="88" height="31">
 
-<em style="font-size: 10pt;line-height: 1;">2010-''<i></i>'' · Joselito · Creative Commons BY-SA 4.0, exceto quando especificado em contrário e nos conteúdos replicados de outras fontes · Última compilação: ''<i></i>''</em>
+<em style="font-size: 10pt;line-height: 1;">2010-''<i></i>'' · Joselito · Creative Commons BY-SA 4.0, exceto quando especificado em contrário e/ou nos conteúdos replicados de outras fontes · Última compilação: ''<i></i>''</em>
 
 ---
 

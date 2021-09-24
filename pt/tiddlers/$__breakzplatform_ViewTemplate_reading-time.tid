@@ -1,0 +1,8 @@
+list-before: $:/core/ui/ViewTemplate/tags
+tags: $:/tags/ViewTemplate
+title: $:/breakzplatform/ViewTemplate/reading-time
+type: text/vnd.tiddlywiki
+
+<$if value={{!!reading-time}}>
+<div class="reading-time tc-subtitle">🕑 Tempo de leitura: {{!!reading-time}}</div>
+</$if>

@@ -48,6 +48,12 @@ div[data-tiddler-title="HomePage"] .tc-title {
   font-variant: small-caps;
 }
 
+div[data-tiddler-title="HomePage"] .krystal-tiddler__title > a.tc-tiddlylink.tc-tiddlylink-resolves {
+	color: #000 !important;
+	font-weight: 700 !important;
+  font-variant: small-caps;
+}
+
 div[data-tiddler-title="HomePage"] .tc-title:before {
 	content: '';
 	display: block;

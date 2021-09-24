@@ -28,7 +28,7 @@ Macro to return the TiddlyWiki core version number
 	*/
 	exports.run = function (date, type) {
 		const years = new Date(new Date() -  new Date(''+date.substring(0,4)+'-'+date.substring(4,6)+'-01T00:20:00')).getFullYear() - 1970;
-    if(years >= 3) return "<div class=\"old-post\"><strong>Atenção:</strong> Esse post é antigo! As informações e opiniões expressas nele podem estar desatualizadas.</div>";
+    if(years >= 3) return "<div class=\"old-post\"><strong>Atenção:</strong> Este post é antigo! Foi escrito há cerca de "+years+" anos. As informações contidas nele podem estar desatualizadas; bem como certas opiniões e visão de mundo mudaram nesse meio tempo.</div>";
 	};
 
 })();

@@ -2,9 +2,11 @@ tags: Artigos [[Aconteceu Comigo]] ⭐
 title: As definições de Hackathon foram atualizadas
 type: text/vnd.tiddlywiki
 
+[img alt="Séries de ícones estilizados representando o Hackathon, como pictogramas: um café amarelo, um notebook laranja, uma pizza vermelha, o simbolo do usb em cor de vinho, um controle de videogame roxo, o sinal de wifi em azul escuro, um besouro (bug) verde e um átomo preto" [https://static.joseli.to/joseli.to/articles/https___s3-us-west-2.amazonaws.com_secure.notion-static.com_7c00a09a-27df-4d57-9860-98a41b3cdea0_Untitled.png]]
+
 !! O melhor hackathon que fui. Até agora.
 
-Há muito tempo atrás, não lembro exatamente como, chegou em minhas mãos o link do Hackathon da Globo. Já tinha ouvido falar de como tinha sido o Hack in POA, bem como a sabia que Globo.com estava criando uma cultura interna de hackathons (por meio da excelente palestra do Rômulo Tavares, da globo.com, que dividiu palco comigo no Alagoas DevDay 2015).
+Há muito tempo atrás, não lembro exatamente como, chegou em minhas mãos o link do Hackathon da Globo. Já tinha ouvido falar de como tinha sido o Hack in POA, bem como a sabia que Globo.com estava criando uma cultura interna de hackathons (por meio da [[excelente palestra|https://www.slideshare.net/romulotavares1/criacao-produtosem24h]] do Rômulo Tavares, da globo.com, que dividiu palco comigo no Alagoas DevDay 2015).
 
 Só estes dois pontos já eram motivos o suficiente (apesar de eles estarem errados — esclareço mais a frente). Mas ao abrir o site, mais coisas impressionantes: o objetivo era comer o maior número de pizzas (isso de fazer produto faz parte, mas é aside); o Felipe Andreolli e o Tiago Leifert nos chamando pra participar; e a cereja do bolo: ''seria na casa do BBB''.
 
@@ -13,3 +15,89 @@ O Big Brother Brasil é que nem Tibia: todo mundo tem vergonha de assumir, mas j
 Nesse meio tempo, eu literalmente esqueci de que tinha me inscrito. Uma semana antes (na sexta) recebi uma inesperada ligação de DDD 21, que virou uma entrevista por telefone, que horas depois garantiu minha vaga no Hackathon da Globo.
 
 Então senta que lá vem história.
+
+!! Os Hackathoners
+
+<figure>
+[img alt="Foto de todos os participantes do Hackathon no Jardim da casa do BBB" [https://static.joseli.to/joseli.to/articles/https___s3-us-west-2.amazonaws.com_secure.notion-static.com_3dae346f-653d-4345-a13c-4326acda78e3_Untitled.png]]
+<figcaption>Essa é uma daquelas fotos que a gente tira pra por de cover nas redes sociais</figcaption>
+</figure>
+
+Apesar da baixa divulgação, foram quase 2000 inscritos que tentaram entrar na Casa Mais Vigiada do Brasil™. Destes, 400 foram selecionados na peneira pela produção. Os 400 viraram 40 após as entrevistas.
+
+É uma das poucas vezes que concordo com a máxima de que o importante é participar. De fato, só de ter sido selecionado pela Globo, entre 2000 pessoas, já é uma vitória. Dá até pra por no LinkedIn pra parecer mais profissa.
+
+A experiência como todo do hackathon foi fantástica, mesmo ganhando ou perdendo (como foi meu caso). Como o Adjamilton disse, ainda na padaria de frente à Globo pela manhã: “mesmo que você não seja foda, ao ser selecionado, você ganhou o título de foda”.
+
+!! A Casa
+
+O principal ponto a se tocar sobre a experiência do hackathon não poderia ser outra coisa: ser na casa do Big Brother. Tal qual em a ilha em LOST, a Casa era um participante importantíssimo na história.
+
+Como o meu amigo de infância Felipe Andreolli bem comentou, num tom jocoso — e porque não dizer polêmico — que seríamos as pessoas mais inteligentes a terem entrado naquela casa. A desconstrução do “padrão” do que ocorre na própria casa (e que, veja você, a própria Globo vende) feita foi genial.
+
+Se as pessoas entram lá pra mostrar os corpos, nós entramos pela mente.
+
+Se as pessoas entram lá não podem ter nenhuma comunicação externa, nós tinhamos acesso a absolutamente tudo aqui fora (sábia escolha da equipe, afinal não dá pra ter hackaton sem Stackoverflow)
+
+Se as pessoas entram lá pra se eliminarem, estavamos lá pra criar algo, compartilhar conhecimento. Ainda que numa competição.
+
+E por aí vai. A equipe do hackathon pensou e planejou tudo com muito carinho. O famoso Q da Globo estava lá, o tempo todo, em todos os lugares.
+
+Sobre a casa em si não há muito o que fazer: é aquilo mesmo que você vê na televisão. Pra não dizer que não há nada de diferente, eu (e vários colegas de hackathon) acharam a casa bem menor do que ela aparenta. É tudo mais próximo e mais aconchegante do que a mansão que aparenta ser na televisão.
+
+Obviamente, a estrutura não era examente a mesma: só tinhamos um quarto com camas mesmo. A sala e o outro quarto estavam ocupado por mesas para utizarmos. A academia, no primeiro andar, também estava ocupada por mesas. O confessionário (que diferente do resto da casa, é bem maior do que parece) estava com um Xbox One e alguns joguinhos.
+
+O melhor lugar da casa, obviamente a cozinha, estava cheia o tempo todo. A geladeira estava sempre cheia com Red Bull e Toddynho. O que foi ruim (porém muito bom) é que a Globo não cumpriu a promessa de competirmos com o máximo de pizzas: tinhamos comida, e boa, o tempo todo. E mesmo quando as refeições tinham acabado/não tinham sido servidos ainda, tinhamos sanduiches e lasanhas-crush na geladeira. Tudo isso sem precisar fazer prova da comida.
+
+!! Os Mentores
+
+<figure>
+[img alt="Foto dos grupo de mentores" [https://static.joseli.to/joseli.to/articles/https___s3-us-west-2.amazonaws.com_secure.notion-static.com_fa343bea-6ecf-4dbb-af7c-347af084b9c0_Untitled.png]]
+<figcaption>Esses cara são moh dahora mano. Na moralzinha</figcaption>
+</figure>
+
+Lembra que eu disse que estava errado lá no começo do post? Então.
+
+Eu estava errado em um ponto interessantíssimo sobre o hackathon, que talvez você não saiba até agora: apesar de ter sido todo trabalhado nas tecnologia, o hackathon não foi da Globo.com. Ele foi da Rede Globo. Da TV.
+
+Que diferença isso faz? Ah, meu amigo. Toda.
+
+A gente se esquece, mas a Globo é uma das maiores redes de TV do mundo. Entretanto, quase que imediatamente, limitamos nossa ideia de tecnologia relacionada a Globo a Globo.com, sendo que a Globo.com é apenas mais uma das empresas do Grupo Globo.
+
+Parando pra pensar dois minutos, é óbvio que a TV Globo teria uma equipe espetacular de Tecnologia. Fiz questão de dizer em alto em bom tom “Caras, ninguém sabe que vocês existem!”. E, de certa forma, o próprio Hackathon foi uma resposta a essa pergunta.
+
+Eles sabem que ninguém sabe (ainda) que eles existem. O Hackathon foi uma das primeiras iniciativas dessa nova Globo, mais ''aberta para o novo'' (desculpa Record). A Globo sempre teve esse estigma de ser fechada e auto-suficiente. Essa renovação é tão interna quanto externa, refletindo na própria programação.
+
+Quem imaginaria um programa como o Tá no Ar a alguns anos, passando na Globo? Possivelmente, só o mesmo cara que achou que a Globo ia fazer um Hackathon um dia.
+
+E todos os nossos mentores, parte da equipe de tecnologia da Globo, aproveitaram ao máximo a oportunidade de liberdade, quase como se fosse passageira: claramente todos estavam tão empolgados quanto nós, os participantes, de estarem sendo parte daquilo. Vinham sempre perguntar o que estavamos fazendo, debater ideias, imaginar cenários, sugerir funcionalidades e melhorias.
+
+Os caras são tão fodas que vou até postar outra foto deles.
+
+<figure>
+[img alt="Foto dos grupo de mentores" [https://static.joseli.to/joseli.to/articles/https___s3-us-west-2.amazonaws.com_secure.notion-static.com_7cf90a98-ba75-4203-832d-85ccd387bb9a_Untitled.png]]
+<figcaption>Saca o sorrisão honesto de quem não manipula a grande mídia nacional para interesses da própria corporação, rsrsrs #humor #comédia #hackathonglobo</figcaption>
+</figure>
+
+De brinde, a galera do TechTudo tava lá fazendo uma cobertura, já que o site estava transmitindo ao vivo que nem o BBB, porém com dignidade. Ou quase. Dá pra ver todas as matérias que sairam durante o hackathon aqui.
+
+!! Nosso Projeto
+Nossa equipe se formou quase que organicamente. Ok, teve uma ajudinha aqui e outra ali, já que eu fazia bastante questão de estar no time da Alda, do GDG São Paulo, tendo em vista que elá manja dos desaig e time que só tem programador é a maior bosta do mundo.
+
+O Yelken, recifense e rei do camarote dos hackathons, me identificou logo no aeroporto e já combinamos de estar no mesmo time também. Viemos no mesmo voo, com a mesma finalidade, e não sabiamos. Então parabéns a Gol Linhas Aéreas pois claramente estava vendendo o trecho mais barato REC->GIG nas datas próximas ao Hackathon. Porém ainda prefiro a TAM.
+
+Quase no final entrou o Adjamilton, que tinhamos já trocado uma ideia na padoca na frente da Globo que foi o esquenta, dado que ele também era nordestino.
+
+Caro leitor, não sei se já notou que no momento já temos a equipe com os nomes mais dahora o possível: Adjamilton, Alda, Joselito e o Yelken.
+
+O último a entrar foi o Gabriel, nosso Arma X, que você pode achar que é a exceção que prova a regra, porém o seu segundo nome é Ilharco. Curiosamente, ele de primeira não acreditou muito na ideia que estava se formando (e provavelmente ele estava corretíssimo, tendo em vista que não ganhamos) mas quando fizemos o brainstorm, toda nossa equipe se alinhou e resolvemos criar o Minha Globo.
+
+Nos preocupamos primeiro em formar um time a tentar fechar a ideia inteira do projeto. Juntamos ideias de todos, lapidamos, fizemos um Trello físico (usar papel é mais bolado nas câmeras, tudo marketing) e começamos a trabalhar.
+
+Com esse perfil formado, analizamos e indentificamos o que da programação da Globo é mais atrente para aquele perfil. Algum perfil pode curtir mais as Novelas, Encontro e Fantástico, outro os Jornalisticos, Futebol e Formula 1. Os perfis tem infinitas possibilidades.
+
+Nós fazemos essa análise usando Big Data e montamos uma espécie de grade única da Globo para cada pessoa: em uma timeline, mostramos o passado (o que rolou nos seus programas favoritos, em texto e vídeo), o futuro (prévias sobre os próximos programas) e o presente: nele, todas as interações de outras pessoas que estão comentando sobre o programa nas redes sociais, bem como conteúdo do próprio programa, surgem em tempo real.
+
+//Um parentesis interessante a ser aberto aqui é pra ressaltar a liberdade que tinhamos, nosso app tinha o nome da Globo; e mais que isso, nós usavamos o imaculado logo da vênus platinada// //modificado//. Se a esmola é demais, não desconfia não. Aproveita.
+
+Nós usamos de base, para o Hackathon o Twitter. Quem assiste MasterChef sabe o quão dahora o Twitter é nas terças-feiras à noite. Nós não quisemos criar uma rede social (isso seria um flop instantâneo), nós utilizamos todas as informações que já estão por aí. Só que filtradas, organizadas e direcionadas únicamente para cada pessoa.
