@@ -17,14 +17,14 @@ Você também pode acompanhar os conteúdos [[via RSS feeds|Feeds]].
 Na dúvida por onde começar? Comece por aqui:
 <ul class="content-list">
 <$list filter="[tag[⭐]limit[5]!sort[created]]"> 
-<li><$link to={{!!title}}>{{!!title}}</$link> <span class="lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
+<li><$link to={{!!title}}>{{!!title}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
 </$list>
 </ul>
 
 !! [[Notinhas]]
 <ul class="content-list">
 <$list filter="[tag[Notinhas]limit[5]!sort[created]]"> 
-<li><$link to={{!!title}}>{{!!title}}</$link> <span class="lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
+<li><$link to={{!!title}}>{{!!title}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
 </$list>
 </ul>
 

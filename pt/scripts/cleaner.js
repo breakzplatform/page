@@ -3,6 +3,9 @@ const CleanCSS = require('clean-css');
 const fs = require('fs');
 const path = require('path');
 
+const { format } = require('date-fns');
+const pt = require('date-fns/locale/pt');
+
 const Parser = require('rss-parser');
 const parser = new Parser();
 
@@ -14,7 +17,7 @@ const newsletterFeedItems = [];
 
   const newsletterFeed = await parser.parseURL('https://world.hey.com/joselito/feed.atom');
   newsletterFeed.items.forEach(item => {
-    newsletterFeedItems.push('* [[' + item.title + '|' + item.link + ']]')
+    newsletterFeedItems.push('* [[' + item.title + '|' + item.link + ']] <span class="content-list-date lowercase">' + format(new Date(item.pubDate), "dd 'de' MMMM 'de' yyyy", { locale: pt }) + '</span>');
   });
 
 
