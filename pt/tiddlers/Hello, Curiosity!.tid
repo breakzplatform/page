@@ -1,5 +1,3 @@
-tags: 
+tags: Projetos Hackathon Recife Arquivado
 title: Hello, Curiosity!
 type: text/vnd.tiddlywiki
-
-<<tabs "[tag[Vídeo]tag[$(currentTiddler)$]]" "$:/videos/dailymotion/HelloCuriosity" "$:/state/videos/HelloCuriosity">>

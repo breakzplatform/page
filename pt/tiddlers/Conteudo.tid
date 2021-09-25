@@ -19,7 +19,7 @@ Você também pode acompanhar os conteúdos [[via RSS feeds|Feeds]].
 !! [[Notinhas]]
 <ul class="content-list">
 <$list filter="[tag[Notinhas]limit[5]!sort[created]]"> 
-<li><$link to={{!!title}}>{{!!title}}</$link> <span><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
+<li><$link to={{!!title}}>{{!!title}}</$link> <span class="lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
 </$list>
 </ul>
 
@@ -39,6 +39,3 @@ Você também pode acompanhar os conteúdos [[via RSS feeds|Feeds]].
 
 !! [[Palestras]]
 <<list-links "[tag[Palestras]!sort[created]limit[5]]">>
-
-!! [[Slides]]
-<<list-links "[tag[Slides]!sort[created]limit[5]]">>

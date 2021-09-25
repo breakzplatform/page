@@ -1,0 +1,8 @@
+caption: Progressive Web Apps na Campus Weekend Recife 2016
+created: 20160821040001000
+just-date: true
+tags: 2016 Recife Palestras
+title: Campus Weekend Recife 2016
+type: text/vnd.tiddlywiki
+
+<$macrocall $name="tabs-talks" tabsList="[[Progressive Web Apps: um guia para não precisar de toalha - Gravação]] [[Progressive Web Apps: um guia para não precisar de toalha]]" default="Progressive Web Apps: um guia para não precisar de toalha - Gravação" />
