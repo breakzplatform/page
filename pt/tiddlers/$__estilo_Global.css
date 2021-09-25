@@ -1,672 +1,440 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+*,::before,::after {
+box-sizing:border-box;
 }
-
-/**
-Use a more readable tab size (opinionated).
-*/
 
 :root {
-  -moz-tab-size: 4;
-  tab-size: 4;
+-moz-tab-size:4;
+tab-size:4;
 }
-
-/**
-1. Correct the line height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-*/
 
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+-webkit-text-size-adjust:100%;
+line-height:1.15;
 }
-
-/*
-Sections
-========
-*/
-
-/**
-Remove the margin in all browsers.
-*/
 
 body {
-  margin: 0;
+font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
+margin:0;
 }
-
-/**
-Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-*/
-
-body {
-  font-family:
-    system-ui,
-    -apple-system, /* Firefox supports this but not yet `system-ui` */
-    'Segoe UI',
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji';
-}
-
-/*
-Grouping content
-================
-*/
-
-/**
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-*/
 
 hr {
-  height: 0; /* 1 */
-  color: inherit; /* 2 */
+color:inherit;
+height:0;
 }
-
-/*
-Text-level semantics
-====================
-*/
-
-/**
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
 
 abbr[title] {
-  text-decoration: underline dotted;
+text-decoration:underline dotted;
 }
 
-/**
-Add the correct font weight in Edge and Safari.
-*/
-
-b,
-strong {
-  font-weight: bolder;
+b,strong {
+font-weight:bolder;
 }
 
-/**
-1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-2. Correct the odd 'em' font sizing in all browsers.
-*/
-
-code,
-kbd,
-samp,
-pre {
-  font-family:
-	  'Iosevka Web',
-    ui-monospace,
-    SFMono-Regular,
-    Consolas,
-    'Liberation Mono',
-    Menlo,
-    monospace; /* 1 */
-  font-size: 1em; /* 2 */
+code,kbd,samp,pre {
+font-family:'Iosevka Web',ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;
+font-size:1em;
 }
-
-/**
-Add the correct font size in all browsers.
-*/
 
 small {
-  font-size: 80%;
+font-size:80%;
 }
 
-/**
-Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
-*/
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+sub,sup {
+font-size:75%;
+line-height:0;
+position:relative;
+vertical-align:baseline;
 }
 
 sub {
-  bottom: -0.25em;
+bottom:-.25em;
 }
 
 sup {
-  top: -0.5em;
+top:-.5em;
 }
-
-/*
-Tabular data
-============
-*/
-
-/**
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-*/
 
 table {
-  text-indent: 0; /* 1 */
-  border-color: inherit; /* 2 */
+border-color:inherit;
+text-indent:0;
 }
 
-/*
-Forms
-=====
-*/
-
-/**
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-*/
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+button,input,optgroup,select,textarea {
+font-family:inherit;
+font-size:100%;
+line-height:1.15;
+margin:0;
 }
 
-/**
-Remove the inheritance of text transform in Edge and Firefox.
-1. Remove the inheritance of text transform in Firefox.
-*/
-
-button,
-select { /* 1 */
-  text-transform: none;
+button,select {
+text-transform:none;
 }
 
-/**
-Correct the inability to style clickable types in iOS and Safari.
-*/
-
-button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
-  -webkit-appearance: button;
+button,[type='button'],[type='reset'],[type='submit'] {
+-webkit-appearance:button;
 }
-
-/**
-Remove the inner border and padding in Firefox.
-*/
 
 ::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+border-style:none;
+padding:0;
 }
-
-/**
-Restore the focus styles unset by the previous rule.
-*/
 
 :-moz-focusring {
-  outline: 1px dotted ButtonText;
+outline:1px dotted ButtonText;
 }
-
-/**
-Remove the additional ':invalid' styles in Firefox.
-See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
-*/
 
 :-moz-ui-invalid {
-  box-shadow: none;
+box-shadow:none;
 }
-
-/**
-Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
-*/
 
 legend {
-  padding: 0;
+padding:0;
 }
-
-/**
-Add the correct vertical alignment in Chrome and Firefox.
-*/
 
 progress {
-  vertical-align: baseline;
+vertical-align:baseline;
 }
 
-/**
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
-
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto;
+::-webkit-inner-spin-button,::-webkit-outer-spin-button {
+height:auto;
 }
-
-/**
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
 
 [type='search'] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+-webkit-appearance:textfield;
+outline-offset:-2px;
 }
-
-/**
-Remove the inner padding in Chrome and Safari on macOS.
-*/
 
 ::-webkit-search-decoration {
-  -webkit-appearance: none;
+-webkit-appearance:none;
 }
-
-/**
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to 'inherit' in Safari.
-*/
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+-webkit-appearance:button;
+font:inherit;
 }
-
-/*
-Interactive
-===========
-*/
-
-/*
-Add the correct display in Chrome and Safari.
-*/
 
 summary {
-  display: list-item;
+display:list-item;
 }
-
-/* highlight.js */
-/*
-  Theme: GitHub
-  Description: Light theme as seen on github.com
-  Author: github.com
-  Maintainer: @Hirse
-  Updated: 2021-05-15
-
-  Outdated base version: https://github.com/primer/github-syntax-light
-  Current colors taken from GitHub's CSS
-*/
 
 .hljs {
-	font-family: 'Iosevka Web';
-  color: #24292e;
-  background: #ffffff;
+background:#fff;
+color:#24292e;
+font-family:'Iosevka Web';
 }
 
-.hljs-doctag,
-.hljs-keyword,
-.hljs-meta .hljs-keyword,
-.hljs-template-tag,
-.hljs-template-variable,
-.hljs-type,
-.hljs-variable.language_ {
-  /* prettylights-syntax-keyword */
-  color: #d73a49;
+.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-variable.language_ {
+color:#d73a49;
 }
 
-.hljs-title,
-.hljs-title.class_,
-.hljs-title.class_.inherited__,
-.hljs-title.function_ {
-  /* prettylights-syntax-entity */
-  color: #6f42c1;
+.hljs-title,.hljs-title.class_,.hljs-title.class_.inherited__,.hljs-title.function_ {
+color:#6f42c1;
 }
 
-.hljs-attr,
-.hljs-attribute,
-.hljs-literal,
-.hljs-meta,
-.hljs-number,
-.hljs-operator,
-.hljs-variable,
-.hljs-selector-attr,
-.hljs-selector-class,
-.hljs-selector-id {
-  /* prettylights-syntax-constant */
-  color: #005cc5;
+.hljs-attr,.hljs-attribute,.hljs-literal,.hljs-meta,.hljs-number,.hljs-operator,.hljs-variable,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id {
+color:#005cc5;
 }
 
-.hljs-regexp,
-.hljs-string,
-.hljs-meta .hljs-string {
-  /* prettylights-syntax-string */
-  color: #032f62;
+.hljs-regexp,.hljs-string,.hljs-meta .hljs-string {
+color:#032f62;
 }
 
-.hljs-built_in,
-.hljs-symbol {
-  /* prettylights-syntax-variable */
-  color: #e36209;
+.hljs-built_in,.hljs-symbol {
+color:#e36209;
 }
 
-.hljs-comment,
-.hljs-code,
-.hljs-formula {
-  /* prettylights-syntax-comment */
-  color: #6a737d;
+.hljs-comment,.hljs-code,.hljs-formula {
+color:#6a737d;
 }
 
-.hljs-name,
-.hljs-quote,
-.hljs-selector-tag,
-.hljs-selector-pseudo {
-  /* prettylights-syntax-entity-tag */
-  color: #22863a;
+.hljs-name,.hljs-quote,.hljs-selector-tag,.hljs-selector-pseudo {
+color:#22863a;
 }
 
 .hljs-subst {
-  /* prettylights-syntax-storage-modifier-import */
-  color: #24292e;
+color:#24292e;
 }
 
 .hljs-section {
-  /* prettylights-syntax-markup-heading */
-  color: #005cc5;
-  font-weight: bold;
+color:#005cc5;
+font-weight:700;
 }
 
 .hljs-bullet {
-  /* prettylights-syntax-markup-list */
-  color: #735c0f;
+color:#735c0f;
 }
 
 .hljs-emphasis {
-  /* prettylights-syntax-markup-italic */
-  color: #24292e;
-  font-style: italic;
+color:#24292e;
+font-style:italic;
 }
 
 .hljs-strong {
-  /* prettylights-syntax-markup-bold */
-  color: #24292e;
-  font-weight: bold;
+color:#24292e;
+font-weight:700;
 }
 
 .hljs-addition {
-  /* prettylights-syntax-markup-inserted */
-  color: #22863a;
-  background-color: #f0fff4;
+background-color:#f0fff4;
+color:#22863a;
 }
 
 .hljs-deletion {
-  /* prettylights-syntax-markup-deleted */
-  color: #b31d28;
-  background-color: #ffeef0;
+background-color:#ffeef0;
+color:#b31d28;
 }
 
-.hljs-char.escape_,
-.hljs-link,
-.hljs-params,
-.hljs-property,
-.hljs-punctuation,
-.hljs-tag {
-  /* purposely ignored */
+::-webkit-scrollbar {
+width:1rem;
 }
 
-/* custom style */
-
-*::-webkit-scrollbar {
-	width: 1rem;
+::-webkit-scrollbar-track {
+background:transparent;
 }
 
-*::-webkit-scrollbar-track {
-	background: transparent;
+::-webkit-scrollbar-thumb {
+background-color:#652585;
 }
 
-*::-webkit-scrollbar-thumb {
-	background-color: #652585;
+a,a:link {
+font-weight:700;
 }
 
-a, a:link {
-	font-weight: bold;
-}
-
-a:hover, a:not(.tc-tiddlylink):hover, a:not(.tc-tiddlylink).tc-tiddlylink-external:hover {
-	background-color: #652585;
-	color: #fff;
+a:hover,a:not(.tc-tiddlylink):hover,a:not(.tc-tiddlylink).tc-tiddlylink-external:hover {
+background-color:#652585;
+color:#fff;
 }
 
 a.tc-tiddlylink:hover {
-	text-decoration: none;
+text-decoration:none;
 }
 
-a:not(.tc-tiddlylink), a:not(.tc-tiddlylink):link, a:not(.tc-tiddlylink):visited {
-	color: #652585;
-	text-decoration: none;
+a:not(.tc-tiddlylink),a:not(.tc-tiddlylink):link,a:not(.tc-tiddlylink):visited {
+color:#652585;
+text-decoration:none;
 }
 
 a.tc-tiddlylink-external:after {
-	content: "➜";
-	display: inline-block;
-	transform: rotate(-45deg);
+content:"➜";
+display:inline-block;
+transform:rotate(-45deg);
 }
 
-code a,
-pre a,
-code a:not(.tc-tiddlylink), code a:not(.tc-tiddlylink):link, code a:not(.tc-tiddlylink):visited,
-pre a:not(.tc-tiddlylink), pre a:not(.tc-tiddlylink):link, pre a:not(.tc-tiddlylink):visited {
-	color: inherit;
-	font-weight: inherit;
+code a,pre a,code a:not(.tc-tiddlylink),code a:not(.tc-tiddlylink):link,code a:not(.tc-tiddlylink):visited,pre a:not(.tc-tiddlylink),pre a:not(.tc-tiddlylink):link,pre a:not(.tc-tiddlylink):visited {
+color:inherit;
+font-weight:inherit;
 }
 
-code a.tc-tiddlylink-external:after,
-pre a.tc-tiddlylink-external:after  {
-	display: none;
+code a.tc-tiddlylink-external:after,pre a.tc-tiddlylink-external:after {
+display:none;
 }
 
 .tc-tiddler-frame:nth-last-of-type(1) {
-	border: none;
+border:none;
 }
 
 .tc-site-title {
-	display: flex;
-	font-family: monospace;
-	align-items: center;
-	justify-content: center;
+align-items:center;
+display:flex;
+font-family:monospace;
+justify-content:center;
 }
 
 .tc-site-title > a.tc-tiddlylink {
-	font-weight: bold;
-	text-transform: lowercase;
-	border: none;
-	color: #9780AA;
+border:none;
+color:#9780AA;
+font-weight:700;
+text-transform:lowercase;
 }
 
 .tc-site-title > a.tc-tiddlylink:hover {
-	background: none;
-	color: #653585;
+background:none;
+color:#653585;
 }
 
 .eu {
-	margin-right: 10px;
-	border-radius: 100%;
+border-radius:100%;
+margin-right:10px;
 }
 
 .tc-dropzone > p {
-    display: none;
-    padding: 0;
-    margin: 0;
+display:none;
+margin:0;
+padding:0;
 }
 
 .tc-sidebar-lists input {
-	border: 1px solid #652585;
+border:1px solid #652585;
 }
 
-.lowercase { text-transform: lowercase; }
+.lowercase {
+text-transform:lowercase;
+}
 
 .krystal-tiddler__title > a.tc-tiddlylink-resolves:hover {
-	background: transparent;
+background:transparent;
 }
 
 .tc-improvement-banner {
-	font-size: .75rem;
-	background: #F1EDF2;
-	border: 1px solid #652585;
-	padding: .25rem .5em;
-	margin: .25rem 0 0;
-	display: flex;
-	align-items: center;
+align-items:center;
+background:#F1EDF2;
+border:1px solid #652585;
+display:flex;
+font-size:.75rem;
+margin:.25rem 0 0;
+padding:.25rem .5em;
 }
 
 .tc-improvement-banner img {
-	width: 1.5em;
-	height: 1.5em;
-	margin-right: .5em;
+height:1.5em;
+margin-right:.5em;
+width:1.5em;
 }
 
 .krystal-tiddler__frame--maximized .tc-tiddler-title,
-.krystal-tiddler__frame--maximized .tc-subtitle, 
-.krystal-tiddler__frame--maximized .tc-tiddler-body {
-	max-width: 720px;
-	width: 100%;
-	margin: 0 auto;
+.krystal-tiddler__frame--maximized .tc-subtitle,
+.krystal-tiddler__frame--maximized .tc-tags-wrapper,
+.krystal-tiddler__frame--maximized .tc-tiddler-body,
+.krystal-tiddler__frame--maximized .tc-reveal {
+margin-left:auto;
+margin-right:auto;
+max-width:720px;
+width:100%;
 }
 
-div[data-tiddler-title="Conteúdo"] .tc-tags-wrapper,
-div[data-tiddler-title="Conteúdo"] .krystal-references,
-div[data-tiddler-title="Index"] .tc-tags-wrapper,
-div[data-tiddler-title="Index"] .krystal-references {
-	display: none;
+div[data-tiddler-title="Conteúdo"] .tc-tags-wrapper,div[data-tiddler-title="Conteúdo"] .krystal-references,div[data-tiddler-title="Index"] .tc-tags-wrapper,div[data-tiddler-title="Index"] .krystal-references {
+display:none;
 }
 
 .tc-sidebar-lists input {
-	padding: .5em;
-	margin: 0 .5em;
+margin:0 .5em;
+padding:.5em;
 }
 
-.tc-search button svg, .tc-search a svg {
-    height: 1.5em;
-    width: 1.5em;
-    margin: 0 .25em;
+.tc-search button svg,.tc-search a svg {
+height:1.5em;
+margin:0 .25em;
+width:1.5em;
 }
 
 .tc-tagged-Artigos .tc-tiddler-body.tc-reveal {
-	line-height: 1.618;
+line-height:1.618;
 }
 
 .tc-tagged-Artigos ul li {
-	margin-bottom: 1rem;
+margin-bottom:1rem;
 }
 
 .tc-tagged-Artigos hr {
-  border-top: 1px solid #f4f4f4;
-	width: 80%;
-	margin: 0 auto;
+border-top:1px solid #f4f4f4;
+margin:0 auto;
+width:80%;
 }
 
 button[title*="Copiar"] {
-    margin: 0 0 .5rem;
-    font-weight: bold;
-    font-family: 'Iosevka Web', monospace;
-    text-transform: uppercase;
+font-family:'Iosevka Web',monospace;
+font-weight:700;
+margin:0 0 .5rem;
+text-transform:uppercase;
 }
 
 figure {
-	margin: 0;
-	text-align: center;
+margin:0;
+text-align:center;
 }
 
 figure figcaption {
-	font-size: 0.8rem;
-	color: #333;
+color:#333;
+font-size:.8rem;
 }
 
-/* share */
 .share-post {
-	margin-top: 1rem;
+margin-top:1rem;
 }
 
-.share-post a,
-.share-post a:hover {
-	margin: 0;
-	padding: .5rem;
-	background: none;
-	display: block;
-	background: #652585;
+.share-post a,.share-post a:hover {
+background:none;
+background:#652585;
+display:block;
+margin:0;
+padding:.5rem;
 }
 
 .share-post a svg {
-	width: 24px;
-	height: 24px;
-	fill: #fff;
-	display: block;
+display:block;
+fill:#fff;
+height:24px;
+width:24px;
 }
 
 .share-post ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	align-items: center;
-	justify-content: right;
+align-items:center;
+display:flex;
+justify-content:right;
+list-style:none;
+margin:0;
+padding:0;
 }
 
 .share-post ul li {
-	margin: 0 0 0 .5rem;
+margin:0 0 0 .5rem;
 }
 
 .old-post {
-	background-color: #FFFAF0;
-	border: 1px solid #ED8936;
-	font-size: .75rem;
-	padding: .25rem .5rem;
-	margin: 0;
+background-color:#FFFAF0;
+border:1px solid #ED8936;
+font-size:.75rem;
+margin:0;
+padding:.25rem .5rem;
 }
 
 .refnotes-tooltip {
-  position: initial;
+position:initial;
 }
 
 .refnotes-tooltip:hover {
-  position: relative;
-} 
+position:relative;
+}
 
 .refnotes-tooltip .refnotes-tooltiptext {
-  max-width: 0;
-  bottom: 0;
+bottom:0;
+max-width:0;
 }
 
 .refnotes-tooltip:hover .refnotes-tooltiptext {
-	max-width: 20vw;
+max-width:20vw;
 }
 
-button.tc-tag-label, span.tc-tag-label {
-	padding: 0.2em 0.3rem;
-	border-radius: 0;
+button.tc-tag-label,span.tc-tag-label {
+border-radius:0;
+padding:.2em .3rem;
 }
 
 .tc-subtitle {
-	color: #333;
-	margin: 0 0 0.15rem;
+color:#333;
+margin:0 0 .15rem;
 }
 
 .krystal-tiddler__frame--hide .share-post {
-	display: none;
+display:none;
 }
 
 .content-list-date {
-	font-size: 0.7rem;
+font-size:.7rem;
+}
+
+.tc-tiddler-controls > span > button[data-share-link] {
+	margin: 0 -5px;
+	padding: 0;
 }
 
 @media screen and (max-width: 768px) {
 	header button.tc-tiddlylink {
-		padding: .5rem;
-		margin: .65rem 0;
+	margin:.65rem 0;
+	padding:.5rem;
 	}
-	
+
 	.tc-tiddler-controls button:not([title="Fechar este Tiddler"]) {
-			display: none;
+	display:none;
 	}
 }

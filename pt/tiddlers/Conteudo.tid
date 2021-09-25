@@ -7,22 +7,19 @@ type: text/vnd.tiddlywiki
 
 `npx joselito --lang=pt`
 
-! Introdução
-
 Aqui estão listados os conteúdos mais recentes publicados por mim. Dado a natureza de uma [[wiki|https://pt.wikipedia.org/wiki/Wiki]] deste [[site|Sobre esse site]], provavelmente tudo que parece um link é realmente um link. Pode ir navegando sem medo, o site vai salvar o seu caminho.
 
 Você também pode acompanhar os conteúdos [[via RSS feeds|Feeds]].
 
-!! [[Favoritos|⭐]]
-Na dúvida por onde começar? Comece por aqui:
-<ul class="content-list">
+Na dúvida por onde começar? Comece pelos favoritos:
+<ul>
 <$list filter="[tag[⭐]limit[5]!sort[created]]"> 
 <li><$link to={{!!title}}>{{!!title}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
 </$list>
 </ul>
 
 !! [[Notinhas]]
-<ul class="content-list">
+<ul>
 <$list filter="[tag[Notinhas]limit[5]!sort[created]]"> 
 <li><$link to={{!!title}}>{{!!title}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
 </$list>
@@ -31,13 +28,25 @@ Na dúvida por onde começar? Comece por aqui:
 !! [[Newsletter|https://world.hey.com/joselito]] ''<i></i>''
 
 !! [[Desenvolvimento]]
-<<list-links "[tag[Desenvolvimento]!tag[Notinhas]!sort[created]limit[5]]">>
+<ul>
+<$list filter="[tag[Desenvolvimento]!tag[Notinhas]!sort[created]limit[5]]"> 
+<li><$link to={{!!title}}>{{!!title}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
+</$list>
+</ul>
 
 !! [[Produtividade]]
-<<list-links "[tag[Produtividade]!tag[Notinhas]!sort[created]limit[5]]">>
+<ul>
+<$list filter="[tag[Produtividade]!tag[Notinhas]!sort[created]limit[5]]"> 
+<li><$link to={{!!title}}>{{!!title}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
+</$list>
+</ul>
 
 !! [[Artigos]]
-<<list-links "[tag[Artigos]!tag[Notinhas]!sort[created]limit[5]]">>
+<ul>
+<$list filter="[tag[Artigos]!tag[Notinhas]!sort[created]limit[5]]"> 
+<li><$link to={{!!title}}>{{!!title}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
+</$list>
+</ul>
 
 !! [[Projetos]]
 <<list-links "[tag[Projetos]!sort[created]limit[5]]">>

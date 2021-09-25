@@ -1,5 +1,5 @@
 /*\
-title: $:/breakzplatform/macros/calcdate.js
+title: $:/breakzplatform/macros/old-post.js
 type: application/javascript
 module-type: macro
 
@@ -16,7 +16,7 @@ Macro to return a message if the content is old
 	Information about this macro
 	*/
 
-	exports.name = "calcdate";
+	exports.name = "old-post";
 
 	exports.params = [
 		{name: "date"},
