@@ -165,6 +165,17 @@ const newsletterFeedItems = [];
         .replaceAll('>', '&gt;')}
     </pre>`)
 
+    root.querySelector('body').insertAdjacentHTML('beforeend', `<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>`);
+
     fs.writeFile(path.join(__dirname, '..', 'output') + '/wiki.min.html', root.toString(), function (err) {
       if (err) return console.log(err);
       // console.log('Hello World > helloworld.txt');
