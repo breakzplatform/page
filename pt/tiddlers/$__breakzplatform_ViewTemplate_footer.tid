@@ -89,12 +89,22 @@ type: text/vnd.tiddlywiki
 		<li>
 			<$macrocall $name="pin" name=<<currentTiddler>> link={{!!share-link}}/>
 		</li>
+		<$if value=<<navigator-share-detect>> matches="true">
+		<li>
+			<a href="javascript:void(0);" data-share-link={{!!share-link}}>
+				{{$:/breakzplatform/icons/share}}
+			</a>
+			<<share-event-listener>>
+		</li>
+		</$if>
+		<$else>
 		<li>
 			<$macrocall $name="in" name=<<currentTiddler>> link={{!!share-link}}/>
 		</li>
 		<li>
 			<$macrocall $name="email" name=<<currentTiddler>> link={{!!share-link}}/>
 		</li>
+		</$else>
 <$if value={{!!rss-link}}>
 		<li>
 			<$macrocall $name="rss" link={{!!rss-link}}/>

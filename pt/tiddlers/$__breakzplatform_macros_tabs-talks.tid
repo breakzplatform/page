@@ -2,7 +2,7 @@ tags: $:/tags/Macro
 title: $:/breakzplatform/macros/tabs-talks
 type: text/vnd.tiddlywiki
 
-\define tabs-talks(tabsList,default,state:"$:/state/tab",class,template,buttonTemplate,retain,actions,explicitState)
+\define tabs-talks(tabsList,default,state:"$:/state/tabs-talks",class,template,buttonTemplate,retain,actions,explicitState)
 <$set name="qualifiedState" value=<<qualify "$state$">>>
 <$vars tabsState={{{ [<__explicitState__>minlength[1]] ~[<qualifiedState>] }}}>
 <div class="tc-tab-set $class$">

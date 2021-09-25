@@ -16,8 +16,9 @@ Startup
 	exports.after = ["render"];
 	exports.synchronous = true;
 
-	exports.startup = function () {
-	document.querySelector('input[type="search"]').setAttribute("aria-label", "Buscar no site");
-		document.querySelector('input[type="search"]').setAttribute("placeholder", "Buscar no site");
+	exports.startup = function () {		
+		const s = document.querySelector('input[type="search"]');
+		s.setAttribute("aria-label", "Buscar no site");
+		s.setAttribute("placeholder", "Buscar no site");
 	}
 })();

@@ -3,7 +3,7 @@ title: $:/breakzplatform/macros/calcdate.js
 type: application/javascript
 module-type: macro
 
-Macro to return the TiddlyWiki core version number
+Macro to return a message if the content is old
 
 \*/
 (function () {

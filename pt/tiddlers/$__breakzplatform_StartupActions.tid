@@ -2,7 +2,7 @@ tags: $:/tags/StartupAction/Browser
 title: $:/breakzplatform/StartupActions
 type: text/vnd.tiddlywiki
 
-<$if value=<<homepageishidden>>>
+<$if value=<<is-home-hidden>> matches="1">
 	<$action-setfield $tiddler="$:/DefaultTiddlers" $value="Conteúdo Index"/>
 </$if>
 <$else>

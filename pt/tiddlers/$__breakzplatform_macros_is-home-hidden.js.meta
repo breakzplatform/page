@@ -1,4 +1,4 @@
 module-type: macro
 tags: 
-title: $:/breakzplatform/macros/homepageishidden.js
+title: $:/breakzplatform/macros/is-home-hidden.js
 type: application/javascript

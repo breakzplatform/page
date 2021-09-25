@@ -1,9 +1,9 @@
 /*\
-title: $:/breakzplatform.js
+title: $:/breakzplatform/native-share-detect.js
 type: application/javascript
 module-type: macro
 
-Macro to return the TiddlyWiki core version number
+Verify if Native Share is supported by the Browser
 
 \*/
 (function(){
@@ -16,7 +16,7 @@ Macro to return the TiddlyWiki core version number
 Information about this macro
 */
 
-exports.name = "mobiledetect";
+exports.name = "navigator-share-detect";
 
 exports.params = [];
 
@@ -24,7 +24,7 @@ exports.params = [];
 Run the macro
 */
 exports.run = function() {
-	return window.matchMedia("only screen and (max-width: 760px)").matches;
+	return !!window.navigator.share;
 };
 
 })();

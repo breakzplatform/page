@@ -3,7 +3,7 @@ title: $:/breakzplatform/macros/homepageishidden.js
 type: application/javascript
 module-type: macro
 
-Macro to return the TiddlyWiki core version number
+Macro to return if the HomePage was hidden by the user
 
 \*/
 (function(){
@@ -16,7 +16,7 @@ Macro to return the TiddlyWiki core version number
 Information about this macro
 */
 
-exports.name = "homepageishidden";
+exports.name = "is-home-hidden";
 
 exports.params = [];
 
@@ -24,7 +24,7 @@ exports.params = [];
 Run the macro
 */
 exports.run = function() {
-	return localStorage.getItem('hideHomePage');
+	return localStorage.getItem('home_hidden');
 };
 
 })();

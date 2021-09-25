@@ -1,0 +1,15 @@
+list-before: $:/core/ui/Buttons/edit
+tags: $:/tags/ViewToolbar
+title: $:/breakzplatform/ViewToolbar/share
+type: text/vnd.tiddlywiki
+
+<$if value={{!!share-link}}>
+<$if value=<<navigator-share-detect>> matches="true">
+<button data-share-link={{!!share-link}} class=<<tv-config-toolbar-class>>>
+		<$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
+		{{$:/breakzplatform/icons/share}}
+		</$list>
+	</button>
+	<<share-event-listener>>
+</$if>
+</$if>

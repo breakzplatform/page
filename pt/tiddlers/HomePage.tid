@@ -54,4 +54,4 @@ Espero que você goste da [[minha Homepage|https://music.youtube.com/watch?v=v2Q
 ---
 
 <button class="btn-hide-home win">Não exibir esta página novamente nas próximas visitas</button>
-<<hidehomepagebuttonevent>>
+<<hide-home-event-listener>>
