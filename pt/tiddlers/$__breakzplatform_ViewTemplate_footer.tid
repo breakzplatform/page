@@ -88,12 +88,16 @@ type: text/vnd.tiddlywiki
 		<li>
 			<$macrocall $name="zap" name=<<currentTiddler>> link={{!!share-link}}/>
 		</li>
+		
+<$if not value=<<mobile-detect>> matches="true">
 		<li>
 			<$macrocall $name="pocket" name=<<currentTiddler>> link={{!!share-link}}/>
 		</li>
 		<li>
 			<$macrocall $name="pin" name=<<currentTiddler>> link={{!!share-link}}/>
 		</li>
+</$if>
+
 		<$if value=<<navigator-share-detect>> matches="true">
 		<li>
 			<a href="javascript:void(0);" data-share-link={{!!share-link}}>
@@ -116,8 +120,10 @@ type: text/vnd.tiddlywiki
 		</li>
 </$if>
 	</ul>
+<$if not value={{!!hide-claps}}>
 <div class="share-post-claps">
 			<$macrocall $name="claps" name=<<currentTiddler>> link={{!!share-link}}/>
  </div>
+</$if>
 </div>
 </$if>
