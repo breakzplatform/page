@@ -212,6 +212,7 @@ text-decoration:none;
 a:not(.tc-tiddlylink),a:not(.tc-tiddlylink):link,a:not(.tc-tiddlylink):visited {
 color:#652585;
 text-decoration:none;
+white-space:nowrap;
 }
 
 a.tc-tiddlylink-external:after {
@@ -295,7 +296,8 @@ width:1.5em;
 .krystal-tiddler__frame--maximized .tc-subtitle,
 .krystal-tiddler__frame--maximized .tc-tags-wrapper,
 .krystal-tiddler__frame--maximized .tc-tiddler-body,
-.krystal-tiddler__frame--maximized .tc-reveal {
+.krystal-tiddler__frame--maximized .tc-reveal,
+.krystal-tiddler__frame--maximized .krystal-references {
 margin-left:auto;
 margin-right:auto;
 max-width:720px;

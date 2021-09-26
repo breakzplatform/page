@@ -1,7 +1,7 @@
 created: 20210330000000000
 modified: 20210401000000000
 tags: Notinhas Snippets
-title: Apagando em massa vídeos da playlist 'Assistir Depois' do YouTube
+title: Apagando em massa vídeos da playlist "Assistir Depois" do YouTube
 type: text/vnd.tiddlywiki
 
 A playlist "Assistir depois" do YouTube é diferente das outras playlists, geralmente de um jeito ruim: você só consegue apagar/mover um vídeo um por um, manualmente. Esse snippet automatiza o processo. Fiz a versão em português [[baseada no código desse link|https://www.tldevtech.com/how-to-bulk-delete-all-youtubes-watch-later-videos/]].
