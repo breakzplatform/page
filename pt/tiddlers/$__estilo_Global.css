@@ -336,6 +336,7 @@ font-family:'Iosevka Web',monospace;
 font-weight:700;
 margin:0 0 .5rem;
 text-transform:uppercase;
+background:#fff;
 }
 
 figure {
@@ -350,6 +351,8 @@ font-size:.8rem;
 
 .share-post {
 margin-top:1rem;
+display: flex;
+justify-content:right;
 }
 
 .share-post a,.share-post a:hover {
@@ -378,6 +381,12 @@ padding:0;
 
 .share-post ul li {
 margin:0 0 0 .5rem;
+}
+
+.share-post-claps {
+	margin-left: 1rem;
+	height: 60px;
+	width: 60px;
 }
 
 .old-post {

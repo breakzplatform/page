@@ -27,7 +27,8 @@ Macro to add click event to the home button
 		const b = document.querySelector(".btn-hide-home.win");
 		
 		b.addEventListener("click", () => {
-			b.innerHTML = "OK, Feito!";
+			b.style.display = "none";
+			document.getElementById('hide-home-message').innerHTML = "<strong>Feito!</strong> Esse post não vai abrir mais nas próximas visitas. Para ver essa página novamente acesse \"Página Inicial\" pelo Index, dentro de Meta.";
 			localStorage.setItem('home_hidden', '1');
 		}, false);
 	};

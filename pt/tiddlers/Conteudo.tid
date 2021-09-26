@@ -18,6 +18,8 @@ Na dúvida por onde começar? Comece pelos favoritos:
 </$list>
 </ul>
 
+Ou se preferir, escolha uma das principais categorias:
+
 !! [[Notinhas]]
 <ul>
 <$list filter="[tag[Notinhas]limit[5]!sort[created]]"> 

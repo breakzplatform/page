@@ -84,6 +84,8 @@ const newsletterFeedItems = [];
     <link rel="alternate" type="application/atom+xml" title="Joseli.to — Notinhas" href="feed/notinhas.atom" />
     <link rel="alternate" type="application/atom+xml" title="Joseli.to — Artigos" href="feed/artigos.atom" />
     <link href="https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css" rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;">
+    <link href="https://unpkg.com/applause-button/dist/applause-button.css" rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;">
+    <script src="https://unpkg.com/applause-button/dist/applause-button.js" async></script>
   `);
 
     root.querySelector('body').insertAdjacentHTML('beforeend', `<script>window.KONAMI_CURSOR=0;const KONAMI_CODE=[38,38,40,40,37,39,37,39,66,65];document.addEventListener('keydown',(e)=>{window.KONAMI_CURSOR=(e.keyCode==KONAMI_CODE[window.KONAMI_CURSOR])?window.KONAMI_CURSOR+1:0;if(window.KONAMI_CURSOR==KONAMI_CODE.length)window.location.href='https://amzn.to/3jXDIiG'})</script>`);
