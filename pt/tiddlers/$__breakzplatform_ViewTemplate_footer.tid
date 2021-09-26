@@ -7,7 +7,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define claps(name, link)
- <applause-button color="#652585" style="width:58px;height:58px;" multiclap="true" url="$link$" />
+ <applause-button color="#652585" style="width:58px;height:58px;" multiclap="true" url="$link$"></applause-button>
 \end
 
 
