@@ -1,3 +1,10 @@
-tags: Projetos Hackathon Recife Arquivado
+created: 20130420040001001
+just-date: true
+tags: Projetos Hackathon Recife Arquivado 2013 NASA
 title: Hello, Curiosity!
 type: text/vnd.tiddlywiki
+
+|!Status|!Código Fonte|!Clipping|!🥇|
+|Arquivado|[[GitHub|https://github.com/gustavopinto/hello-curiosity]][[(.zip)|https://static.joseli.to/joseli.to/projects/hello-curiosity-master.zip]]|[[G1 Pernambuco|http://g1.globo.com/pernambuco/noticia/2013/04/vencedores-de-fase-nacional-de-desafio-da-nasa-sao-anunciados.html]][[(.pdf)|https://static.joseli.to/joseli.to/pdf/clipping/vencedores-de-fase-nacional-de-desafio-da-nasa-sao-anunciados.pdf]]|Vencedor|
+
+<$macrocall $name="tabs-talks" tabsList="[[Vídeo: Hello, Curiosity!]] [[Slides: Hello, Curiosity!]]" default="Vídeo: Hello, Curiosity!" />

@@ -1,11 +1,13 @@
 hide-claps: true
 rss-link: https://joseli.to
 share-link: https://joseli.to
-tags: $:/tags/MenuBar Index
+tags: $:/tags/MenuBar Index Meta
 title: Index
 type: text/vnd.tiddlywiki
 
 Todo o conteúdo deste site, organizado em ordem alfabética.
+
+Se preferir, você também pode navegar via [[assuntos|Tags]].
 
 <div class="tc-table-of-contents">
 <<toc 'Index'>>

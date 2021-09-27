@@ -54,11 +54,6 @@ sup {
 top:-.5em;
 }
 
-table {
-border-color:inherit;
-text-indent:0;
-}
-
 button,input,optgroup,select,textarea {
 font-family:inherit;
 font-size:100%;

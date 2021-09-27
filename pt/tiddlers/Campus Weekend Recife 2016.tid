@@ -5,4 +5,4 @@ tags: 2016 Recife Palestras
 title: Campus Weekend Recife 2016
 type: text/vnd.tiddlywiki
 
-<$macrocall $name="tabs-talks" tabsList="[[Progressive Web Apps: um guia para não precisar de toalha - Gravação]] [[Progressive Web Apps: um guia para não precisar de toalha]]" default="Progressive Web Apps: um guia para não precisar de toalha - Gravação" />
+<$macrocall $name="tabs-talks" tabsList="[[Vídeo: Progressive Web Apps: um guia para não precisar de toalha]] [[Progressive Web Apps: um guia para não precisar de toalha]]" default="Vídeo: Progressive Web Apps: um guia para não precisar de toalha" />

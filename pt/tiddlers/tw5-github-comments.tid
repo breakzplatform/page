@@ -4,6 +4,9 @@ tags: Projetos Plugins
 title: tw5-github-comments
 type: text/vnd.tiddlywiki
 
+|!Status|!Código Fonte|!Página Oficial|
+|Ativo|[[GitHub|https://github.com/gustavopinto/hello-curiosity]]|[[Acesse|https://google.com]]|
+
 <$list filter="$:/plugins/breakzplatform/github-comments">
 <$set name="plugin-type" value={{!!plugin-type}}>
 <$set name="default-popup-state" value="no">

@@ -1,0 +1,10 @@
+title: Draft of 'Tags'
+type: text/vnd.tiddlywiki
+
+<$list filter="[tags[]!is[system]sort[title]!tag[Index]] -⭐">
+<span class="cloud">
+!! <$view field="title"/> (<$count
+filter="[all[current]tagging[]] +[sum[]]"/>)
+<<list-links filter:"[tag<currentTiddler>] +[sort[title]]">>
+</span>
+</$list>

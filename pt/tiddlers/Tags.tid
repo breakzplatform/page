@@ -1,0 +1,10 @@
+tags: Meta
+title: Tags
+type: text/vnd.tiddlywiki
+
+<$list filter="[tags[]!is[system]sort[title]!tag[Index]] -⭐">
+<h2><<currentTiddler>>
+(<$count
+filter="[all[current]tagging[]] +[sum[]]"/>)</h2>
+<<list-links filter:"[tag<currentTiddler>] +[sort[title]]">>
+</$list>
