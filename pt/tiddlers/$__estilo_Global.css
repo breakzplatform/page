@@ -386,6 +386,16 @@ margin:0 0 0 .5rem;
 	width: 58px;
 }
 
+.share-post-claps applause-button .style-root:after {
+border: 2px solid;
+}
+
+.share-post-claps applause-button .count-container .count {
+color: #652585;
+font-weight: bold;
+font-family:'Iosevka Web',ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;
+}
+
 .old-post {
 background-color:#FFFAF0;
 border:1px solid #ED8936;
