@@ -120,9 +120,9 @@ type: text/vnd.tiddlywiki
 		</li>
 </$if>
 	</ul>
-<$if not value={{!!hide-claps}}>
+<$if value={{!!clap-link}}>
 <div class="share-post-claps">
-			<$macrocall $name="claps" name=<<currentTiddler>> link={{!!share-link}}/>
+			<$macrocall $name="claps" name=<<currentTiddler>> link={{!!clap-link}}/>
  </div>
 </$if>
 </div>
