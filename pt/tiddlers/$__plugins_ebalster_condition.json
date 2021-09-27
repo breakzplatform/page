@@ -1,32 +1,5 @@
 {
     "tiddlers": {
-        "$:/plugins/ebalster/condition/changelog": {
-            "text": "!!Version 0.1.1 — December 30, 2017\n\n* Fix an error when refreshing the condition widget.\n* Fix \"match\" attribute not working as expected.\n\n\n!!Version 0.1.0 — December 29, 2017\n\n* Initial implementation.\n* Includes $if, $else, $else-if\n* Common code in condition.js",
-            "title": "$:/plugins/ebalster/condition/changelog",
-            "tags": "",
-            "modified": "20171230165117169",
-            "created": "20171230164920491"
-        },
-        "$:/plugins/ebalster/condition/license": {
-            "text": "!!The MIT License (MIT)\n\nCopyright (c) 2017 Evan Balster\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-            "type": "text/vnd.tiddlywiki",
-            "title": "$:/plugins/ebalster/condition/license",
-            "tags": "",
-            "revision": "0",
-            "modified": "20171230044506791",
-            "created": "20171230044445712",
-            "caption": "license"
-        },
-        "$:/plugins/ebalster/condition/readme": {
-            "text": "The ''Condition'' plugin for TiddlyWiki, version {{$:/plugins/ebalster/condition!!version}}, by Evan Balster.\n\nThis plugin defines widgets that will either show or hide their contents depending on a condition.\n\nUnlike the closely-related reveal widget, condition widgets do //not// retain their content, and do not support animation or popups.  Conditions may be based on variables, macros or filtered attributes.  It can also be used with the [[Formula Plugin]].\n\n\n!!Truthiness\n\nTruthiness is a simple rule for whether a value triggers an \"if\" widget or not.  Values are \"truthy\" if they do not match any of the \"falsy\" values below:\n\n* The number `0`, including any decimal point.\n* `false`\n* `undefined`\n* `null`\n* Blank (no text)\n\nThis matching is case-insensitive, and any whitespace before or after the value will be ignored.\n\n\n!!If Widget\n\nThe `$if` widget will show its content based on whether a value is \"truthy\", or matches another value.\n\n|Attribute|Meaning|h\n|value|''Required.'' Content is shown if `value` is truthy.|\n|match|Optional. If present, `value` and `match` must equal //exactly// for content to be shown. (Truthiness doesn't matter.)|\n|not|Inverts the condition, so the value will be shown if it would be hidden and vice versa.|\n\nFor example,\n\n```\n<$if not value={{$:/StoryList}}>\nNo tiddlers are open right now!\n</$if>\n```\n\n\n!!Else Widget\n\nThe `$else` widget has no attributes.  It must be placed after one of the conditional widgets listed below, and will only show its contents if the preceding widget is //not// showing its content.\n\n|After...|Show contents when...|h\n|`$if`<br/>`$else-if`|None of the previous if-conditions was true.|\n|`$list`|The list is empty. `$else` can be used instead of emptyMessage.|\n|`$reveal`|The contents of the reveal widget are hidden.|\n|`$else`|An else after an else will //never// be shown.|\n\nFor example:\n\n```\n<$if value={{{[tag[Note]]}}}>\n!!My notes:\n  <$list filter=\"[tag[Note]]\">\n    - {{!!title}}\n  </$list>\n</$if>\n<$else>\n!!I don't have any notes...\n</$else>\n```\n\nNote that the else widget can't have any blank lines between it and the preceding widget.\n\n\n!!Else-If Widget\n\nThe `$else-if` widget is a combination of the `$else` and `$if` widgets, and has the same attributes as the `$if` widget.  Its content will only be displayed if the previous widget is //not// showing its content //and// the `$if`-condition is true.\n\n`$else-if` widgets can be used to perform a \"chain\" of tests, showing some text based on the first condition that passes (or fails).  For example:\n\n```\nSomething approaches...\n\n<$if      value={{!!animal}} match=cat>  Meow!  </$if>\n<$else-if value={{!!animal}} match=dog>  Bark!  </$else-if>\n<$else-if value={{!!animal}} match=bird> Tweet! </$else-if>\n<$else> This isn't like any animal you've seen before. </$else>\n```\n\n\n!!Help & Support\n\nThis plugin is a work in progress; seek help with it on the TiddlyWiki Google Group:  https://groups.google.com/forum/#!forum/tiddlywiki\n\nOr E-mail me directly: [[evan@imitone.com|mailto://evan@imitone.com]]",
-            "type": "text/vnd.tiddlywiki",
-            "title": "$:/plugins/ebalster/condition/readme",
-            "tags": "",
-            "revision": "0",
-            "modified": "20171230052355854",
-            "created": "20171230044517252",
-            "caption": "readme"
-        },
         "$:/plugins/ebalster/condition/repack": {
             "text": "Repacking command (use this in the browser console to repack the plugin)\n\n<pre><code>$tw.utils.repackPlugin(\"$:/plugins/ebalster/condition\", (= \"[\" & textjoin(\",\",\n TRUE,\n [prefix[$:/plugins/ebalster/condition/]addprefix[\"]addsuffix[\"]]) & \"]\" =));\n</code></pre>\n\nVersion: <$edit-text tiddler=\"$:/plugins/ebalster/condition\" field=\"version\" />",
             "type": "text/vnd.tiddlywiki",

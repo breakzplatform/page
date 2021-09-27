@@ -59,14 +59,6 @@
             "type": "text/vnd.tiddlywiki",
             "text": "\\define cmcolour(name)\n{{$:/plugins/adithyab/cmplus/settings##$name$}}\n\\end"
         },
-        "$:/plugins/adithyab/cmplus/readme": {
-            "title": "$:/plugins/adithyab/cmplus/readme",
-            "created": "20210328060842133",
-            "modified": "20210328060929665",
-            "tags": "",
-            "type": "text/vnd.tiddlywiki",
-            "text": "!! TW5 CodeMirrorPlus\nTowards making a better editor for TiddlyWiki5.\n"
-        },
         "$:/plugins/adithyab/cmplus/settings": {
             "title": "$:/plugins/adithyab/cmplus/settings",
             "text": "monospace-font:monospace,\"Courier New\"\nselected:rgba(100,100,100,0.3)\nlinenumber:<<colour primary>>\nkeyword:<<colour code-foreground>>\nmacro:<<colour code-foreground>>\nquote:<<colour primary>>\npre:<<colour foreground>>\nexternallink:<<colour external-link-foreground>>\ninternallink:<<colour tiddler-title-foreground>>\nlink:<<colour tiddler-title-foreground>>\ntransclude:<<colour tiddler-title-foreground>>\nmonospace:<<colour foreground>>\nlist1:<<colour primary>>\nlist2:<<colour primary>>\nlist3:<<colour primary>>\nlist4:<<colour primary>>\nlist5:<<colour primary>>\nlist6:<<colour primary>>\nh1:<<colour primary>>\nh2:<<colour primary>>\nh3:<<colour primary>>\nh4:<<colour primary>>\nh5:<<colour primary>>\nh6:<<colour primary>>\nhr:<<colour primary>>",
