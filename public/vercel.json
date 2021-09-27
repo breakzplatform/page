@@ -2,6 +2,6 @@
   "redirects": [
     { "source": "/en", "destination": "https://joselito.dev" }
   ],
-  "trailingSlash": "true",
-  "public": "true"
+  "trailingSlash": true,
+  "public": true
 }
