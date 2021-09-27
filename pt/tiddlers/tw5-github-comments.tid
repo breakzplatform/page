@@ -5,7 +5,7 @@ title: tw5-github-comments
 type: text/vnd.tiddlywiki
 
 |!Status|!Código Fonte|!Página Oficial|
-|Ativo|[[GitHub|https://github.com/gustavopinto/hello-curiosity]]|[[Acesse|https://google.com]]|
+|Ativo|[[GitHub|https://github.com/breakzplatform/tw5-github-comments/]]|[[Acesse|https://tw5-github-comments.joseli.to/]]|
 
 <$list filter="$:/plugins/breakzplatform/github-comments">
 <$set name="plugin-type" value={{!!plugin-type}}>
