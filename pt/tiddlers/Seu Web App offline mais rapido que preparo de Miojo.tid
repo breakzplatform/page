@@ -1,0 +1,35 @@
+tags: ⭐ ServiceWorkers Offline Desenvolvimento
+title: Seu Web App offline mais rápido que preparo de Miojo
+type: text/vnd.tiddlywiki
+
+!! Código pronto em três minutos ou seu dinheiro de de volta
+
+[img alt="Fotos de diversos Cup Noodles empilhados" [https://static.joseli.to/joseli.to/articles/https___s3-us-west-2.amazonaws.com_secure.notion-static.com_7f660254-e8ec-4cde-a033-758e57166fe2_Untitled.png]]
+
+Quando você pensa que não, 2016 já está perto de chegar ao fim. Isso só é um indicador a mais que já passou da hora de fazer com que seu web app funcione offline.
+
+Sim, eu sei, os ''ServiceWorkers'', apesar de não parecer tão terríveis quanto eram antigamente ainda parecem muito complicados de usar. Principalmente por que o código (e a maneira com que ele funciona) é muito diferente do “normal” que estamos acostumados.
+
+No início do ano eu fiz um Hangout com o GDG Belo Horizonte sobre como usar ServiceWorkers. A palestra tá no meu canal, e você pode ver abaixo. Acho que é o único conteúdo sobre isso em Português no YouTube<<fnote "Todos os [[meus vídeos|Vídeos]] agora estão neste site">>, então vale o seu like.
+
+<$macrocall $name="tabs-talks" tabsList="[[Vídeo: Web Apps Offline com ServiceWorkers]] [[Slides: Web Apps Offline com ServiceWorkers]]" default="Vídeo: Web Apps Offline com ServiceWorkers" />
+
+Porém, ainda sim, usar ''ServiceWorkers'' sem exemplos mais claros ainda não é das tarefas mais fáceis. Seria ótimo se, sei lá, tivéssemos algum repositório com uma série de exemplos, que a gente pudesse ao menos ~~copiar e colar~~ olhar e entender melhor como funciona.
+
+O time do Google Chrome tem o [[GoogleChrome/samples|https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker]] na rede social de códigos GitHub, com diversos exemplos excelentes de como usar ServiceWorkers para armazenar o //conteúdo offline//.
+
+Alguns exemplos da lista são:
+
+* [[Basic Demo|https://googlechrome.github.io/samples/service-worker/basic/index.html]], que mostra o básico do básico de implementaçao de SW em uma página. Como é o básico do básico, é justamente o melhor lugar pra começar se você nunca fez algo parecido.
+
+* [[Detailed Registration|https://googlechrome.github.io/samples/service-worker/registration-events/index.html]], que já é alguns passos a frente, e você aprende como registrar um SW na sua página, além de receber informações detalhadas do SW, como os seus estados e versões.
+
+* [[Multiple fetch handlers|https://googlechrome.github.io/samples/service-worker/multiple-handlers/index.html]], onde você pode ter mais noções de como os SW funcionam como uma espécie de proxy, entre seu servidor e o navegador
+
+* [[Custom offline page|https://googlechrome.github.io/samples/service-worker/custom-offline-page/index.html]], exemplo mais básico de offline (usando de base as “etapas” acima citadas), onde um simples ''fallback'' é exibido ao usuário, caso ele esteja sem conexão.
+
+E por aí vai. O legal do repositório é que os códigos são os mais auto-contidos o possível, então é praticamente fazer um ''plug’n’play'' no código da sua própria aplicação.
+
+---
+
+<<showfnotes title:"Notas de Rodapé">>

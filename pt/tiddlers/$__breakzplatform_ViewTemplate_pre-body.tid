@@ -3,7 +3,14 @@ tags: $:/tags/ViewTemplate
 title: $:/breakzplatform/ViewTemplate/pre-body
 type: text/vnd.tiddlywiki
 
+\whitespace trim
 <$list filter="[all[current]tag[Artigos]]">
+<$if value={{!!created}}>
+<$macrocall $name="old-post" date={{!!created}}/>
+</$if>
+</$list>
+
+<$list filter="[all[current]tag[Desenvolvimento]]">
 <$if value={{!!created}}>
 <$macrocall $name="old-post" date={{!!created}}/>
 </$if>

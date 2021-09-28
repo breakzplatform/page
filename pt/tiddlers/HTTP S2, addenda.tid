@@ -1,0 +1,82 @@
+created: 20160204040001001
+tags: 2016 Desenvolvimento HTTPS SSL $:/tags/hide-comments
+title: HTTP S2, addenda
+type: text/vnd.tiddlywiki
+
+!! A segunda parte de um texto que não sabia que teria uma segunda parte.
+
+Aconteceu muita coisa desde o dia 19, quando publiquei [[Seus sites seguros de graça sem custo nenhum e não pagando nada]] nesta rede social Medium. Apesar de relevante pra situação atual da web, não esperava que acontecessem tantas coisas relacionadas, em tão poucos dias.
+
+[img alt="Ilustração de uma barra de navegador com http em verde, junto de um cadeado" [https://static.joseli.to/joseli.to/articles/https___s3-us-west-2.amazonaws.com_secure.notion-static.com_bba49477-244a-4517-ae1d-f69555bd580f_Untitled.png]]
+
+Com isso em mente, me sinto mais que na obrigação de informar o mais relevante que rolou. Vem, jovem:
+
+!! [[O Chrome fará sites ''HTTP-only'' passar vergonha|http://motherboard.vice.com/read/google-will-soon-shame-all-websites-that-are-unencrypted-chrome-https]]
+
+Não se sabe com exatidão quando, mas eventualmente, o Google Chrome irá tratar sites sem HTTPS com um comportamento parecido de quando o site é inseguro ou possui um certificado falso: a ícone de cadeado na barra de navegação irá possuir um “X” vermelho. A diferença básica é que você conseguirá acessar o conteúdo normalmente, sem nenhum aviso que “sua conexão é insegura”.
+
+A ideia do time do Chrome é justamente deixar claro que o simples fato de você não estar utilizando uma conexão HTTPS, por conseguinte não encriptada, já é inseguro o bastante.
+
+Se você quiser testar no seu Chrome, vá em
+
+<<code """js
+chrome:/flags
+""">>
+
+e procure por “mark non-secure as”, e selecione “mark non-secure origins as non-secure”. Reinicie o Chrome e veja o futuro.
+
+[img[https://static.joseli.to/joseli.to/articles/https___s3-us-west-2.amazonaws.com_secure.notion-static.com_42f2c36c-6871-437f-93d5-48093c11f85a_Untitled.png]]
+
+!! [[O Firefox também não vai deixar sites sem HTTPS impunes|https://hacks.mozilla.org/2016/01/login-forms-over-https-please/]]
+
+A partir do Firefox Developer Edition 46 (que já é a versão atual, no momento da publicação), ''sites que possuem formulário com campo de senha e não possuem HTTPS serão indicados como inseguros''. A estratégia é bem menos violenta que a do Chrome, mas também deixa claro quando está tendo cheiro vacilo no ar.
+
+Uma coisa bem interessante é que não basta você estar enviando os dados via HTTPs (pra um servidor num domínio diferente, por exemplo), você também tem que estar servindo via HTTPS, e isso impede vários tipos de ataques locais.
+
+!! Let’s Encrypt comemora com o peito em festa e coração a gargalhar [[ter emitido mais de 500 mil certificados|https://twitter.com/letsencrypt/status/695077737380208640]]
+
+Título de notícia do EGO, mas é bem verdade:
+
+[img[https://static.joseli.to/joseli.to/articles/1fe30f4e-86fe-4ceb-aa01-29f4753973a2.png]]
+
+!! [[O maldito Facebook fechou o Parse|http://blog.parse.com/announcements/moving-on/]]
+
+O Facebook provou mais uma vez que não é digno de confiança e fechou o [[(m)BaaS|https://en.wikipedia.org/wiki/Mobile_backend_as_a_service]] mais completo que existia. [[Existe um excelente texto refletindo o porquê|https://medium.com/@s2o/they-never-wanted-to-host-your-app-the-real-reasons-why-parse-shut-down-6ec3d7d5c53c]]. Mas no nosso contexto, destaco isso pois sugeri o Parse como um bom local para você hospedar seu site, e ainda vinha com HTTPs.
+
+Tenho umas novidades pra me redimir.
+
+!! Ainda mais opções para ter um HTTPS pra chamar de seu
+
+Só seu e de mais ninguém.
+
+!!! [[Pancake.io|https://pancake.io]]
+
+A Pancake.io é uma plataforma extremamente amigável, com um deploy tão fácil que dá pra fazer pelo Dropbox (literalmente). Mas se você é uma pessoa de bem e usa controle de versão, você pode usar Git também.
+
+Os domínios ''*.pancakeapps.com'' tem HTTPS habilitados por padrão.
+
+!!! [[Google App Engine|https://appengine.google.com/]]
+
+Confesso que não mencionar o App Engine no post original foi realmente um ponto fora da curva. Mas é pra isso que adendos servem, correto?
+
+Domínios ''*.appspot.com'' já tem certificado HTTPS. Você também pode fazer upload de um certificado SSL próprio, se for usar seu próprio domínio no App Engine.
+
+!! Ferramentas bônus
+
+Em barras de ouro, pois estas valem mais do que dinheiro.
+
+!!! [[Get HTTPS for Free|https://gethttpsforfree.com/]]
+
+A cada dia que passa temos mais certezas que a internet veio pra ficar. Um cidadão automatizou o suficiente de todo o processo manual do Let’s Encrypt em um formulário simples.
+
+!!! [[badssl.com|https://badssl.com]]
+
+Esse site é uma mão na roda para você que quer ver como os navegadores se comportam em diferentes situações. Se seu próprio HTTPS der algum problema, você tem uma base para comparar e descobrir o que está acontecendo.
+
+!! Stairway to heaven
+
+Parte do trabalho de desenvolvedores web é fazer a própria web evoluir. Não deixa de ser curioso como um assunto tão marginal gerou tanto conteúdo em tão pouco tempo.
+
+[[Comentar sobre a importância de HTTPS não é de hoje|http://mashable.com/2011/05/31/https-web-security/]]. Porém ainda a muito a ser discutido e debatido sobre o assunto, e pelo que os indícios mostram, ele irá se tornar cada vez mais relevante.
+
+''Proponha uma discussão sobre HTTPS na sua comunidade'', ele se encaixa em vários contextos. Me dê um ping no Twitter se eu puder ajudar em algo. Há um longo caminho a ser percorrido.

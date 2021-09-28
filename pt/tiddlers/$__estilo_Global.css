@@ -322,7 +322,8 @@ line-height:1.618;
 margin-bottom:1rem;
 }
 
-.tc-tagged-Artigos hr {
+.tc-tagged-Artigos hr,
+.tc-tagged-Desenvolvimento hr{
 border-top:1px solid #f4f4f4;
 margin:0 auto;
 width:80%;
@@ -437,6 +438,7 @@ display:none;
 
 .content-list-date {
 font-size:.7rem;
+white-space: nowrap;
 }
 
 .tc-tiddler-controls > span > button[data-share-link] {
