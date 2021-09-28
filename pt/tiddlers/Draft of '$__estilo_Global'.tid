@@ -1,3 +1,6 @@
+title: Draft of '$:/estilo/Global'
+type: text/vnd.tiddlywiki
+
 *,::before,::after {
 box-sizing:border-box;
 }
@@ -445,20 +448,7 @@ white-space: nowrap;
 	margin: 0 -5px;
 	padding: 0;
 }
-
-div[data-tiddler-title="Vídeos"] a,
-div[data-tiddler-title="Vídeos"] a:link {
-display: inline-block;
-}
-
-
-div[data-tiddler-title="Vídeos"] .tc-thumbnail-caption {
-    font-size: 0.7rem;
-    border-radius: 0;
-    padding: 2px;
-}
-
-
+div[data-tiddler-title="Index"]
 
 @media screen and (max-width: 768px) {
 	header button.tc-tiddlylink {
