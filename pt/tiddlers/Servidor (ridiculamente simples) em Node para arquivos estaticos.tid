@@ -1,0 +1,28 @@
+tags: Desenvolvimento 2017
+title: Servidor (ridiculamente simples) em Node para arquivos estáticos
+type: text/vnd.tiddlywiki
+
+<figure>
+[img[https://static.joseli.to/joseli.to/articles/1_30yDYBe9yy6zFtJm9g80YA.jpeg]]
+<figcaption>Uma imagem estática.</figcaption>
+</figure>
+
+O post de hoje é uma dica rápida.
+
+Hoje em dia iniciar um projeto em JS é quase um casamento seu com suas ferramentas, no qual você tem que passar alguns bons minutos (ou horas) pra configurar tudo e deixar tudo perfeitinho.
+
+A vantagem disso é que //teoricamente// você só vai precisar fazer esse trabalho uma vez; porém nem sempre a gente quer, ou //precisa//, ter esse trabalho. Um dos melhores amigos de quem trabalha com conteúdo estático é o //SimpleHTTPServer// do Python, que nos permite levantar um servidor HTTP com uma facilidade absurda, além da sua grande vantagem de já estar pré-instalado virtualmente em qualquer máquina com um sistema UNIX.
+
+Se você está trabalhando só com um punhado de arquivos estáticos, com o //SHS// em uma linha tava o //localhost// aberto no navegador. Porém o SHS não é a coisa — digamos — menos bugada do mundo, e também não tem tantas opções assim pra customizar as própriedades do servidor (ou até tenha, eu que não sou de Python que não sei mexer)
+
+Pra manter tudo dentro de casa, existe o pacote //''http-server''// disponível lá no npm, como de costume:
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.npmjs.com/package/http-server" data-iframely-url="//cdn.iframe.ly/7sMmYBk?card=small"></a></div></div>
+
+Tem a mesma praticidade do SHS, e apesar de não vir direto com o sistema, eu imagino que a essa altura do campeonato você tenha o npm instalado.
+
+Além de menos bugado (apesar de ser em JS, né), ele oferece umas opções 100% show de bola e muito úteis, relacionadas com ''CORS'', ''SSL'' e ''Proxies''.
+
+Mesmo que não seja de todo útil em projetos mais escaláveis, o http-server é uma daquelas ferramentas que vale a pena ter guardado pro “nunca se sabe”
+
+Vai que né.
