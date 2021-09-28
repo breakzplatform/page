@@ -1,4 +1,6 @@
-tags: ⭐ ServiceWorkers Offline Desenvolvimento
+created: 20160308040001001
+reading-time: 2 minutos
+tags: ⭐ ServiceWorkers Offline Desenvolvimento $:/tags/refurbished
 title: Seu Web App offline mais rápido que preparo de Miojo
 type: text/vnd.tiddlywiki
 
@@ -28,7 +30,7 @@ Alguns exemplos da lista são:
 
 * [[Custom offline page|https://googlechrome.github.io/samples/service-worker/custom-offline-page/index.html]], exemplo mais básico de offline (usando de base as “etapas” acima citadas), onde um simples ''fallback'' é exibido ao usuário, caso ele esteja sem conexão.
 
-E por aí vai. O legal do repositório é que os códigos são os mais auto-contidos o possível, então é praticamente fazer um ''plug’n’play'' no código da sua própria aplicação.
+E por aí vai. O legal do repositório é que os códigos são os mais auto-contidos o possível, então é praticamente fazer um //plug’n’play// no código da sua própria aplicação.
 
 ---
 

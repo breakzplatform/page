@@ -18,4 +18,4 @@ $caption$
 <$list filter="""$filter$"""><$macrocall $name="thumbnail-v" link={{!!title}} icon={{!!icon}} color={{!!color}} background-color={{!!background-color}} image={{!!video-preview}} caption={{!!caption}} width="""$width$""" height="""$height$"""/></$list>
 \end
 
-<<list-thumbnails-v filter:"[tag[Vídeos]]" width:"168" height:"95">>
+<<list-thumbnails-v filter:"[tag[Vídeos]]" width:"190" height:"107">>

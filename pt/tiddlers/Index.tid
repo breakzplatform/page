@@ -6,7 +6,7 @@ type: text/vnd.tiddlywiki
 
 Todo o conteúdo deste site, organizado em ordem alfabética.
 
-Se preferir, você também pode navegar via [[assuntos|Tags]].
+Se preferir, você também pode navegar via [[tags|Tags]].
 
 <div class="tc-table-of-contents">
 <<toc 'Index'>>

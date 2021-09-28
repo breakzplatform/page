@@ -1,0 +1,93 @@
+created: 20170323040001001
+reading-time: 4 minutos
+tags: Desenvolvimento PWA GitHub SPA 2017
+title: Como hospedar Progressive Web Apps no GitHub Pages
+type: text/vnd.tiddlywiki
+
+[img alt="Foto de um aparelho com a home screen aberta" [https://static.joseli.to/joseli.to/articles/0_Q2IxPaOiVl2NXXkV.jpg]]
+
+Eu vivo falando da rede social de banco de dados em tempo real chamada //Firebase// neste blogue digital. O Firebase ja é conhecido pela suas funcionalidades de Hosting, e basta um `firebase deploy` para por um projeto no ar. Porém, como eu sou uma pessoa chata e desagradável, eu não gosto muito de usar o Firebase Hosting quando eu não estou usando nada //além do própiro Firebase Hosting//.
+
+Explico: quando estamos usando mesmo o Firebase, aí tudo bem, estamos tudo em casa, tem o Database, tem o Hosting, tem algum serviço de autenticação… se justifica deixar tudo lá. Mas quando eu não tô usando outra coisa sem ser o Hosting, aparecem certas coisas que me incomodam: ter que criar um projeto novo no Firebase (que são limitados, caso não saiba), ter que inicializar o repositório com as configurações, usar o Firebase-CLI além de — obviamente — o próprio Git, e configurar o domínio e SSL não é difícil; mas é chato, demorado e manual (ao menos pros meus padrões).
+
+Quando essa situação acontece, eu prefiro usar o //GitHub Pages// para por minhas páginas estáticas no ar. Eu já ia estar usando o Git de todo jeito, agora eu só tenho que dar push na branch certa e ele vai estar no ar. Nesses dias rolou algo interessante, um problema que eu nunca tinha enfrentado antes. Quando a gente desenvolve um Progressive Web App, é normal ele ter ao menos um tipo de autenticaçãozinha que seja. então eu sempre hospedava já no Firebase.
+
+
+O Firebase Hosting tem um tipo de configuração especial para //Single Page Apps//: como é sabido, single page apps tem só o `index.html` e todo o conteúdo é adicionado e removido do DOM, e mudamos os valores e URL via JavaScript. No Firebase podemos configurar para que todos os requests válidos sejam redirecionados para o `index`, e assim é garantido que o usuário acessará o conteúdo devido, mesmo fazendo um acesso direto a uma página específica sem ser a própria home. É só por isso aqui no seu `firebase.json`:
+
+<<code """json
+ "rewrites": [{
+   "source": "**",
+   "destination": "/index.html"
+ }]
+""">>
+
+Ou seja, quando acessamos algum SPA hospedado no Firebase por: `https://meu.pwa/pagina`, o Firebase vai redirecionar o request para `index.html` e - se você fez tudo certo - vai receber de parâmetro "pagina" e você redireciona o usuário pro conteúdo devido.
+
+Mas no GitHub Pages, se eu tentar acessar `https://meu.pwa/pagina`, o que acontece? Isso mesmo:
+
+[img alt="Print de uma pagina de 404 do GitHub" [https://static.joseli.to/joseli.to/articles/0_F8WwSSdyPKn4xd-N.png]]
+
+O famoso erro 404. O GitHub quando você tenta acessar `https://meu.pwa/pagina` ele tenta retornar `https://meu.pwa/pagina/index.html`. Como essa página não existe, ele retorna a página de erro 404. Se você parar pra pensar, realmente o servidor está coberto de razão.
+
+Eu podia nesse momento engolir o orgulho e voltar chorando pr’os braços do Firebase. Mas eu sou Brasileiro e não desisto nunca. Algum jeito tem que ter, não é possível. E como em 99,9% dos casos, tem solução pra tudo.
+
+Achei o repositório do ilutre desconhecido @rafrex. Eu podia terminar o post aqui linkando o repositório, mas lá tem tanto arquivo, tanto texto, tanta coisa ~desnecesária (apesar de entender porquê eles estão lá) que vou pular a abertura da série pra você e explicar o que tem que ser feito.
+
+No Firebase, ele redireciona todos os requests pra `index.html`. No GItHub não. Mas se você parar pra pensar, dado que é um SPA. Só existem duas possibilidades de acesso direto a arquivos:
+
+* O próprio `index.html`
+* A página de erro 404
+
+Aqui que a mágica acontece. Tecnicamente falando, o GitHub faz a mesma coisa que o Firebase, só que ao invés do `index.html` ele sempre redireciona para `404.html`. Se a gente der um jeito de redirecionar o `404` para o `index` e passar os parâmetros, estamos feitos, tudo funciona. Então, a gente tem que fazer duas coisas. Primeiro, escrever isso aqui no código da nossa //404.html//:
+
+<<code """html
+ <html>
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+      <script type="text/javascript">
+        // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+        var pathPrefix = false;
+        var l = window.location;
+        l.replace(
+            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          l.pathname.split('/').slice(0, 2 * pathPrefix).join('/') + '/?p=/' +
+          l.pathname.slice(1).split('/').slice(pathPrefix).join('/').replace(/&/g, '~and~') +
+          (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+        );
+      </script>
+    </head>
+    <body>
+    </body>
+  </html>
+""">>
+
+O código é simples mais genial. Se o usuário acessa `https://meu.pwa/pagina`, o GitHub renderiza o template de `404.html`. No próprio template, ele pega a própria url e transforma `https://meu.pwa/pagina` em `https://meu.pwa/?p=pagina`. Aí agora a história é outra. Estamos indo para `index.html`, que é uma página válida. Então lá, precisamos adicionar o seguinte código:
+
+<<code """js
+  // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+       (function(l) {
+             if (l.search) {
+               var q = {};
+             l.search.slice(1).split('&').forEach(function(v) {
+                 var a = v.split('=');
+               q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+             });
+             if (q.p !== undefined) {
+                 window.history.replaceState(null, null,
+                 l.pathname.slice(0, -1) + (q.p || '') +
+                 (q.q ? ('?' + q.q) : '') +
+                 l.hash
+               );
+             }
+           }
+       }(window.location))
+""">>
+
+Aqui termina o truque. Como esse problema de URLS só acontece quando estamos trabalhando diretamente com a //History API//, o nosso próprio App vai usar a //própria// History API, independente do Framework que você estiver usando. Aí é garantido que a página vai ser redirecionada para o conteúdo esperado.
+
+Aí é só correr pro abraço. Se você quisser ver um exemplo com Polymer funcionando, pode acessar o website web online do I/O Extended Pernambuco. Foi justamente por culpa dele que eu descobri como que isso acontece.
+
+Nada como ser cabeça dura ás vezes, né não?
