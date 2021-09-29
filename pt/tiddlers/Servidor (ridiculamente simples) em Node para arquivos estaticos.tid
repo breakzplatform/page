@@ -15,9 +15,7 @@ A vantagem disso é que //teoricamente// você só vai precisar fazer esse traba
 
 Se você está trabalhando só com um punhado de arquivos estáticos, com o //SHS// em uma linha tava o //localhost// aberto no navegador. Porém o SHS não é a coisa — digamos — menos bugada do mundo, e também não tem tantas opções assim pra customizar as própriedades do servidor (ou até tenha, eu que não sou de Python que não sei mexer)
 
-Pra manter tudo dentro de casa, existe o pacote //''http-server''// disponível lá no npm, como de costume:
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.npmjs.com/package/http-server" data-iframely-url="//cdn.iframe.ly/7sMmYBk?card=small"></a></div></div>
+Pra manter tudo dentro de casa, existe o pacote //''http-server''// disponível [[lá no npm|https://www.npmjs.com/package/http-server]], como de costume.
 
 Tem a mesma praticidade do SHS, e apesar de não vir direto com o sistema, eu imagino que a essa altura do campeonato você tenha o npm instalado.
 
