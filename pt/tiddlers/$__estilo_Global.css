@@ -397,6 +397,16 @@ font-weight: bold;
 font-family:'Iosevka Web',ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;
 }
 
+.share-post-claps applause-button.clapped.clap.clap-limit-exceeded div .shockwave {
+    background: #652585;
+}
+
+.share-post-claps applause-button.clapped.clap.clap-limit-exceeded div {
+    fill: #fff !important;
+    stroke: #fff !important;
+    color: #652585 !important;
+}
+
 .old-post {
 background-color:#FFFAF0;
 border:1px solid #ED8936;
