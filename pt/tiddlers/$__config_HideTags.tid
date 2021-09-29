@@ -2,4 +2,4 @@ tags:
 title: $:/config/HideTags
 type: text/vnd.tiddlywiki
 
-[[$:/tags/hide-comments]] [[$:/tags/MenuBar]] [[$:/tags/refurbished]]
+[[$:/tags/hide-comments]] [[$:/tags/refurbished]] [[$:/tags/duplicate]] [[$:/tags/MenuBar]]

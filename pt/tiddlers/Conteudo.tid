@@ -30,29 +30,29 @@ Ou se preferir, escolha uma das principais categorias:
 
 !! [[Newsletter|https://world.hey.com/joselito]] ''<i></i>''
 
-!! [[Desenvolvimento]]
+!! [[Desenvolvimento]] <$count filter="[tag[Desenvolvimento]]"/>
 <ul>
 <$list filter="[tag[Desenvolvimento]!tag[Notinhas]!sort[created]limit[5]]"> 
 <li><$link to={{!!title}}>{{!!title}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
 </$list>
 </ul>
 
-!! [[Produtividade]]
+!! [[Produtividade]] <$count filter="[tag[Produtividade]]"/>
 <ul>
 <$list filter="[tag[Produtividade]!tag[Notinhas]!sort[created]limit[5]]"> 
 <li><$link to={{!!title}}>{{!!title}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
 </$list>
 </ul>
 
-!! [[Artigos]]
+!! [[Artigos]] <$count filter="[tag[Artigos]]"/>
 <ul>
 <$list filter="[tag[Artigos]!tag[Notinhas]!sort[created]limit[5]]"> 
 <li><$link to={{!!title}}>{{!!title}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
 </$list>
 </ul>
 
-!! [[Projetos]]
+!! [[Projetos]] <$count filter="[tag[Projetos]]"/>
 <<list-links "[tag[Projetos]!sort[created]limit[5]]">>
 
-!! [[Palestras]]
+!! [[Palestras]] <$count filter="[tag[Palestras]]"/>
 <<list-links "[tag[Palestras]!sort[created]limit[5]]">>
