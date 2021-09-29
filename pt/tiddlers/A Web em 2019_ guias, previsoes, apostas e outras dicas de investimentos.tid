@@ -1,0 +1,85 @@
+tags: Desenvolvimento
+title: A Web em 2019: guias, previsões, apostas e outras dicas de investimentos
+type: text/vnd.tiddlywiki
+
+Chegamos ao último ano da década de 10. E nada como um começo de ano para nós estabelecermos algumas metas: perder peso, ter uma vida mais saudável, correr uma maratona, virar dev front-end… você sabe, o de sempre.
+
+Enquanto eu seria um péssimo consultor no tocante da maioria das resoluções citadas — ao menos por enquanto — tem uma que eu //talvez// saiba um pouquinho, que é isso de ser desenvolvedor web. Mas desde já, já adianto: esse post não tem como intenção em ser um guia de como ser uma pessoa desenvolvedora da web em nenhuma circustância. Principalmente pois existem alguns guias excelentes para tal, até um roadmap mastigadinho.
+
+A proposta aqui é fazer algo mais reflexivo e brincar de futurista, tentando prever o que nos aguarda em 2019. Eu espero que ano que vem a gente possa voltar aqui e dar risada, seja por estar tudo certo, seja por estar tudo errado; mas com a certeza de que a web evoluiu.
+
+----
+
+!! Frameworks serão cada vez menos importantes, e cada vez mais relevantes
+
+//Eu sei que ficou confuso, esses títulos são só pra chamar atenção.//
+
+Depois da pergunta //“Porque existe algo ao invés de nada?”,// a maior questão da atualidade é //“Qual framework de JS que eu devo aprender?” — //Felizmente, mais do que nunca, a resposta para essa pergunta é “tanto faz”. Nós estamos vivendo um momento do qual todos fazem as coisas de um jeito muito parecido, e não caberá ninguém além do próprio indivíduo a escolher o que funciona melhor para si.
+
+Se você quiser alguém bancando de profeta, diria o seguinte: React vai continuar a ser a Majestade e a opção Número 1 pra implementar alguma coisa. No entanto, Vue vai cada vez mais ser aquele que a gente vai olhar com mais carinho, e se não for algo crítico ou que precise de ir pra produção muito rápido, será a escolha. E não esqueça do Angular: ele ainda vai crescer bastante em “soluções corporativas”, como falam pessoas que usam o LinkedIn.
+
+Então, a importância individual de cada um deles não é realmente tão importante assim, porém a relevância do conjunto está cada vez maior. Bem ou mal, os frameworks são os que mais empurram a Web pra frente. A coisa está tão séria que o Google anunciou um fundo apenas para patrocinar frameworks.
+
+Sabe a “guerra” dos consoles? Vai ser tipo isso. Temos três grandes, vez por outra vai aparecer alguém pra fazer graça, mas no fim, tá todo mundo no mesmo barco escolhendo o que é mais divertido.
+
+//“E vocês ai na Stone, usam qual?”//: Todos, incluindo nenhum deles. Cada projeto é uma história e tem seus requisitos específicos, então cada time tem liberdade de escolha de qual tecnologia vai ser utilizada para o seu desenvolvimento.
+
+O importante é lembrar que uma coisa nunca muda: aprenda JavaScript.
+
+!! Conheça suas ferramentas
+
+Tá ai algo que vai ficar bem importante esse ano: usar (e principalmente saber usar) as ferramentas que estão “ao redor” do seu código. E por “ferramentas” pense em todas as possibilidades: desde a habilidade de entender o que diabos o Webpack está fazendo, passando por escrever scripts no NPM e até saber quais os melhores plugins do seu editor de texto.
+
+Sabe aquele mito que a gente toma como verdade de que quem programa em Vim é um deus da programação? Isso tem um fundo de verdade justamente nessa questão de conhecer a ferramenta. Como o Vim ''exige'' que você saiba como tudo funciona, automaticamente quem usa — em teoria — tem mais habilidade e conhece melhor a ferramenta que usa. Isso vai se tornar tão importante quanto saber escrever código.
+
+Mais uma das sugestões é desde já aprender Bash: ferramentas de linha de comando explodiram nos últimos tempos e isso só tende a aumentar — ainda bem! Temos inclusive workflows inteiros baseados em CLI, como o Next.js, o Nuxt.js, o famoso create-react-app e o Angular atualmente já funcionam assim por padrão.
+
+!! Será preciso ter estilo
+
+Uma guerra real que está divertida de fato de acompanhar é a que está acontecendo sobre a estilização: qual é o jeito certo de usar CSS em componentes? Usando CSS-HTML-JS, do jeito “clássico” com folhas de estilo e classes, ou JS-JS-JS, onde basicamente tudo é string escrita em JavaScript?
+
+Há argumentos para os dois lados e eu particularmente não tenho preferência pra um dos dois ainda. De um lado, a roda não é reinventada, do outro, a roda fica topzeira e soltando faísca.
+
+Na dúvida, vale a regra de sempre: aprenda CSS. Isso não vai mudar.
+
+!! A Web vai sair da sua caixinha
+
+WebAssembly vai pegar tração, mais do que você está imaginando agora — apesar de ainda ser em coisas isoladas. O futuro que o WebAssembly pretende trazer, com código de máquina rodando direto nos navegadores, está cada vez mais próximo.
+
+O futuro antigo, os Progressive Web Apps começam a compensar em deixar de ser futuro e virar presente. Ainda é nicho, mas com as novidades que o iOS vai trazer para ele esse ano (e acredite, trará) ficará mais popular que nunca. É hora de embarcar ou vai vai perder o bonde andando.
+
+Os aplicativos não vão a lugar nenhum, ainda. Mas se dá pra fazer algo que tem entrega instantânea pra todas as plataformas, porquê não?
+
+Lembrando sempre, crianças: aplicativos são atrelados a plataformas. Sites, não. Sites funcionam agora, funcionam no passado (um Windows XP com Firefox roda o WhatsApp Web, seu Froyo nem o WhatsApp atual roda) e funcionarão no futuro. Não é coincidência que todo mundo agora tem uma solução de Cloud pra hospedar as coisas lá, talkei?
+
+Outra coisa para começar a prestar atenção mais seriamente este ano são os Web Components. Tudo converge para um lugar, se você prestar atenção.
+
+!! Menos código, mais gente
+
+Tem uma expressão em inglês bonita pra isso: Soft Skills. É saber que seu colega, seu chefe e até mesmo você é um Humano. E aplicar isso no seu dia dia. E a parte boa é que isso é praticamente o mais fácil de se conseguir, dada a imensa quantidade de opções de coisas que você pode fazer em relação a isso.
+
+Você pode começar a se dedicar a Open Source, a ir em mais eventos, a estudar acessibilidade, a ver como aquele seu amigo metido a hacker usa o Linux dele. Sentir e entender o que o outro sente ajuda muito no processo de construção de qualquer coisa, inclusive de software.
+
+Quer um exemplo bem prático e nada genérico? Aqui na Stone uma vez ou outra fazemos o que chamamos de “Escuta”, que é acompanhar o dia-a-dia nosso serviço de atendimento ao consumidor. Ficamos lá escutando, anotando, colhendo feedback, discutindo ideias. Pessoas reais, dos dois lados, mostram com mais clareza quais problemas nós temos que atacar, que nenhum console no mundo ia ser capaz de avisar.
+
+----
+
+Agora, se me permitem um pouco de francês, quero prever certas obscenidades. Mas lembre que esse ano acontecerão absurdos como o Edge virar Chrome e rodar até em macOS. Então deixa eu sonhar um pouquinho:
+
+!! A Era do Flash vai voltar
+
+Calma. É a parte boa que vai voltar.
+
+Quem viveu a época do Flash lembra dela com nostalgia, apesar de ter que admitir — a contragosto — que vivemos num momento melhor na Web. É um fato. Mas tinha algo que o Flash permitia e que por muito tempo tivemos que abidicar: animações complexas, e porque não dizer, artes.
+
+Um grid de 12 colunas se tornou a base de virtualmente qualquer site que //existe// na internet. E, finalmente, depois de uns longos 10 anos, nós iremos romper com esse paradigma. Flexbox, CSS Grid, as animações com CSS, sprites com SVG, Emojis… Logo logo tudo vai ficar mais divertido, e já tem um monte de coisa por aí se você procurar direito.
+
+Estamos vivendo numa fase onde é bem pouco o que a web //não// consegue fazer. Tá na hora de aproveitar mais.
+
+----
+
+Nada melhor do que prever o futuro criando ele, não é? O mais legal é que aqui na Stone a gente efetivamente trabalha com praticamente tudo que foi falado aí em cima. Talvez menos a parte do Flash. Ainda.
+
+Se você tiver afim de fazer o futuro junto com a gente, tem uma porção de desafios disponíveis. Não tenha dúvidas, será um prazer ter você no time.
+
+No mais, nos vemos em 2020, e saberemos o quanto errado esse post foi.
