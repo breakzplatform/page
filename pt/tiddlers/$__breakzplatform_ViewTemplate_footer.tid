@@ -3,7 +3,7 @@ title: $:/breakzplatform/ViewTemplate/footer
 type: text/vnd.tiddlywiki
 
 \define twitter(name, link)
-<a href="https://twitter.com/share?text=“$name$”&url=$link$&via=breakzplatform" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"></path></svg></a>
+<a href="https://twitter.com/share?text=“$name$”&url=$link$&via=breakzplatform" target="_blank" rel="noopener noreferrer" title="Compartilhar no Twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"></path></svg></a>
 \end
 
 \define claps(name, link)
@@ -12,21 +12,21 @@ type: text/vnd.tiddlywiki
 
 
 \define telegram(name, link)
-<a href="https://telegram.me/share/url?url=$link$" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 136 113" xmlns="http://www.w3.org/2000/svg"><path d="M123.866 1.1351C123.866 1.1351 136.358 -3.7229 135.317 8.0751C134.97 12.9331 131.847 29.9361 129.418 48.3271L121.09 102.806C121.09 102.806 120.396 110.787 114.15 112.175C107.904 113.563 98.535 107.317 96.8 105.929C95.412 104.888 70.775 89.2731 62.1 81.6391C59.671 79.5571 56.895 75.3931 62.447 70.5351L98.882 35.8351C103.046 31.6711 107.21 21.9551 89.86 33.7531L41.28 66.7181C41.28 66.7181 35.728 70.1881 25.318 67.0651L2.76296 60.1251C2.76296 60.1251 -5.56504 54.9201 8.66196 49.7151C43.362 33.4061 86.043 16.7501 123.866 1.1351Z"></path></svg></a>
+<a href="https://telegram.me/share/url?url=$link$" target="_blank" rel="noopener noreferrer" title="Compartilhar no Telegram"><svg viewBox="0 0 136 113" xmlns="http://www.w3.org/2000/svg"><path d="M123.866 1.1351C123.866 1.1351 136.358 -3.7229 135.317 8.0751C134.97 12.9331 131.847 29.9361 129.418 48.3271L121.09 102.806C121.09 102.806 120.396 110.787 114.15 112.175C107.904 113.563 98.535 107.317 96.8 105.929C95.412 104.888 70.775 89.2731 62.1 81.6391C59.671 79.5571 56.895 75.3931 62.447 70.5351L98.882 35.8351C103.046 31.6711 107.21 21.9551 89.86 33.7531L41.28 66.7181C41.28 66.7181 35.728 70.1881 25.318 67.0651L2.76296 60.1251C2.76296 60.1251 -5.56504 54.9201 8.66196 49.7151C43.362 33.4061 86.043 16.7501 123.866 1.1351Z"></path></svg></a>
 \end
 
 \define zap(name, link)
-<a href="https://api.whatsapp.com/send?phone=&text=$link$" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><g><path d="M847.1,150.7C755,58.4,632.4,7.6,501.9,7.6c-268.9,0-487.8,218.9-487.8,488c0,86,22.5,170.1,65.2,243.9L10,992.4l258.7-67.9c71.3,38.8,151.6,59.5,233.1,59.5h0.2l0,0c268.9,0,488-218.9,488-488C990,365.6,939.2,243.1,847.1,150.7L847.1,150.7z M502,901.6L502,901.6c-72.9,0-144.3-19.6-206.6-56.6l-14.8-8.9l-153.5,40.2l41-149.6l-9.6-15.4c-40.8-64.4-62.1-139.1-62.1-215.8c0-223.7,182-405.7,405.9-405.7c108.3,0,210.3,42.3,286.8,118.9c76.6,76.8,118.7,178.5,118.7,287C907.5,719.6,725.6,901.6,502,901.6L502,901.6z M724.4,597.7c-12.1-6.2-72.1-35.6-83.3-39.6c-11.1-4.1-19.3-6.2-27.5,6.2c-8.1,12.1-31.5,39.6-38.7,47.9c-7.1,8.1-14.2,9.2-26.3,3.1c-12.1-6.2-51.6-19-98.1-60.6c-36.2-32.3-60.8-72.3-67.9-84.5c-7.1-12.1-0.8-18.8,5.4-24.8c5.6-5.4,12.1-14.2,18.3-21.4c6.2-7.1,8.1-12.1,12.1-20.4c4.1-8.1,2.1-15.2-1-21.4c-3.1-6.2-27.5-66.2-37.5-90.6c-9.8-23.9-20-20.6-27.5-21c-7.1-0.4-15.2-0.4-23.3-0.4s-21.4,3.1-32.5,15.2c-11.1,12.1-42.7,41.7-42.7,101.7c0,60,43.6,117.9,49.8,126.2c6.2,8.1,86,131.4,208.3,184.1c29.1,12.5,51.8,20,69.4,25.8c29.2,9.2,55.8,7.9,76.8,4.8c23.5-3.4,72.1-29.4,82.4-57.9c10.2-28.5,10.2-52.9,7.1-57.9C744.8,606.9,736.8,603.9,724.4,597.7L724.4,597.7z"></path></g></svg></a>
+<a href="https://api.whatsapp.com/send?phone=&text=$link$" target="_blank" rel="noopener noreferrer" title="Compartilhar no WhatsApp"><svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><g><path d="M847.1,150.7C755,58.4,632.4,7.6,501.9,7.6c-268.9,0-487.8,218.9-487.8,488c0,86,22.5,170.1,65.2,243.9L10,992.4l258.7-67.9c71.3,38.8,151.6,59.5,233.1,59.5h0.2l0,0c268.9,0,488-218.9,488-488C990,365.6,939.2,243.1,847.1,150.7L847.1,150.7z M502,901.6L502,901.6c-72.9,0-144.3-19.6-206.6-56.6l-14.8-8.9l-153.5,40.2l41-149.6l-9.6-15.4c-40.8-64.4-62.1-139.1-62.1-215.8c0-223.7,182-405.7,405.9-405.7c108.3,0,210.3,42.3,286.8,118.9c76.6,76.8,118.7,178.5,118.7,287C907.5,719.6,725.6,901.6,502,901.6L502,901.6z M724.4,597.7c-12.1-6.2-72.1-35.6-83.3-39.6c-11.1-4.1-19.3-6.2-27.5,6.2c-8.1,12.1-31.5,39.6-38.7,47.9c-7.1,8.1-14.2,9.2-26.3,3.1c-12.1-6.2-51.6-19-98.1-60.6c-36.2-32.3-60.8-72.3-67.9-84.5c-7.1-12.1-0.8-18.8,5.4-24.8c5.6-5.4,12.1-14.2,18.3-21.4c6.2-7.1,8.1-12.1,12.1-20.4c4.1-8.1,2.1-15.2-1-21.4c-3.1-6.2-27.5-66.2-37.5-90.6c-9.8-23.9-20-20.6-27.5-21c-7.1-0.4-15.2-0.4-23.3-0.4s-21.4,3.1-32.5,15.2c-11.1,12.1-42.7,41.7-42.7,101.7c0,60,43.6,117.9,49.8,126.2c6.2,8.1,86,131.4,208.3,184.1c29.1,12.5,51.8,20,69.4,25.8c29.2,9.2,55.8,7.9,76.8,4.8c23.5-3.4,72.1-29.4,82.4-57.9c10.2-28.5,10.2-52.9,7.1-57.9C744.8,606.9,736.8,603.9,724.4,597.7L724.4,597.7z"></path></g></svg></a>
 \end
 
 \define pocket(name, link)
-<a href="https://getpocket.com/save?url=$link$&title=$name$" target="_blank" rel="noopener noreferrer">
+<a href="https://getpocket.com/save?url=$link$&title=$name$" target="_blank" rel="noopener noreferrer" title="Salvar no Pocket">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="75.247 261.708 445.529 401.074"><path d="M114.219 261.708c-24.275 1.582-38.972 15.44-38.972 40.088v147.611c0 119.893 119.242 214.114 222.393 213.37 115.986-.837 223.137-98.779 223.137-213.37V301.796c0-24.741-15.626-38.693-40.088-40.088h-366.47zm93.943 120.079L297.64 466.8l89.571-85.013c40.088-16.835 57.574 28.927 41.111 42.321L311.685 535.443c-3.813 3.628-24.183 3.628-27.996 0L167.051 424.107c-15.72-14.789 4.743-61.295 41.111-42.32z"/></svg>
 </a>
 \end
 
 \define pin(name, link)
-<a href="https://pinboard.in/popup_login/?url=$link$&title=$name$" target="_blank" rel="noopener noreferrer">
+<a href="https://pinboard.in/popup_login/?url=$link$&title=$name$" target="_blank" rel="noopener noreferrer" title="Salvar no Pinboard">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
 <g><g transform="translate(0.000000,641.000000) scale(0.100000,-0.100000)"><path d="M1641.9,4731.7C790.8,3860.6,96.9,3146.7,100,3143.6c1.5-3.1,316.1,12.3,696.9,32.4c561.2,30.8,696.9,33.9,712.3,18.5c9.3-10.8,553.5-683,1208.8-1492.5C3374.9,892.5,3934.6,200.2,3962.4,164.7l52.4-64.7l-144.9-821.8c-80.2-451.7-144.9-823.3-143.4-824.9c4.6-4.6,505.7,501.1,1250.5,1262.8l598.3,613.7l117.2-106.4c155.7-138.8,4130.6-3651.1,4180-3692.8c50.9-43.2,240.5-257.5-1888.8,2133.9C6967.5-194.5,6127.2,749.1,6116.4,763c-18.5,20,98.7,151.1,934.4,1039.2c525.8,558.2,952.9,1017.6,951.3,1020.7c-3.1,3.1-416.3-95.6-919-218.9l-912.8-225.1l-66.3,58.6c-35.5,32.4-704.6,647.6-1486.4,1367.6l-1421.6,1309l-3.1,599.8l-4.6,599.8L1641.9,4731.7z"/></g></g>
 </svg>
@@ -34,7 +34,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define in(name, link)
-<a href="http://www.linkedin.com/shareArticle?mini=true&url=$link$&title=$name$" target="_blank" rel="noopener noreferrer">
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=$link$&title=$name$" target="_blank" rel="noopener noreferrer" title="Compartilhar no Linkedin">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 260.366 260.366" style="enable-background:new 0 0 260.366 260.366;" xml:space="preserve">
 <g>
@@ -51,15 +51,15 @@ type: text/vnd.tiddlywiki
 \end
 
 \define email(name, link)
-<a href="mailto:?subject=Leia%3A%20$name$&body=$link$" target="_blank" rel="noopener noreferrer">
+<a href="mailto:?subject=Leia%3A%20$name$&body=$link$" target="_blank" rel="noopener noreferrer" title="Compartilhar por E-mail">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491.52 491.52"><g><g><polygon points="0,96.693 0,394.808 194.5,245.771"></polygon></g></g><g><g><polygon points="11.998,85.916 245.722,265.06 479.449,85.916"></polygon></g></g><g><g><polygon points="296.946,245.77 491.52,394.864 491.52,96.639"></polygon></g></g><g><g><path d="M283.933,255.777l-33.391,25.561c-1.421,1.087-3.12,1.633-4.819,1.633c-1.7,0-3.399-0.546-4.82-1.633l-33.386-25.561 L11.987,405.604h467.474L283.933,255.777z"></path></g></g></svg>
 </a>
 \end
 
 
 \define rss(link)
-<a href="$link$" target="_blank" rel="noopener noreferrer">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<a href="$link$" target="_blank" rel="noopener noreferrer" title="Inscrever-se via RSS">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 24.332 24.332" style="enable-background:new 0 0 24.332 24.332;" xml:space="preserve">
 <g>
 	<g id="c40_rss">
@@ -100,7 +100,7 @@ type: text/vnd.tiddlywiki
 
 		<$if value=<<navigator-share-detect>> matches="true">
 		<li>
-			<a href="javascript:void(0);" data-share-link={{!!share-link}}>
+			<a href="javascript:void(0);" title="Compartilhe" data-share-link={{!!share-link}}>
 				{{$:/breakzplatform/icons/share}}
 			</a>
 			<<share-event-listener>>
@@ -128,6 +128,6 @@ type: text/vnd.tiddlywiki
 </div>
 </$if>
 <$if value={{!!ad}}>
-<div style="margin: 28px -48px -48px; width: calc(100% + 96px);">
-<a href="https://amzn.to/2Yca559" target="_blank" rel="noopener noreferrer"><img src="https://static.joseli.to/joseli.to/promo/XCM_Manual_2148x588_1221939_1156923_version_q_b591616a_afc4_43a8_a4b2_e691df34cc31_jpg.jpg" width="100%" style="margin: 0 0 -5px;" /></a></div>
+<div class="promo-amazon">
+<a href="https://amzn.to/2Yca559" target="_blank" rel="noopener noreferrer" title="Amazon Prime: Apenas R$9,90 por mês (Patrocinado)"><img src="https://static.joseli.to/joseli.to/promo/XCM_Manual_2148x588_1221939_1156923_version_q_b591616a_afc4_43a8_a4b2_e691df34cc31_jpg.jpg" width="100%" alt="Propraganda Amazon" /></a></div>
 </$if>

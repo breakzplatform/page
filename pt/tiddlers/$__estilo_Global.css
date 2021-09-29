@@ -458,7 +458,18 @@ div[data-tiddler-title="Vídeos"] .tc-thumbnail-caption {
     padding: 2px;
 }
 
+.promo-amazon {
+	margin: 28px -48px -48px;
+	width: calc(100% + 96px);
+}
 
+.krystal-tiddler__frame--hide .promo-amazon {
+	display: none;
+}
+
+.promo-amazon img {
+	margin: 0 0 -5px;
+}
 
 @media screen and (max-width: 768px) {
 	header button.tc-tiddlylink {
@@ -468,5 +479,14 @@ div[data-tiddler-title="Vídeos"] .tc-thumbnail-caption {
 
 	.tc-tiddler-controls button:not([title="Fechar este Tiddler"]) {
 	display:none;
+	}
+	
+	.promo-amazon {
+		margin: 0;
+		width: 100%;
+	}
+
+	.promo-amazon img {
+		margin: 0;
 	}
 }
