@@ -4,8 +4,8 @@ tags: Projetos 2009
 title: Robôs do Migre.me
 type: text/vnd.tiddlywiki
 
-<div style="position: relative; padding-top: 56.25%;"><iframe src="https://iframe.mediadelivery.net/embed/9924/d2bcd6dc-0283-4cee-be81-dc4863863d74?autoplay=false&preload=false" loading="lazy" style="border: none; position: absolute; top: 0; height: 100%; width: 100%;" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe></div>
+<div style="position: relative; padding-top: 67.9245283018868%;"><iframe src="https://iframe.mediadelivery.net/embed/9924/d2bcd6dc-0283-4cee-be81-dc4863863d74?autoplay=false&preload=false" loading="lazy" style="border: none; position: absolute; top: 0; height: 100%; width: 100%;" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe></div>
 
-Muito, mas muito, antes de virar moda eu já fiz chatbots. O ''Robôs do Migre.me'' era um chatbot que funcionava pelo ''MSN'', onde você enviava URLs e ele respondia pra você a mesma encurtada. Em 2009 com o Twitter ainda em sua infância, com 140 caracteres e sem encurtar automaticamente as URLs, o Migre.me foi um serviço extremamente popular no Brasil.
+Muito, mas muito, antes de virar moda eu já fiz chatbots. O ''Robôs do Migre.me'' era um chatbot que funcionava pelo ''MSN'', onde você enviava URLs e ele respondia pra você a mesma encurtada. Em 2009 com o Twitter ainda em sua infância, com 140 caracteres e sem encurtar automaticamente as URLs, o [[Migre.me|https://www.techtudo.com.br/artigos/noticia/2011/03/migreme-o-sucesso-do-maior-encurtador-de-enderecos-brasileiro.html]] foi um serviço extremamente popular no Brasil.
 
 Foi a primeira vez que eu usei uma API pra alguma coisa, eu sabia algo de frontend mas absolutamente nada de backend. Lembro que esse protótipo só saiu justamente porque um dos endpoints da API do Migre.me retornava apenas o texto puro com a url encurtada, então eu não tinha que modelar nada ou ter um servidor meu no meio do caminho. O próprio bot podia ir buscar lá direto.
