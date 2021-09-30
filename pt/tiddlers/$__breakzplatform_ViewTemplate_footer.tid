@@ -129,5 +129,5 @@ type: text/vnd.tiddlywiki
 </$if>
 <$if value={{!!ad}}>
 <div class="promo-amazon">
-<a href="https://amzn.to/2Yca559" target="_blank" rel="noopener noreferrer" title="Amazon Prime: Apenas R$9,90 por mês (Patrocinado)"><img src="https://static.joseli.to/joseli.to/promo/XCM_Manual_2148x588_1221939_1156923_version_q_b591616a_afc4_43a8_a4b2_e691df34cc31_jpg.jpg" width="100%" alt="Propraganda Amazon" /></a></div>
+<a href="https://amzn.to/2Yca559" target="_blank" rel="noopener noreferrer" title="Amazon Prime: Apenas R$9,90 por mês (Patrocinado)"><img lazy="true" src="https://static.joseli.to/joseli.to/promo/XCM_Manual_2148x588_1221939_1156923_version_q_b591616a_afc4_43a8_a4b2_e691df34cc31_jpg.jpg" width="100%" height="100%" alt="Propraganda Amazon" /></a></div>
 </$if>

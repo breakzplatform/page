@@ -3,4 +3,4 @@ modified: 20210828232243746
 title: $:/SiteTitle
 type: text/vnd.tiddlywiki
 
-[img width=48 height=48 class="eu" alt="Avatar Joselito" [https://next.joseli.to/pt/icon.webp]][[Joseli.to|Index]]
+<img lazy="true" src="https://next.joseli.to/pt/icon.webp" class="eu" width="48" height="48" alt="Avatar Joselito">[[Joseli.to|Index]]
