@@ -407,6 +407,10 @@ font-family:'Iosevka Web',ui-monospace,SFMono-Regular,Consolas,'Liberation Mono'
     color: #652585 !important;
 }
 
+.share-post-claps applause-button.clapped.clap.clap-limit-exceeded svg {
+    opacity: 1;
+}
+
 .old-post {
 background-color:#FFFAF0;
 border:1px solid #ED8936;
