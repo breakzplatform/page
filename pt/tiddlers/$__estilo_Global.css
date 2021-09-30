@@ -232,7 +232,7 @@ border:none;
 .tc-site-title {
 align-items:center;
 display:flex;
-font-family:monospace;
+font-family:'Iosevka Web',ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;
 justify-content:center;
 }
 
