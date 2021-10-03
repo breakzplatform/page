@@ -1,8 +1,8 @@
 tags: Meta
-title: Tags
+title: Anuários
 type: text/vnd.tiddlywiki
 
-<$list filter="[tags[]!is[system]sort[title]!tag[Index]!prefix[20]] -⭐">
+<$list filter="[tags[]!is[system]sort[title]!tag[Index]prefix[20]] -⭐">
 <h2><<currentTiddler>>
 (<$count
 filter="[all[current]tagging[]] +[sum[]]"/>)</h2>
