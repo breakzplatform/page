@@ -96,7 +96,18 @@ const newsletterFeedItems = [];
     const jsonContentMod = [];
 
     jsonContent.split('\n').forEach(line => {
-      if (line.includes('"title":"$:/Splash"') || line.includes('"title":"$:/sitemap"') || line.includes('"title":"$:/rss/Notinhas"') || line.includes('"title":"$:/rss/Artigos"') || line.includes('"title":"$:/Import"') || line.includes('"author":"Flibbles"') || line.includes('"author":"Scott Kingery"') || line.includes('"title":"$:/plugins/tiddlywiki/codemirror"') || line.includes('"title":"$:/config/codemirror/theme"') || line.includes('"title":"$:/plugins/adithyab/cmplus"') || line.includes('"title":"$:/config/codemirror/styleActiveLine"') || line.includes('"title":"$:/config/codemirror/lineNumbers"')) {
+      if (line.includes('"title":"$:/Splash"')
+        || line.includes('"title":"$:/sitemap"')
+        || line.includes('"title":"$:/rss/Notinhas"')
+        || line.includes('"title":"$:/rss/Artigos"')
+        || line.includes('"title":"$:/Import"')
+        || line.includes('"author":"Flibbles"')
+        || line.includes('"author":"Scott Kingery"')
+        || line.includes('"title":"$:/plugins/tiddlywiki/codemirror"')
+        || line.includes('"title":"$:/config/codemirror/theme"')
+        || line.includes('"title":"$:/plugins/adithyab/cmplus"')
+        || line.includes('"title":"$:/config/codemirror/styleActiveLine"')
+        || line.includes('"title":"$:/config/codemirror/lineNumbers"')) {
         // removes unecessary tiddlers
         console.log('Removed');
       } else if (line.includes('"title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel"')) {

@@ -15,7 +15,10 @@ const path = require('path');
     const jsonContentMod = [];
 
     jsonContent.split('\n').forEach(line => {
-      if (line.includes('"title":"$:/plugins/rmnvsl/krystal"') || line.includes('"title":"$:/plugins/rmnvsl/krystal/plugin.js"') || line.includes('"title":"$:/plugins/rmnvsl/krystal/headertools"') || line.includes('"title":"$:/plugins/rmnvsl/krystal/images/maximize-tiddler"')) {
+      if (line.includes('"title":"$:/plugins/rmnvsl/krystal"')
+        || line.includes('"title":"$:/plugins/rmnvsl/krystal/plugin.js"')
+        || line.includes('"title":"$:/plugins/rmnvsl/krystal/headertools"')
+        || line.includes('"title":"$:/plugins/rmnvsl/krystal/images/maximize-tiddler"')) {
         // removes unecessary tiddlers
         console.log('Removed');
       } else if (line.includes('"title":"$:/SiteTitle"')) {
