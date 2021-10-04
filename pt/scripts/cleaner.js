@@ -77,6 +77,7 @@ const newsletterFeedItems = [];
     <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="assets/favicon-128.png" sizes="128x128" />
     <meta name="application-name" content="Joseli.to"/>
+    <meta name="googlebot" content="noindex">
     <title>Joseli.to — Uma página pessoal</title>
     <meta name="description" content="Este site é um site igual a todos os outros sites. É um site diferente dos outros sites. É o meu cantinho na internet. O meu site. Leia sobre desenvolvimento web, produtividade e artigos políticos com praticamente nenhum embasamento." />
     <meta property="og:description" content="Este site é um site igual a todos os outros sites. É um site diferente dos outros sites. É o meu cantinho na internet. O meu site. Leia sobre desenvolvimento web, produtividade e artigos políticos com praticamente nenhum embasamento." />
