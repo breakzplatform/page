@@ -113,7 +113,7 @@ display:list-item;
 }
 
 .hljs {
-background:#fff;
+background:#fcfcfc;
 color:#24292e;
 font-family:'Iosevka Web';
 }
@@ -334,7 +334,8 @@ font-family:'Iosevka Web',monospace;
 font-weight:700;
 margin:0 0 .5rem;
 text-transform:uppercase;
-background:#fff;
+color:#652585;
+background:#fcfcfc;
 }
 
 figure {
