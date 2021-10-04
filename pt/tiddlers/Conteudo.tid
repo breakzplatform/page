@@ -55,4 +55,8 @@ Ou se preferir, escolha uma das principais categorias:
 <<list-links "[tag[Projetos]!sort[created]limit[5]]">>
 
 !! [[Palestras]] <$count filter="[tag[Palestras]]"/>
-<<list-links "[tag[Palestras]!sort[created]limit[5]]">>
+<ul>
+<$list filter="[tag[Palestras]!sort[created]limit[5]]"> 
+<li><$link to={{!!title}}>{{!!caption}}</$link> <span class="content-list-date lowercase">{{!!year}}</span></li>
+</$list>
+</ul>

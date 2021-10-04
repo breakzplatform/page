@@ -4,10 +4,18 @@ tags: $:/tags/MenuBar Index Meta
 title: Index
 type: text/vnd.tiddlywiki
 
-Todo o conteúdo deste site, organizado em ordem alfabética.
+Todo<<fnote "Quase todo. Há páginas acessíveis apenas por links internos de outras páginas.">> o conteúdo deste site, organizado alfabeticamente<<fnote "Algumas páginas, como as [[palestras|Palestras]], são ordenadas pelo título do evento e não pelo valor da etiqueta na lista. Então, podem parecer fora de ordem, mas juro que estão perfeitamente ordenadas.">>.
 
-Se preferir, você também pode navegar via [[tags|Tags]].
+Se preferir, você também pode navegar via [[tags|Tags]] ou [[por ano|Anuários]].
 
 <div class="tc-table-of-contents">
 <<toc 'Index' '!tag[$:/tags/duplicate]sort[title]'>>
 </div>
+
+---
+
+<<showfnotes title:" ">>
+
+---
+
+{{$:/Footer}}

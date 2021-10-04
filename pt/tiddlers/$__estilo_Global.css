@@ -323,7 +323,8 @@ margin-bottom:1rem;
 }
 
 .tc-tagged-Artigos hr,
-.tc-tagged-Desenvolvimento hr{
+.tc-tagged-Desenvolvimento hr, 
+.tc-tagged-Index hr {
 border-top:1px solid #f4f4f4;
 margin:0 auto;
 width:80%;
@@ -434,7 +435,7 @@ max-width:0;
 }
 
 .refnotes-tooltip:hover .refnotes-tooltiptext {
-max-width:20vw;
+max-width:275px;
 }
 
 button.tc-tag-label,span.tc-tag-label {
@@ -484,6 +485,10 @@ div[data-tiddler-title="Vídeos"] .tc-thumbnail-caption {
 
 .promo-amazon img {
 	margin: 0 0 -5px;
+}
+
+.tc-body .fslightbox-container {
+    z-index: 99999999;
 }
 
 @media screen and (max-width: 768px) {
