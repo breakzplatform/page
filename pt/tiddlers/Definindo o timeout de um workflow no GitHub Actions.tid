@@ -7,7 +7,7 @@ Tenho utilizado bastante o GitHub Actions para algumas automações, pela facili
 
 Mas uma coisa que me quebrou as pernas que eu não tinha parado pra pensar é que, em determinados casos, o workflow entra num estado de suspensão por alguma falha, mas não interrompe a execução sua execução, rodando indefinidamente até o seu timeout padrão, que é nada mais nada menos que ''6 horas'', ou 360 minutos.
 
-No plano gratuito do GitHub, você tem direito a 2000 minutos por mês, ou seja, se você vacilar (<a data-fslightbox="gallery" href="https://static.joseli.to/joseli.to/articles/WindowTop_OQqbC2l9yQ.png">feito eu</a>) e deixar rolar uns quatro ou cinco workflows quebrados, já era seu tempo.
+No plano gratuito do GitHub, você tem direito a 2000 minutos por mês, ou seja, se você vacilar (<a data-fslightbox="gallery" href="https://static.joseli.to/joseli.to/articles/WindowTop_OQqbC2l9yQ.png" target="_blank">feito eu</a>) e deixar rolar uns quatro ou cinco workflows quebrados, já era seu tempo.
 
 Felizmente, [[a solução é bem simples|https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idtimeout-minutes]]. Lá no seu .yml, logo no início de cada //job//, é só informar quantos minutos de timeout ele tem, por exemplo:
 

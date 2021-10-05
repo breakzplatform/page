@@ -1,0 +1,92 @@
+created: 20160929040001001
+tags: Desenvolvimento JavaScript Firebase 2016
+title: Regras de negócio no Firebase (ou quase)
+type: text/vnd.tiddlywiki
+
+!!! //Porque ele é mais do que um Banco de Dados que atualiza sozinho.//
+
+[img alt="Fotografia de dois homens de costas com um colete onde se lê 'Security'" [https://static.joseli.to/joseli.to/articles/1_mSfaQfUwDFCFyKPvFYEHOw.jpeg]]
+
+O ''Firebase'' é poderoso e acho que todo mundo hoje em dia está de acordo com isso. A versão 3.0 mostrou que não tá aí de brincadeira e já tem uma galera topster usando em produção.
+
+Mas se tem uma coisa confusa sobre o Firebase é sobre como a sua segurança e regras funcionam. Quem tá acostumado com um CRUD clássico, onde ele escreve as regras e validações antes daquele conteúdo que o usuário criou ir pra o banco de dados.
+
+Alguns acham que a validação e implementação de regras de segurança devem ser do lado do //''frontend''//. Mais absurdo que isso, apenas aqueles que acham que o ''Firebase'' não faz qualquer verificação, e qualquer um que conseguir o conjunto de chaves vai pintar e bordar com seu //backend//.
+
+Trago boas novas. É compreensível a dúvida já que praticamente todo conteúdo que existe sobre ''Firebase'' é demonstrando como fazer //get// e //set// de variável, e mostrando como é fofinho mudando os valores em tempo real. Quantas vezes eu não ouvi que o Firebase é top pra fazer um ''Dashboardzinho'', mas pra projeto “//de verdade//” precisa de banco de dados “//de verdade//”. Parece até um eleitor do Trump falando (ou talvez do Dória).
+
+Vem conhecer o ''Firebase Rules.''
+
+!! É tudo JavaScript mesmo
+
+O Firebase Rules se utiliza de uma sintaxe própria para descrever as regras. Tal qual o próprio banco de dados, ele é um arquivo JSON enorme, onde usamos determinadas variáveis na estrutura de dados.
+
+No seu console, vá em ''Database'' no menu lateral e clique na aba ''Rules''. Logo quando você cria um projeto no Firebase, ele vai vir assim:
+
+<<code """json
+ {
+   "rules": {
+		".read": "auth != null",
+		".write": "auth != null"
+   }
+ }
+""">>
+
+//“rules”// é nosso objeto raiz, equivalente ao objeto raiz do banco. Tudo que estiver abaixo dele em hierarquia vai ser correspondido ao objeto no banco do Firebase.
+
+Além disso, repare nas primeiras palavras reservadas que temos: //“.read”// e //“.write”//. É isso mesmo que você tá pensando: //.read// define as regras de leitura e //.write// define as regras de escrita. Perceba também que a informação recebida sempre é uma ''expressão que retorna um booleano''.
+
+Ou seja, toda vez que alguma operação for realizada no banco de dados, o Firebase vai lá nas Rules ver quais são as regras aplicadas a aquele objeto, rodar a verificação e ver se ela passa ou não.<blockquote>Ok. Top. Mas como ele sabe quem foi que fez essa operação pra saber se ela vai ser válida?</blockquote>Excelente pergunta. O código acima basicamente está dizendo que para ler e escrever, o usuário precisa estar autenticado. //“auth”// é mais uma palavra reservada do Firebase, sendo esta uma representação do objeto de autenticação do usuário que está fazendo determinada requisição. Se //auth// não é null, então isso significa que o usuário está logado.
+
+''E se eu quiser que todo mundo tenha acesso?''
+
+Fácil. É só fazer algo mais ou menos assim:
+
+<<code """json
+ {
+    "rules": {
+      ".read": "auth != null",
+      ".write": "auth != null",
+      "public": {
+            ".read": true,
+          ".write": true
+      }
+    }
+  }
+""">>
+
+Como sempre é retornado um valor booleano, o que estamos querendo dizer acima é que, o que está dentro do objeto “public” é acessível para leitura e escrita para qualquer pessoa que esteja acessando sua aplicação. Isso é maravilhoso e terrível se você souber (ou não) o que está fazendo.
+
+!! Mais que autenticação
+
+Usamos o //auth// como exemplo geral para verificar a segurança das coisas. Mas há outras formas de verificar sem utiliza-lo (ou utilizando ele em conjunto).
+
+Por exemplo, você quer escrever um dado uma vez, e apenas uma vez, no banco. Ele pode até ser apagado, mas não pode ser sobrescrito. É só fazer algo assim:
+
+```
+ ".write": "!data.exists() || !newData.exists()"
+```
+
+Aqui conhecemos mais duas palavras reservadas: //data// e //newData//. O //data// representa o objeto que armazena o valor atual do nó. De maneira análoga, //newData// serve para representar o valor futuro do nó, caso a operação realmente se concretize, passando na validação.
+
+!! Valide. Eu validaria.
+
+Por fim, mas não menos importante, temos o //“.validate”//, que funciona de forma parecida tal qual nossos conhecidos //“.read”// e //“.write”//. Como você bem adivinhou, ele serve para verificar se o conteúdo é valido conforme as suas regras.
+
+Se você tá fazendo seu próprio Twitter e quer ter certeza que o usuário não vai digitar mais de 140 caracteres, faça isso aqui:
+
+```
+ ".validate": "newData.val().length <= 140"
+```
+
+Quer validar se o usuário tá mandando um número, por exemplo? Mole.
+
+```
+ ".validate": "newData.isNumber()"
+```
+
+!! Está bom por hoje
+
+Espero que você tenha entendido o básico do básico de segurança e validação do ''Firebase''. Se você quer que eu faça uma versão mais avançada, aperta no coraçãozinho aqui no ''Medium'' e compartilha com o pessoal. Aí eu sei o conteúdo é legal e que vocês querem saber mais sobre (:
+
+Hora de acabar com esse <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=Jzl_nrTkfIM" target="_blank">medo bobo</a> de usar o Firebase.
