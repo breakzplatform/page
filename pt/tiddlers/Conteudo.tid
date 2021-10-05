@@ -57,6 +57,6 @@ Ou se preferir, escolha uma das principais categorias:
 !! [[Palestras]] <$count filter="[tag[Palestras]]"/>
 <ul>
 <$list filter="[tag[Palestras]!sort[created]limit[5]]"> 
-<li><$link to={{!!title}}>{{!!caption}}</$link> <span class="content-list-date lowercase">{{!!year}}</span></li>
+<li><$link to={{!!title}}>{{!!caption}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="YYYY"/></span></li>
 </$list>
 </ul>

@@ -4,6 +4,5 @@ just-date: true
 tags: 2016 Recife Palestras
 title: DevFest Belo Horizonte 2017
 type: text/vnd.tiddlywiki
-year: 2017
 
-<$macrocall $name="tabs-talks" tabsList="[[Vídeo: Progressive Web Apps: o estado atual]] [[Slides: Progressive Web Apps: o estado atual]]" default="Vídeo: Progressive Web Apps: um guia para não precisar de toalha" />
+<$macrocall $name="tabs-talks" tabsList="[[Vídeo: Progressive Web Apps: o estado atual]] [[Slides: Progressive Web Apps: o estado atual]]" default="Vídeo: Progressive Web Apps: o estado atual" />
