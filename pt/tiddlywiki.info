@@ -45,6 +45,7 @@
 			"--rendertiddler","$:/sitemap","sitemap.xml","text/plain",
 			"--rendertiddler","$:/rss/Notinhas","feed/notinhas.atom","text/plain",
 			"--rendertiddler","$:/rss/Artigos","feed/artigos.atom","text/plain",
-			"--rendertiddler","$:/rss/Desenvolvimento","feed/desenvolvimento.atom","text/plain"]
+			"--rendertiddler","$:/rss/Desenvolvimento","feed/desenvolvimento.atom","text/plain",
+			"--rendertiddler","$:/rss/Notinhas!Desenvolvimento!Artigos","feed/notinhas-.atom","text/plain"]
     }
 }

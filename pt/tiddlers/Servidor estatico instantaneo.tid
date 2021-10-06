@@ -4,7 +4,7 @@ tags: Notinhas 2021 Desenvolvimento
 title: Servidor estático instantâneo
 type: text/vnd.tiddlywiki
 
-Existe um post meu de alguns anos falando sobre levantar um servidor HTTP com um comando usando Node. Já era simples, mas felizmente vivemos no futuro. Se você tem NPM instalado (com toda certeza tem) basta entrar na pasta que você quer servir e rodar:
+Existe [[um post meu|Servidor (ridiculamente simples) em Node para arquivos estáticos]] de alguns anos falando sobre levantar um servidor HTTP com um comando usando Node. Já era simples, mas felizmente vivemos no futuro. Se você tem NPM instalado (com toda certeza tem) basta entrar na pasta que você quer servir e rodar:
 
 `npx serve`
 

@@ -81,10 +81,11 @@ const newsletterFeedItems = [];
     <title>Joseli.to — Uma página pessoal</title>
     <meta name="description" content="Este site é um site igual a todos os outros sites. É um site diferente dos outros sites. É o meu cantinho na internet. O meu site. Leia sobre desenvolvimento web, produtividade e artigos políticos com praticamente nenhum embasamento." />
     <meta property="og:description" content="Este site é um site igual a todos os outros sites. É um site diferente dos outros sites. É o meu cantinho na internet. O meu site. Leia sobre desenvolvimento web, produtividade e artigos políticos com praticamente nenhum embasamento." />
-    <link rel="alternate" type="application/atom+xml" title="Joseli.to — Newsletter" href="https://world.hey.com/joselito/feed.atom" />
-    <link rel="alternate" type="application/atom+xml" title="Joseli.to — Notinhas" href="feed/notinhas.atom" />
-    <link rel="alternate" type="application/atom+xml" title="Joseli.to — Artigos" href="feed/artigos.atom" />
-    <link rel="alternate" type="application/atom+xml" title="Joseli.to — Desenvolvimento" href="feed/desenvolvimento.atom" />
+    <link rel="alternate" type="application/atom+xml" title="Joseli.to — Tudo" href="https://feeds.feedburner.com/joselito_pt" />
+    <link rel="alternate" type="application/atom+xml" title="Joseli.to — Notinhas" href="https://feeds.feedburner.com/joselito_notinhas" />
+    <link rel="alternate" type="application/atom+xml" title="Joseli.to — Newsletter" href="https://feeds.feedburner.com/joselito_newsletter" />
+    <link rel="alternate" type="application/atom+xml" title="Joseli.to — Artigos" href="https://feeds.feedburner.com/joselito_artigos" />
+    <link rel="alternate" type="application/atom+xml" title="Joseli.to — Desenvolvimento" href="https://feeds.feedburner.com/joselito_desenvolvimento" />
     <link href="assets/iosevka-webfont/iosevka.css" rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;">
     <link href="assets/applause-button.css" rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;">
     <script async src="assets/applause-button.js"></script>

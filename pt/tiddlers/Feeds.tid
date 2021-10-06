@@ -8,10 +8,13 @@ Este site é à moda antiga. Antes da internet só ter 3 ou 4 sites que entregam
 
 Infelizmente hoje em dia não é uma prática tão comum, mas acredito que com o tempo iremos, pouco a pouco, renovar essa tradição e tomar o controle da web de volta.
 
-Hoje neste humilde site, temos 3 feeds disponíveis:
+Hoje neste humilde site, temos 4 feeds disponíveis:
 
-*[[Newsletter|https://feeds.feedburner.com/joselito_newsletter]]
-*Desenvolvimento
-*Artigos
+|!Feed|!URL|
+|''Tudo''|https://feeds.feedburner.com/joselito_pt|
+|Notinhas|https://feeds.feedburner.com/joselito_notinhas|
+|Newsletter|https://feeds.feedburner.com/joselito_newsletter|
+|Desenvolvimento|https://feeds.feedburner.com/joselito_desenvolvimento|
+|Artigos|https://feeds.feedburner.com/joselito_artigos|
 
 Você pode adicionar individualmente a url de cada feed ou simplesmente adicionar `https://joseli.to/pt/` no seu leitor de feeds, e ele irá exibir todas as opções.
