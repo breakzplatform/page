@@ -2,4 +2,10 @@ tags: Index
 title: Slides
 type: text/vnd.tiddlywiki
 
-<<list-links "[tag[Slides]]">>
+<$list filter="[tags[]!is[system]sort[title]!tag[Index]prefix[20]reverse[]] -⭐">
+<$if value={{{[tag<currentTiddler>tag[Slides]count[]]}}}>
+<h2><$link to="Anuários"><<currentTiddler>></$link> <$count
+filter="[tag<currentTiddler>tag[Slides]]"/></h2>
+<<list-links filter:"[tag<currentTiddler>tag[Slides]] +[sort[title]]">>
+</$if>
+</$list>

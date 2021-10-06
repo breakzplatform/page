@@ -84,6 +84,7 @@ const newsletterFeedItems = [];
     <link rel="alternate" type="application/atom+xml" title="Joseli.to — Newsletter" href="https://world.hey.com/joselito/feed.atom" />
     <link rel="alternate" type="application/atom+xml" title="Joseli.to — Notinhas" href="feed/notinhas.atom" />
     <link rel="alternate" type="application/atom+xml" title="Joseli.to — Artigos" href="feed/artigos.atom" />
+    <link rel="alternate" type="application/atom+xml" title="Joseli.to — Desenvolvimento" href="feed/desenvolvimento.atom" />
     <link href="assets/iosevka-webfont/iosevka.css" rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;">
     <link href="assets/applause-button.css" rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;">
     <script async src="assets/applause-button.js"></script>
