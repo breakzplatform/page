@@ -1,0 +1,74 @@
+created: 20161004040001001
+tags: Ionic [[Material Design]] Desenvolvimento 2016
+title: Material Design no Ionic 2, na força bruta
+type: text/vnd.tiddlywiki
+
+!!! //Como definir o Material Design como padrão, mesmo no iOS, modificando Config do seu @App//
+
+[img[https://static.joseli.to/joseli.to/articles/1_bk6rY40xsdgKk4tsT5wAUA.png]]
+
+O Ionic 2 é lindo. Sério. Principalmente nos seus componentes feitos usando os princípios do Material Design. Diferente do Ionic 1.x, onde teríamos que utilizar alguma biblioteca como o Ionic Material, tudo já vem prontinho de fábrica pra a gente aproveitar.
+
+Claro que os temas para iOS e Windows também estão lá, nada mudou. Mas se você está fazendo toda sua identidade visual baseada no Material, provavelmente você irá querer manter essa consistência entre plataformas.
+
+Fazer isso no Ionic 2 é bem simples, utilizando o //Config// do módulo //ionicBootstrap,// que está no pacote //ionic-angular//:
+
+<<code """js
+import { ionicBootstrap } from ‘ionic-angular’;
+""">>
+
+O //ionicBootstrap// é equivalende ao Bootstrap do Angular 2, que “avisa” qual componente será o root da nossa aplicação. Ele já está devidamente importado e chamado no *''app/app.ts'' do seu aplicativo.
+
+Vá para a última linha, e lá estará ele:
+
+<<code """js
+ionicBootstrap(BitBar);
+""">>
+
+O //ionicBootstrap// recebe (até) três parâmetros, o componente Root, os Custom Providers e o objeto Config. É deste último que iremos tratar no dia de hoje.
+
+!! Config
+
+O Config nada mais é do que um simples objeto onde definimos determinadas propriedades. A primeira coisa é adiciona-lo ao Bootstrap:
+
+<<code """js
+ionicBootstrap(BitBar, [], {
+
+});
+
+// O Config é o terceiro parâmetro, então estamos passando um array vazio no parâmetro do Custom Providers. Trataremos dele em outro post.
+""">>
+
+Para implementarmos a ideia original do post, basta definirmos o //mode// como //“md”://
+
+<<code """js
+ionicBootstrap(BitBar, [], {
+    mode: 'md'
+});
+""">>
+
+Prontinho! Estamos avisando ao Ionic que queremos que o modo ''sempre seja'' o Material, independente da plataforma real do dispositivo utilizado.
+
+Esse é só um exemplo do que o Config é capaz. Podemos por exemplo, forçar com que as abas apareçam sempre no topo, é só fazer isso aqui:
+
+<<code """js
+ionicBootstrap(BitBar, [], {
+  mode: 'md',
+  tabsPlacement: 'top'
+});
+
+// 🔝 kkkkkkkkkkk 😂👌
+""">>
+
+Quer usar o Material, mas acha os Ícones do iOS mais bonitinhos?
+
+<<code """js
+ionicBootstrap(BitBar, [], {
+  mode: 'md',
+  iconMode: 'ios'
+});
+
+// Atenção, não é porque você pode que você deve.
+""">>
+
+[[Na documentação oficial do Ionic 2 existem inúmeros exemplos|https://ionicframework.com/docs/v3/api/config/Config/]] de como podemos utilizar o Config para manipularmos nosso App. Mas lembrem sempre, crianças, com grandes poderes vem grandes responsabilidades.
