@@ -1,0 +1,17 @@
+tags: Meta
+title: Feeds
+type: text/vnd.tiddlywiki
+
+Este site é à moda antiga. Antes da internet só ter 3 ou 4 sites que entregam pra você o que o algoritmo deles acha que deve, dava pra acompanhar os sites via RSS.
+
+[[Really Simple Syndication|https://pt.wikipedia.org/wiki/RSS]], ou simpesmente RSS, é uma forma de atualizar em tempo real os leitores sobre novos conteúdos nos seus sites favoritos, sem precisar de intermediário pra isso. Basta você ter um leitor de RSS como (o [[Feedly|https://feedly.com/]]) e adicionar nele os feeds disponibilizados pelos sites.
+
+Infelizmente hoje em dia não é uma prática tão comum, mas acredito que com o tempo iremos, pouco a pouco, renovar essa tradição e tomar o controle da web de volta.
+
+Hoje neste humilde site, temos 3 feeds disponíveis:
+
+*[[Newsletter|https://feeds.feedburner.com/joselito_newsletter]]
+*Desenvolvimento
+*Artigos
+
+Você pode adicionar individualmente a url de cada feed ou simplesmente adicionar `https://joseli.to/pt/` no seu leitor de feeds, e ele irá exibir todas as opções.

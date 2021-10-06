@@ -195,7 +195,7 @@ a,a:link {
 font-weight:700;
 }
 
-a:hover,a:not(.tc-tiddlylink):hover,a:not(.tc-tiddlylink):link:hover,a:not(.tc-tiddlylink).tc-tiddlylink-external:hover {
+a:hover,a:not(.tc-tiddlylink):hover,a:not(.tc-tiddlylink):link:hover,a:not(.tc-tiddlylink):visited:hover,a:not(.tc-tiddlylink).tc-tiddlylink-external:hover {
 background-color:#652585;
 color:#fff;
 }
