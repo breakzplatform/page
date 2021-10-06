@@ -22,7 +22,7 @@ const path = require('path');
         // removes unecessary tiddlers
         console.log('Removed');
       } else if (line.includes('"title":"$:/SiteTitle"')) {
-        jsonContentMod.push('{"title":"$:/SiteTitle","created":"20210828175705185","modified":"20210828232243746","type":"text/vnd.tiddlywiki","text":"\\u003Cimg loading=\\"lazy\\" src=\\"https://next.joseli.to/pt/icon.webp\\" class=\\"eu\\" width=\\"128\\" height=\\"128\\" alt=\\"Avatar Joselito\\">\\u003Cspan style=\\"display:none\\">Joseli.to\\u003C/span>","revision":"0","bag":"default"},')
+        jsonContentMod.push('{"title":"$:/SiteTitle","created":"20210828175705185","modified":"20210828232243746","type":"text/vnd.tiddlywiki","text":"\\u003Cimg loading=\\"lazy\\" src=\\"https://joseli.to/pt/icon.webp\\" class=\\"eu\\" width=\\"128\\" height=\\"128\\" alt=\\"Avatar Joselito\\">\\u003Cspan style=\\"display:none\\">Joseli.to\\u003C/span>","revision":"0","bag":"default"},')
       } else {
         jsonContentMod.push(line);
       }
