@@ -4,4 +4,4 @@ type: text/vnd.tiddlywiki
 
 Pequenas pilulas de conhecimento que não rendem um artigo inteiro, porém são interessantes o suficiente pra guardar e publicar. Eventualmente deverá ser a maior área deste humilde website.
 
-<<toc 'Notinhas' !sort[created]>>
+<<list-links filter:"[tag[Notinhas]] +[!sort[created]]">>

@@ -5,12 +5,12 @@ type: text/vnd.tiddlywiki
 Esta é minha amigável coleção de artigos. Grande parte deles são de opinião, então eles podem representar ou não minha opinião atual, que muda o tempo inteiro. Preste atenção, mas não leve muito a sério.
 
 !! Aconteceu Comigo
-<<toc 'Aconteceu Comigo' '!sort[created]'>>
+<<list-links filter:"[tag[Aconteceu Comigo]] +[!sort[created]]">>
 
 !! Reflexões
-<<toc 'Reflexões' '!sort[created]'>>
+<<list-links filter:"[tag[Reflexões]] +[!sort[created]]">>
 
 !! Cultura Pop
-<<toc 'Cultura Pop' '!sort[created]'>>
+<<list-links filter:"[tag[Cultura Pop]] +[!sort[created]]">>
 
 Eventualmente ainda pode aparecer um texto ou outro por aqui, porém a coisa mais parecida com um blog que eu tenho atualmente é a minha [[Newsletter|https://world.hey.com/joselito]], que uso como se fosse um Twitter com uma quantidade bem mais razoável de carateres.

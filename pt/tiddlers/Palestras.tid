@@ -6,6 +6,6 @@ type: text/vnd.tiddlywiki
 <$if value={{{[tag<currentTiddler>tag[Palestras]count[]]}}}>
 <h2><$link to="Anuários"><<currentTiddler>></$link> <$count
 filter="[tag<currentTiddler>tag[Palestras]]"/></h2>
-<<list-links filter:"[tag<currentTiddler>tag[Palestras]] +[sort[title]]">>
+<<list-links filter:"[tag<currentTiddler>tag[Palestras]] +[!sort[created]]">>
 </$if>
 </$list>
