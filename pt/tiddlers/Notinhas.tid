@@ -1,7 +1,8 @@
+rss-link: true
 tags: Index
 title: Notinhas
 type: text/vnd.tiddlywiki
 
-Pequenas pilulas de conhecimento que não rendem um artigo inteiro, porém são interessantes o suficiente pra guardar e publicar. Eventualmente deverá ser a maior área deste humilde website.
+Pequenas pílulas de conhecimento que não rendem um artigo inteiro, porém são interessantes o suficiente pra guardar e publicar. Eventualmente deverá ser a maior área deste humilde website.
 
 <<list-links filter:"[tag[Notinhas]] +[!sort[created]]">>

@@ -7,7 +7,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define claps(name, link)
- <applause-button color="#652585" style="width:58px;height:58px;" url="$link$"></applause-button>
+ <applause-button multiclap="true" color="#652585" style="width:58px;height:58px;" url="$link$"></applause-button>
 \end
 
 
@@ -58,7 +58,7 @@ type: text/vnd.tiddlywiki
 
 
 \define rss(link)
-<a href="$link$" target="_blank" rel="noopener noreferrer" title="Inscrever-se via RSS">
+<$link to="Feeds" title="Inscrever-se via RSS">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 24.332 24.332" style="enable-background:new 0 0 24.332 24.332;" xml:space="preserve">
 <g>
@@ -73,7 +73,7 @@ type: text/vnd.tiddlywiki
 			"/>
 	</g>
 </svg>
-</a>
+</$link>
 \end
 
 <$if value={{!!share-link}}>
@@ -117,6 +117,11 @@ type: text/vnd.tiddlywiki
 <$if value={{!!rss-link}}>
 		<li>
 			<$macrocall $name="rss" link={{!!rss-link}}/>
+		</li>
+</$if>
+<$if value={{!!rss}}>
+		<li>
+			<$macrocall $name="rssg" />
 		</li>
 </$if>
 	</ul>

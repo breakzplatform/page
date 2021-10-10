@@ -1,0 +1,9 @@
+author: inmysocks
+core-version: >=5.1.6
+dependents: 
+description: A bookmark library for TiddlyWiki
+plugin-type: plugin
+source: https://github.com/inmysocks/TW5-NoLearningRequired-Full
+title: $:/plugins/inmysocks/Bookmarks
+type: application/json
+version: 0.0.7
