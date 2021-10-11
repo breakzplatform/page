@@ -259,7 +259,7 @@ margin:0;
 padding:0;
 }
 
-.tc-sidebar-lists input {
+.tc-sidebar-lists input, .input-filter {
 border:1px solid #652585;
 }
 
@@ -303,9 +303,13 @@ div[data-tiddler-title="Conteúdo"] .tc-tags-wrapper,div[data-tiddler-title="Con
 display:none;
 }
 
-.tc-sidebar-lists input {
+.tc-sidebar-lists input, .input-filter {
 margin:0 .5em;
 padding:.5em;
+}
+
+.input-filter {
+margin: 0;
 }
 
 .tc-search button svg,.tc-search a svg {

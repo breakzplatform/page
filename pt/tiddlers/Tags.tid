@@ -11,11 +11,8 @@ filter="[all[current]tagging[]] +[sum[]]"/>)</h2>
 </$list>
 \end
 
-<$edit-text tiddler='$:/temp/TagList' placeholder="Filtrar Tags..." field=search_text/>
+<$edit-text tiddler="$:/temp/TagList" placeholder="Filtrar tags..." field="search_text" class="input-filter" />
 
-<$set
-    name=searchString
-    value={{$:/temp/TagList!!search_text}}
->
+<$set name=searchString value={{$:/temp/TagList!!search_text}}>
     <<thisTagsList>>
 </$set>
