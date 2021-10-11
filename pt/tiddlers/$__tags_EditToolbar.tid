@@ -1,0 +1,3 @@
+list: $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save $:/plugins/rmnvsl/krystal/buttons/maximize
+title: $:/tags/EditToolbar
+type: text/vnd.tiddlywiki
