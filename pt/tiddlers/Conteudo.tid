@@ -15,7 +15,7 @@ Você também pode acompanhar os conteúdos [[via feeds RSS|Feeds]].
 Na dúvida por onde começar? Comece pelos favoritos:
 <ul>
 <$list filter="[tag[⭐]limit[5]!sort[created]]"> 
-<li><$link to={{!!title}}>{{!!title}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
+<li><$link to={{!!title}}>{{!!title}}</$link> <small class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></small></li>
 </$list>
 </ul>
 
@@ -24,39 +24,39 @@ Ou se preferir, escolha uma das principais categorias:
 !! [[Notinhas]]
 <ul>
 <$list filter="[tag[Notinhas]limit[5]!sort[created]]"> 
-<li><$link to={{!!title}}>{{!!title}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
+<li><$link to={{!!title}}>{{!!title}}</$link> <small class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></small></li>
 </$list>
 </ul>
 
 !! [[Newsletter|https://world.hey.com/joselito]] ''<i></i>''
 
-!! [[Desenvolvimento]] <$count filter="[tag[Desenvolvimento]]"/>
+!! [[Desenvolvimento]] <small><$count filter="[tag[Desenvolvimento]]"/></small>
 <ul>
 <$list filter="[tag[Desenvolvimento]!tag[Notinhas]!sort[created]limit[5]]"> 
-<li><$link to={{!!title}}>{{!!title}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
+<li><$link to={{!!title}}>{{!!title}}</$link> <small class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></small></li>
 </$list>
 </ul>
 
-!! [[Produtividade]] <$count filter="[tag[Produtividade]]"/>
+!! [[Produtividade]] <small><$count filter="[tag[Produtividade]]"/></small>
 <ul>
 <$list filter="[tag[Produtividade]!tag[Notinhas]!sort[created]limit[5]]"> 
-<li><$link to={{!!title}}>{{!!title}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
+<li><$link to={{!!title}}>{{!!title}}</$link> <small class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></small></li>
 </$list>
 </ul>
 
-!! [[Artigos]] <$count filter="[tag[Artigos]]"/>
+!! [[Artigos]] <small><$count filter="[tag[Artigos]]"/></small>
 <ul>
 <$list filter="[tag[Artigos]!tag[Notinhas]!sort[created]limit[5]]"> 
-<li><$link to={{!!title}}>{{!!title}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></span></li>
+<li><$link to={{!!title}}>{{!!title}}</$link> <small class="content-list-date lowercase"><$view field="created" format="date" template="0DD de MMM de YYYY"/></small></li>
 </$list>
 </ul>
 
-!! [[Projetos]] <$count filter="[tag[Projetos]]"/>
+!! [[Projetos]] <small><$count filter="[tag[Projetos]]"/></small>
 <<list-links "[tag[Projetos]!sort[created]limit[5]]">>
 
-!! [[Palestras]] <$count filter="[tag[Palestras]]"/>
+!! [[Palestras]] <small><$count filter="[tag[Palestras]]"/></small>
 <ul>
 <$list filter="[tag[Palestras]!sort[created]limit[5]]"> 
-<li><$link to={{!!title}}>{{!!caption}}</$link> <span class="content-list-date lowercase"><$view field="created" format="date" template="YYYY"/></span></li>
+<li><$link to={{!!title}}>{{!!caption}}</$link> <small class="content-list-date lowercase"><$view field="created" format="date" template="YYYY"/></small></li>
 </$list>
 </ul>

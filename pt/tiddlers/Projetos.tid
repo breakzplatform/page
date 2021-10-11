@@ -2,5 +2,7 @@ tags: Index
 title: Projetos
 type: text/vnd.tiddlywiki
 
-!! Plugins
+<figure>[img[https://static.joseli.to/joseli.to/articles/TokyoPagoda6968UnderConstruct.gif]]</figure>
+
+!!! Plugins para TiddlyWiki
 <<list-links "[tag[Plugins]!sort[created]]">>

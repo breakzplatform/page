@@ -1,0 +1,8 @@
+caption: Progressive Web Apps no GDG Tech Tour
+created: 20160925160010000
+just-date: true
+tags: 2016 Palestras Caruaru
+title: GDG Tech Tour 2016
+type: text/vnd.tiddlywiki
+
+<$macrocall $name="tabs-talks" tabsList="[[Vídeo: Progressive Web Apps: um guia para não precisar de toalha]] [[Slides: Progressive Web Apps: um guia para não precisar de toalha]]" default="Vídeo: Progressive Web Apps: um guia para não precisar de toalha" />

@@ -1,0 +1,21 @@
+tags: Meta
+title: Links
+type: text/vnd.tiddlywiki
+
+\define thisBookmarkList()
+<ul><$list
+    filter='[tag[Bookmark]regexp[(?i)$(searchString)$]sort[title]]-[[$:/temp/Bookmarks/NewBookmark]]'>
+		<li>
+			<a href={{!!url}} target="_blank"><$view field=title/></a> {{!!note}} <small><$link to={{!!title}}>&#8943;</$link></small>
+		</li>
+</$list></ul>
+\end
+
+<$edit-text tiddler='$:/temp/Bookmarks/BookmarkList' placeholder="Filtrar..." field=search_text/>
+
+<$set
+    name=searchString
+    value={{$:/temp/Bookmarks/BookmarkList!!search_text}}
+>
+    <<thisBookmarkList>>
+</$set>

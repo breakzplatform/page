@@ -1,0 +1,8 @@
+caption: ServiceWorkers num Hangout do GDG BH
+created: 20160113040001000
+just-date: true
+tags: 2016 Palestras [[Hangout ]] [[Belo Horizonte]]
+title: Hangout GDG BH (Jan/16)
+type: text/vnd.tiddlywiki
+
+<$macrocall $name="tabs-talks" tabsList="[[Vídeo: Web Apps Offline com ServiceWorkers]] [[Slides: Web Apps Offline com ServiceWorkers]]" default="Vídeo: Web Apps Offline com ServiceWorkers" />

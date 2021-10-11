@@ -2,9 +2,20 @@ tags: Meta
 title: Tags
 type: text/vnd.tiddlywiki
 
-<$list filter="[tags[]!is[system]sort[title]!tag[Index]!prefix[20]] -⭐">
+\define thisTagsList()
+<$list filter="[tags[]!is[system]regexp[(?i)$(searchString)$]sort[title]!tag[Index]!prefix[20]] -⭐">
 <h2><<currentTiddler>>
 (<$count
 filter="[all[current]tagging[]] +[sum[]]"/>)</h2>
 <<list-links filter:"[tag<currentTiddler>] +[sort[title]]">>
 </$list>
+\end
+
+<$edit-text tiddler='$:/temp/TagList' placeholder="Filtrar Tags..." field=search_text/>
+
+<$set
+    name=searchString
+    value={{$:/temp/TagList!!search_text}}
+>
+    <<thisTagsList>>
+</$set>
