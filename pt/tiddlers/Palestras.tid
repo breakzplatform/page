@@ -4,8 +4,8 @@ type: text/vnd.tiddlywiki
 
 <$list filter="[tags[]!is[system]sort[title]!tag[Index]prefix[20]reverse[]] -⭐">
 <$if value={{{[tag<currentTiddler>tag[Palestras]count[]]}}}>
-<h2><$link to="Anuários"><<currentTiddler>></$link> <$count
-filter="[tag<currentTiddler>tag[Palestras]]"/></h2>
+<h2><$link to="Anuários"><<currentTiddler>></$link> <small><$count
+filter="[tag<currentTiddler>tag[Palestras]]"/></small></h2>
 <<list-links filter:"[tag<currentTiddler>tag[Palestras]] +[!sort[created]]">>
 </$if>
 </$list>
