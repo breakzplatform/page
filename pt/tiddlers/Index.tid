@@ -1,6 +1,6 @@
 rss-link: true
 share-link: https://joseli.to/pt/
-tags: $:/tags/MenuBar Index Meta
+tags: $:/tags/MenuBar Index
 title: Index
 type: text/vnd.tiddlywiki
 
@@ -9,7 +9,7 @@ Todo<<fnote "Quase todo. Há páginas acessíveis apenas por links internos de o
 Se preferir, você também pode navegar via [[tags|Tags]] ou [[por ano|Anuários]].
 
 <div class="tc-table-of-contents">
-<<toc 'Index' '!tag[$:/tags/duplicate]!tag[$:/tags/hide]sort[title]'>>
+<<toc 'Index' '!tag[$:/tags/duplicate]!tag[$:/tags/hide]'>>
 </div>
 
 ---
