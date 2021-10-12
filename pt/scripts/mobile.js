@@ -21,6 +21,9 @@ const path = require('path');
         || line.includes('"title":"$:/plugins/rmnvsl/krystal/images/maximize-tiddler"')) {
         // removes unecessary tiddlers
         console.log('Removed');
+      } else if (line.includes('"title":"HomePage"')) {
+        jsonContentMod.push(line
+          .replace(`ao lado`, `abaixo`));
       } else if (line.includes('"title":"$:/SiteTitle"')) {
         jsonContentMod.push('{"title":"$:/SiteTitle","created":"20210828175705185","modified":"20210828232243746","type":"text/vnd.tiddlywiki","text":"\\u003Cimg loading=\\"lazy\\" src=\\"https://joseli.to/pt/icon.webp\\" class=\\"eu\\" width=\\"128\\" height=\\"128\\" alt=\\"Avatar Joselito\\">\\u003Cspan style=\\"display:none\\">Joseli.to\\u003C/span>","revision":"0","bag":"default"},')
       } else {
