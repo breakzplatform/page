@@ -7,7 +7,7 @@ type: text/vnd.tiddlywiki
 <ul><$list
     filter='[tag[Links]regexp[(?i)$(searchString)$]sort[title]]-[[$:/temp/Bookmarks/NewBookmark]]'>
 		<li>
-			<a data-fslightbox="gallery" href={{!!url}} target="_blank"><$view field=title/></a>: {{!!note}} <small><$link to={{!!title}}>&#8943;</$link></small>
+			<a href={{!!url}} target="_blank"><$view field=title/></a>: {{!!note}} <small><$link to={{!!title}}>&#8943;</$link></small>
 		</li>
 </$list></ul>
 \end
