@@ -147,13 +147,7 @@ const newsletterFeedItems = [];
 
     // Lightbox
     root.querySelector('body').insertAdjacentHTML('beforeend', `<script src="assets/fslightbox.min.js"></script>`);
-    // Konami Code
-    root.querySelector('body').insertAdjacentHTML('beforeend', `<script>window.KONAMI_CURSOR=0;const KONAMI_CODE=[38,38,40,40,37,39,37,39,66,65];document.addEventListener('keydown',(e)=>{window.KONAMI_CURSOR=(e.keyCode==KONAMI_CODE[window.KONAMI_CURSOR])?window.KONAMI_CURSOR+1:0;if(window.KONAMI_CURSOR==KONAMI_CODE.length)window.location.href='https://amzn.to/3jXDIiG'})</script>`);
-    // VLibras
-    root.querySelector('body').insertAdjacentHTML('beforeend', `<div vw class="enabled"><div vw-access-button class="active"></div><div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div></div><script data-cfasync="false" src="https://vlibras.gov.br/app/vlibras-plugin.js"></script><script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script><style>[vw] [vw-access-button] .access-button {border-radius:100%}</style>`);
-
-
-
+    
     fs.writeFile(path.join(__dirname, '..', 'output') + '/wiki.min.html', root.toString(), function (err) {
       if (err) return console.log(err);
       // console.log('Hello World > helloworld.txt');
