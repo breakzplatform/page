@@ -86,9 +86,6 @@ const newsletterFeedItems = [];
     <link rel="alternate" type="application/atom+xml" title="Joseli.to — Newsletter" href="https://feeds.feedburner.com/joselito_newsletter" />
     <link rel="alternate" type="application/atom+xml" title="Joseli.to — Artigos" href="https://feeds.feedburner.com/joselito_artigos" />
     <link rel="alternate" type="application/atom+xml" title="Joseli.to — Desenvolvimento" href="https://feeds.feedburner.com/joselito_desenvolvimento" />
-    <link href="assets/iosevka-webfont/iosevka.css" rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;">
-    <link href="assets/applause-button.css" rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;">
-    <script async src="assets/applause-button.js"></script>
   `);
 
 
@@ -145,12 +142,8 @@ const newsletterFeedItems = [];
 
     root.querySelector('.tiddlywiki-tiddler-store').set_content(jsonContentMod.join('\n'));
 
-    // Lightbox
-    root.querySelector('body').insertAdjacentHTML('beforeend', `<script src="assets/fslightbox.min.js"></script>`);
-    
     fs.writeFile(path.join(__dirname, '..', 'output') + '/wiki.min.html', root.toString(), function (err) {
       if (err) return console.log(err);
-      // console.log('Hello World > helloworld.txt');
     });
   })
 })();

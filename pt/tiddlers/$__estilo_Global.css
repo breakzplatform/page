@@ -495,6 +495,22 @@ div[data-tiddler-title="Vídeos"] .tc-thumbnail-caption {
     z-index: 99999999;
 }
 
+.tc-block-dropdown {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+}
+
+.lazy-VLibras {
+	width:36px;
+	height:36px;
+	position:fixed;
+	right:0;
+	top:60%;
+	margin-top:-32vh;
+}
+
 @media screen and (max-width: 768px) {
 	header button.tc-tiddlylink {
 	margin:.65rem 0;

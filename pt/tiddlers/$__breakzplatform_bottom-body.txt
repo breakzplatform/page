@@ -1,7 +1,23 @@
 \rules only filteredtranscludeinline transcludeinline
-<ninja-keys noAutoLoadMdIcons></ninja-keys>
+<ninja-keys noAutoLoadMdIcons placeholder="Digite o comando..." hideBreadcrumbs></ninja-keys>
 <script>
   const ninja = document.querySelector('ninja-keys');
+	ninja.addEventListener('selected', (event) => {
+		if(!event.detail.action && event.detail.search.startsWith('>')) {
+			window.location.hash = "#:[!is[system]search["+event.detail.search.substring(1)+"]]";
+			ninja.close();
+		}
+		
+		if(!event.detail.action && event.detail.search.startsWith('>!')) {
+			window.location.hash = "#:[search["+event.detail.search.substring(2)+"]]";
+			ninja.close();
+		}
+		
+		if(!event.detail.action && event.detail.search.startsWith('@')) {
+      (new $tw.Story()).navigateTiddler(event.detail.search.substring(1));
+			ninja.close();
+		}
+	});
   ninja.data = [
     {
       id: 'Contato',
@@ -12,24 +28,4 @@
     }
   ];
 </script>
-<a href="#" onclick="loadVLibras(e)" id="lazyVLibras" style="width:36px;height:36px;position:absolute;right:0;top: 60%;margin-top:-32vh;"><img loading="lazy" alt="Disponível em Libras" src="https://static.joseli.to/joseli.to/vlibras.jpg" style="width:100%;height:100%;border-radius:100%;"/></a>
-<script>
-function loadVLibras(e) {
-	document.getElementById("lazyVLibras").style.display = 'none';
-	
-	  var script = document.createElement('script');
-script.onload = function () {
-
-	window.onload = null;
-	new window.VLibras.Widget('https://vlibras.gov.br/app');
-	window.onload();
-	waitForElm('.access-button').then(el => el.click());
-	
-};
-script.src = "https://vlibras.gov.br/app/vlibras-plugin.js";
-
-document.body.appendChild(script);
-}
-</script>
-<div vw class="enabled"><div vw-access-button class="active"></div><div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div></div><style>[vw] [vw-access-button] .access-button {border-radius:100%}</style><script>window.KONAMI_CURSOR=0;const KONAMI_CODE=[38,38,40,40,37,39,37,39,66,65];document.addEventListener('keydown',(e)=>{window.KONAMI_CURSOR=(e.keyCode==KONAMI_CODE[window.KONAMI_CURSOR])?window.KONAMI_CURSOR+1:0;if(window.KONAMI_CURSOR==KONAMI_CODE.length)window.location.href='https://amzn.to/3jXDIiG'})</script>
-<script>function waitForElm(e){return new Promise(t=>{if(document.querySelector(e))return t(document.querySelector(e));const r=new MutationObserver(o=>{document.querySelector(e)&&(t(document.querySelector(e)),r.disconnect())});r.observe(document.body,{childList:!0,subtree:!0})})}</script>
+<a href="#" onclick="loadVLibras()" class="lazy-VLibras"><img loading="lazy" alt="Disponível em Libras" src="https://static.joseli.to/joseli.to/vlibras.jpg" style="width:100%;height:100%;border-radius:100%;"/></a><script>function loadVLibras(){document.querySelector(".lazy-VLibras").style.display="none";const a=document.createElement("script");a.onload=function(){window.onload=null,new window.VLibras.Widget("https://vlibras.gov.br/app"),window.onload(),waitForElm(".access-button").then(a=>a.click())},a.src="https://vlibras.gov.br/app/vlibras-plugin.js",document.body.appendChild(a)}</script><div vw class="enabled"><div vw-access-button class="active"></div><div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div></div><style>[vw] [vw-access-button] .access-button {border-radius:100%}</style><script>window.KONAMI_CURSOR=0;const KONAMI_CODE=[38,38,40,40,37,39,37,39,66,65];document.addEventListener('keydown',(e)=>{window.KONAMI_CURSOR=(e.keyCode==KONAMI_CODE[window.KONAMI_CURSOR])?window.KONAMI_CURSOR+1:0;if(window.KONAMI_CURSOR==KONAMI_CODE.length)window.location.href='https://amzn.to/3jXDIiG'})</script><script>function waitForElm(e){return new Promise(t=>{if(document.querySelector(e))return t(document.querySelector(e));const r=new MutationObserver(o=>{document.querySelector(e)&&(t(document.querySelector(e)),r.disconnect())});r.observe(document.body,{childList:!0,subtree:!0})})}</script><script src="assets/fslightbox.min.js"></script>
