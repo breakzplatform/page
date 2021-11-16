@@ -1,6 +1,6 @@
 !! Sobre este site
 
-Esta política de privacidade refere-se ao site https://joseli.to/pt/.
+Esta política de privacidade refere-se ao site https://joselito.wiki
 
 !! Dados coletados
 

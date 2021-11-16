@@ -1,9 +1,9 @@
 tags: 
-title: $:/rss/Notinhas
+title: $:/rss/Notinhas!Desenvolvimento!Artigos
 type: text/vnd.tiddlywiki
 
 \define MyFilter(MyTag,domain)
-[!is[system]tag[Notinhas]!sort[created]limit[10]]
+[!is[system]tag[Notinhas]!tag[Desenvolvimento]!tag[Artigos]!sort[created]limit[10]]
 \end
 
 &#60;?xml version="1.0" encoding="UTF-8"?&#62;<br />
@@ -19,7 +19,7 @@ Joselito
 &#60;/name&#62;<br />
      &#60;/author&#62;<br />
      &#60;id&#62;{{$:/plugins/techlifeweb/xmlbuilder/discoverfeed!!serverdomain}}#Notinhas&#60;/id&#62;<br />
-     &#60;link rel="self" type="application/atom+xml" href="https://joseli.to/pt/feed/notinhas.atom" /&#62;<br />
+     &#60;link rel="self" type="application/atom+xml" href="https://joselito.wiki/feed/notinhas.atom" /&#62;<br />
 <$set name="MyTag" value=Feed>
 <$set name="domain" value={{$:/plugins/techlifeweb/xmlbuilder/discoverfeed!!serverdomain}}>
 <$list filter=<<MyFilter>>>

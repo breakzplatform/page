@@ -1,0 +1,5 @@
+tags: $:/tags/RawMarkup
+title: $:/breakzplatform/head
+type: text/vnd.tiddlywiki
+
+<link href="https://joselito.wiki/assets/iosevka-webfont/iosevka.css" rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;"><link href="https://joselito.wiki/assets/applause-button.css" rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;"><script async src="https://joselito.wiki/assets/applause-button.js"></script><script type="module" async src="https://unpkg.com/ninja-keys@1.1.6/dist/ninja-keys.js?module"></script>

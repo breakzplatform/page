@@ -4,7 +4,7 @@ title: $:/ContributionBanner
 type: text/vnd.tiddlywiki
 
 \define base-github()
-https://github.com/breakzplatform/joseli.to/tree/main/pt/tiddlers/
+https://github.com/breakzplatform/joseli.to/tree/main/wiki/tiddlers/
 \end
 
 <$set name="draft-of" value={{{ [<currentTiddler>get[draft.of]] }}}>

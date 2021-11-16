@@ -511,6 +511,15 @@ div[data-tiddler-title="Vídeos"] .tc-thumbnail-caption {
 	margin-top:-32vh;
 }
 
+div.tc-tiddler-frame {
+border-top:2px solid transparent;
+}
+
+div.tc-tiddler-frame.activeTiddler {
+border-left:none;
+border-top:2px solid #652585;
+}
+
 @media screen and (max-width: 768px) {
 	header button.tc-tiddlylink {
 	margin:.65rem 0;
