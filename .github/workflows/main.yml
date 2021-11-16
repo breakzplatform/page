@@ -37,11 +37,11 @@ jobs:
         working-directory: ./wiki
         run: yarn feeds
       - name: Move PT to root
-        run: mv pt/output/index.html public/wiki/index.html
+        run: mv wiki/output/index.html public/wiki/index.html
       - name: Move PT mobile to root
-        run: mv pt/output/mobile/index.html public/mobile/wiki/index.html
+        run: mv wiki/output/mobile/index.html public/mobile/wiki/index.html
       - name: Move PT Feeds to root
-        run: mkdir public/wiki/feed && mv -v pt/output/feed/* public/wiki/feed/
+        run: mkdir public/wiki/feed && mv -v wiki/output/feed/* public/wiki/feed/
       - name: Replicate vercel.json
         run: cp public/vercel.json public/mobile/vercel.json
       - name: Replicate assets PT
