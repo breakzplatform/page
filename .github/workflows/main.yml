@@ -1,4 +1,4 @@
-name: joselito.wiki Deploy
+name: joselito.page Deploy
 on:
   push:
     branches:

@@ -19,7 +19,7 @@ Joselito
 &#60;/name&#62;<br />
      &#60;/author&#62;<br />
      &#60;id&#62;{{$:/plugins/techlifeweb/xmlbuilder/discoverfeed!!serverdomain}}#Artigos&#60;/id&#62;<br />
-     &#60;link rel="self" type="application/atom+xml" href="https://joselito.wiki/feed/artigos.atom" /&#62;<br />
+     &#60;link rel="self" type="application/atom+xml" href="https://joselito.page/feed/artigos.atom" /&#62;<br />
 <$set name="MyTag" value=Feed>
 <$set name="domain" value={{$:/plugins/techlifeweb/xmlbuilder/discoverfeed!!serverdomain}}>
 <$list filter=<<MyFilter>>>
