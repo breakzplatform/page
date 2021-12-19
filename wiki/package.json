@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "tiddlywiki --listen",
+    "start": "tiddlywiki --listen port=8090",
     "build": "rm -rf .cache && tiddlywiki --build index",
     "minify": "node scripts/cleaner.js && html-minifier output/wiki.min.html -o output/index.html --remove-comments --collapse-whitespace --minify-css",
     "minify:mobile": "node scripts/mobile.js && html-minifier output/wiki.mobile.min.html -o output/mobile/index.html --remove-comments --collapse-whitespace --minify-css && html-minifier output/index.html -o output/index.html",
