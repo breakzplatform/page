@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Inter var';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('https://rsms.me/inter/font-files/Inter-roman.var.woff2?v=3.19') format('woff2');
+  font-named-instance: 'Regular';
+}
+
+@font-face {
+  font-family: 'Inter var';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('https://rsms.me/inter/font-files/Inter-italic.var.woff2?v=3.19') format('woff2');
+  font-named-instance: 'Italic';
+}
+
+:root, html, body { font-family: 'Inter var', system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
+}
+
 *,::before,::after {
 box-sizing:border-box;
 }
@@ -13,7 +34,6 @@ line-height:1.15;
 }
 
 body {
-font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
 margin:0;
 }
 
@@ -317,6 +337,10 @@ height:1.5em;
 margin:0 .25em;
 width:1.5em;
 }
+
+ .tc-tiddler-title-icon {
+ 	display: none;
+ }
 
 .tc-tagged-Artigos .tc-tiddler-body.tc-reveal {
 line-height:1.618;

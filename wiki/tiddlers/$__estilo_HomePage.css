@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Pixelated MS Sans Serif";
-  src: url(assets/ms_sans_serif.woff) format("woff");
-  src: url(assets/ms_sans_serif.woff2) format("woff2");
+  src: url("https://joselito.page/assets/ms_sans_serif.woff") format("woff");
+  src: url("https://joselito.page/assets/ms_sans_serif.woff") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -33,10 +33,6 @@ div[data-tiddler-title="HomePage"] p > a.tc-tiddlylink:hover,
 div[data-tiddler-title="HomePage"] p > a.tc-tiddlylink-external:hover {
 	font-style: normal;
 	background: none;
-}
-
-div[data-tiddler-title="HomePage"] .tc-tiddler-title-icon {
-	margin-right: .5rem;
 }
 
 div[data-tiddler-title="HomePage"] .tc-title {
